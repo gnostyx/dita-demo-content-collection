@@ -87,4 +87,4 @@ Guide to the Maps
 |Integrator Bookmap|This BookMap includes publication information, such as a list of figures and an index as back matter. This map topics that would be used by an administrator working within an integrator organization instead of a local administrator working within an end-customer organization.|
 |Customer Proposal Template Map|A map incorporates content into a template proposal that can be used to demonstrate the sharing of content between documentation sources and business documents.|
 
-_Source: c_guide_to_scenarios.dita_
+_Source: Thunderbird/c_guide_to_scenarios.dita_
