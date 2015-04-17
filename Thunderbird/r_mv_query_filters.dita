@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<reference xml:lang="en-us" id="r_mv_query_filters">
+    <title>Query filters</title>
+    <shortdesc>Before generating a data view, you must filter your query. This section lists the query
+        filters available for each analysis. This list is organized alphabetically by query
+        filter.</shortdesc>
+    <prolog>
+         <metadata>
+            <prodinfo>
+                <prodname><term conkeyref="r_productname_variables/ph_clusterview"/>
+                </prodname>
+                <vrmlist>
+                    <vrm version="1.1" release="GA" modification="b"/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+        <metadata>
+            <keywords><indexterm><term conkeyref="r_productname_variables/ph_clusterview"/><indexterm>query filters</indexterm></indexterm></keywords>
+        </metadata>
+    </prolog>
+    <refbody>
+        <section>
+            <table frame="topbot" rowsep="1">
+                <tgroup cols="3" rowsep="1">
+                    <colspec colnum="1" colname="1" colwidth="19*"/>
+                    <colspec colnum="2" colname="2" colwidth="23*"/>
+                    <colspec colnum="3" colname="3" colwidth="35*"/>
+                    <thead>
+                        <row rowsep="1">
+                            <entry>Query filter</entry>
+                            <entry>Associated reports</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row rowsep="1">
+                            <entry><uicontrol>Access rule</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Access rule configuration</li>
+                                </ul>
+                            </entry>
+                            <entry>Select the access rule to investigate.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Acknowledged by</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Users who acknowledged the alarm.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Acknowledged on</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Alarm acknowledgement time range.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Action taken</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Hits</li>
+                                </ul>
+                            </entry>
+                            <entry>User hit actions (Monitor, Diagnose, Clear).</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Acknowledgement type</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Check one of the following acknowledgement type options: <dl>
+                                    <dlentry>
+                                        <dt>Alternate</dt>
+                                        <dd>Alarm was acknowledged by a user using the alternate
+                                            mode.</dd>
+                                    </dlentry>
+                                    <dlentry>
+                                        <dt>Default</dt>
+                                        <dd>Alarm was acknowledged by a user, or auto-acknowledged
+                                            by the system.</dd>
+                                    </dlentry>
+                                    <dlentry>
+                                        <dt>Forcibly</dt>
+                                        <dd>An administrator forced the alarm to be
+                                            acknowledged.</dd>
+                                    </dlentry>
+                                </dl></entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Alarm priority</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Alarm priority.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Alarms</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                             <entry>Select the types of alarms you want to investigate.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Application</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Activity trails</li>
+                                    <li>Audit trails</li>
+                                </ul>
+                            </entry>
+                            <entry>Which client application was used for the activity.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Archiver</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Archiver events</li>
+                                </ul>
+                            </entry>
+                            <entry>Select the Archivers to investigate.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Clusters</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Cluster activities</li>
+                                </ul>
+                            </entry>
+                            <entry>Select the clusters to investigate.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Compare with</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Inventory report</li>
+                                </ul>
+                            </entry>
+                            <entry>Compare entities with a source entity of the event.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Creation time</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Incidents</li>
+                                </ul>
+                            </entry>
+                            <entry>Incidents created/reported within the specified time
+                                range.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Credential</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Credential management</li>
+                                </ul>
+                            </entry>
+                            <entry>Specify whether or not the credential is assigned.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Custom fields</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Most reports</li>
+                                </ul>
+                            </entry>
+                            <entry>If custom fields are defined for the entity you are
+                                investigating, they can be included in this report.<note>You might
+                                    not see the custom fields filter, depending on whether your user
+                                    is configured to view that custom field.</note></entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Description</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Activity trails</li>
+                                    <li>Credential management</li>
+                                </ul>
+                            </entry>
+                             <entry>Restrict the search to entries that contain this text
+                                string.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Devices</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>IO configuration</li>
+                                </ul>
+                            </entry>
+                            <entry>Select the devices to investigate.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Entities</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Audit trails</li>
+                                </ul>
+                            </entry>
+                            <entry>Select the entities you want to investigate. You can filter the
+                                entities by name and by type. </entry>
+                        </row>
+                    
+                        <row rowsep="1">
+                            <entry><uicontrol>Health event</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health history</li>
+                                </ul>
+                            </entry>
+                            <entry>Name of the health event.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Health severity</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health history</li>
+                                </ul>
+                            </entry>
+                            <entry>Severity level of the health event.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Hit rules</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Hits</li>
+                                    <li>Reads</li>
+                                 </ul>
+                            </entry>
+                            <entry>Select the hit rules to include in the report.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Hit type</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Hits</li>
+                                </ul>
+                            </entry>
+                            <entry>Select the type of hits to include in the report.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Impacted</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Activity trails</li>
+                                </ul>
+                            </entry>
+                            <entry>The entities that were impacted by this activity.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Incident time</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Incidents</li>
+                                </ul>
+                            </entry>
+                            <entry>Incidents reported within the specified time range. The incident
+                                time corresponds to the event or alarm timestamp the incident refers
+                                to. If the incident does not refer to any event or alarm, then the
+                                incident time corresponds to the creation time.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Initiator</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Activity trails</li>
+                                </ul>
+                            </entry>
+                            <entry>User responsible for the activity.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Investigated by</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Which user put the alarm into the <i>under investigation</i>
+                                state.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Investigated on</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Specify a time range when the alarm was put into the <i>under
+                                    investigation</i> state.</entry>
+                        </row>
+                       
+                        <row rowsep="1">
+                            <entry><uicontrol>Machine</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health history</li>
+                                </ul>
+                            </entry>
+                            <entry>Select a computer that was having health issues to investigate.
+                            </entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Modified by</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Audit trails</li>
+                                </ul>
+                            </entry>
+                            <entry>User responsible for the entity modification.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Modification time</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Audit trails</li>
+                                    <li>Incidents</li>
+                                </ul>
+                            </entry>
+                            <entry>
+                                <dl>
+                                    <dlentry>
+                                        <dt><i>Audit trails</i> task</dt>
+                                        <dd>Entities modified within the specified time range.</dd>
+                                    </dlentry>
+                                    <dlentry>
+                                        <dt><i>Incidents</i> task</dt>
+                                        <dd>Incidents modified within the specified time range.</dd>
+                                    </dlentry>
+                                </dl>
+                            </entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Notes</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Incidents</li>
+                                </ul>
+                            </entry>
+                            <entry>Enter text to find incidents with a description starting or
+                                containing the specified text.</entry>
+                        </row>
+                         <row rowsep="1">
+                            <entry><uicontrol>State</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                           <entry>Current state of the alarm.<dl>
+                                    <dlentry>
+                                        <dt>Active</dt>
+                                        <dd>Alarm is not yet acknowledged. Selecting an active alarm
+                                            shows the alarm acknowledge buttons in the report
+                                            pane.</dd>
+                                    </dlentry>
+                                    <dlentry>
+                                        <dt>Acknowledged</dt>
+                                        <dd>Alarm was acknowledged by a user, or auto-acknowledged
+                                            by the system.</dd>
+                                    </dlentry>
+                                    <dlentry>
+                                        <dt>Under investigation</dt>
+                                        <dd>Alarm with an acknowledgement condition that is still
+                                            active was put under investigation.</dd>
+                                    </dlentry>
+                                    <dlentry>
+                                        <dt>Acknowledgement required</dt>
+                                        <dd>Alarm with an acknowledgement condition that was cleared
+                                            is ready to be acknowledged.</dd>
+                                    </dlentry>
+                                </dl></entry>
+                        </row>
+                       <row rowsep="1">
+                            <entry><uicontrol>Triggered on</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Alarm trigger time
+                                range.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Triggering event</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Events used to trigger the alarm.</entry>
+                        </row>
+                       <row rowsep="1">
+                            <entry><uicontrol>Users</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Hits</li>
+                                    <li>Reads</li>
+                                </ul>
+                            </entry>
+                            <entry>Select the user name.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+    </refbody>
+</reference>

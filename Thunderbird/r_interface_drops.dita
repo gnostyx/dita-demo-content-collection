@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Composite//EN" "/SysSchema/dita/ditabase.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="i3199174" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic       reference/reference "><title class="- topic/title ">Interface bypass</title>
+<shortdesc class="- topic/shortdesc ">Interface bypass notification is sent if the bypass group
+        table operational status sets to bypass mode (value=0).</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>Interface bypass</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <refbody class="- topic/body reference/refbody "><section id="i3199175" class="- topic/section "><title>Minor Condition</title><p>A <codeph>bypass</codeph> notification is sent if the sum of <codeph>ifInDiscards</codeph> and
+                    <codeph>ifOutDiscards</codeph> exceeds 10 within an interval of 3600
+                seconds.</p><table frame="none" colsep="0" rowsep="0" class="- topic/table ">
+<tgroup cols="2" colsep="0" rowsep="0" outputclass="Table" class="- topic/tgroup ">
+<colspec colnum="1" colname="1" colwidth="24*" colsep="0" class="- topic/colspec "/>
+<colspec colnum="2" colname="2" colwidth="76*" colsep="0" class="- topic/colspec "/>
+<tbody class="- topic/tbody ">
+<row rowsep="0" class="- topic/row ">
+<entry colname="1" class="- topic/entry ">Profile</entry>
+<entry colname="2" class="- topic/entry ">Description</entry>
+</row>
+<row rowsep="0" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><p class="- topic/p ">Frequency</p></entry>
+<entry colname="2" class="- topic/entry "><p class="- topic/p ">3600 seconds</p></entry>
+</row>
+<row rowsep="0" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><p class="- topic/p ">Severity</p></entry>
+<entry colname="2" class="- topic/entry "><p class="- topic/p ">Minor</p></entry>
+</row>
+<row rowsep="0" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><p class="- topic/p ">Condition</p></entry>
+<entry colname="2" class="- topic/entry "><p class="- topic/p ">DELTA (IF-MIB::ifInDiscards + IF-MIB::ifOutDiscards)
+&gt; 10</p></entry>
+</row>
+</tbody>
+</tgroup></table></section><section><title>Major Condition</title><table frame="none" colsep="0" rowsep="0" class="- topic/table ">
+    <tgroup cols="2" colsep="0" rowsep="0" outputclass="Table" class="- topic/tgroup ">
+        <colspec colnum="1" colname="1" colwidth="24*" colsep="0" class="- topic/colspec "/>
+        <colspec colnum="2" colname="2" colwidth="76*" colsep="0" class="- topic/colspec "/>
+        <tbody class="- topic/tbody ">
+            <row rowsep="0" class="- topic/row ">
+                <entry colname="1" class="- topic/entry ">Profile</entry>
+                <entry colname="2" class="- topic/entry ">Description</entry>
+            </row>
+            <row rowsep="0" class="- topic/row ">
+                <entry colname="1" class="- topic/entry "><p class="- topic/p ">Frequency</p></entry>
+                <entry colname="2" class="- topic/entry "><p class="- topic/p ">0 seconds (Immediate)</p></entry>
+            </row>
+            <row rowsep="0" class="- topic/row ">
+                <entry colname="1" class="- topic/entry "><p class="- topic/p ">Severity</p></entry>
+                <entry colname="2" class="- topic/entry "><p class="- topic/p ">Major</p></entry>
+            </row>
+            <row rowsep="0" class="- topic/row ">
+                <entry colname="1" class="- topic/entry "><p class="- topic/p ">Condition</p></entry>
+                <entry colname="2" class="- topic/entry "><p class="- topic/p ">ALPHABET-MIB::svBypassGroupGroupTableOperStatus == 0
+                    (eBypassWatchdogOperStatus_BYPASS_OPER_STATUS_BYPASS)</p></entry>
+            </row>
+        </tbody>
+    </tgroup></table></section></refbody></reference>

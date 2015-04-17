@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<concept id = "i713072"><title>About capture file names</title>
+    <shortdesc>Capture file names require relative paths.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>resource destinations<indexterm>file<indexterm>capture file
+                            name</indexterm></indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<conbody>
+        <section>
+            <p>Capture file names must be entered with a relative pathname. The absolute path is
+                determined when a file is received, when the relative path is appended to a default
+                absolute path prefix.</p>
+            <p>
+                <note>
+                    <p id="p_1">Current directory (".") and parent directory ("..") indicators are
+                        not allowed in the relative path definition.</p>
+                </note>
+                <ul id="ul_nww_tqz_ce">
+                    <li>
+                        <p>The default absolute path is <filepath>/d2/var/captures.</filepath> The
+                            root of the file capture can’t be changed. Any empty directories under
+                                <filepath>/d2/var/captures</filepath> are automatically deleted.</p>
+                    </li>
+                    <li>
+                        <p>The file name that you enter is a prefix, to which is added an 8-digit
+                            number followed by <filepath>.cap</filepath>. For example, if
+                                <filepath>file unknownUdp</filepath> is specified, the following
+                            files will be
+                            created:<codeblock>
+unknownUdp.00000001.cap
+unknownUdp.00000002.cap
+…
+</codeblock></p>
+                    </li>
+                    <li>
+                        <p>When files are being written, a temporary file is used. The temporary
+                            file cannot be read. When a flush occurs, the file is renamed and can be
+                            read. </p>
+                    </li>
+                </ul>
+            </p>
+        </section></conbody></concept>

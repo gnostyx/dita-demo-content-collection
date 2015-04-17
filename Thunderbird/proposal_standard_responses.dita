@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_h1s_rgc_rr">
+  <title>Standard responses</title>
+  <body>
+    <section>
+      <title>Describe the security provisions provided by your product.</title>
+      <p conref="c_security.dita#conceptId/p_wjp_nhc_rr"/>
+    </section>
+    <section>
+      <title>How does your solution address the challenges of administering a large enterprise
+        deployment?</title>
+      <p conref="c_ease_of_management.dita#conceptId/p_tct_h3c_rr"/>
+      <p conref="c_ease_of_management.dita#conceptId/p_y5d_33c_rr"/>
+    </section>
+    <section>
+      <title>When can administrators make changes to the deployed system? How can high priority
+        changes be forced into production?</title>
+      <p conref="c_ease_of_management.dita#conceptId/p_srn_33c_rr"/>
+    </section>
+    <section>
+      <title>Does your solution provide data visualization tools to support administrators in
+        extracting and analyzing data resources being provided by different system
+        components?</title>
+      <p conref="c_product_about.dita#v3337120/v5667119"/>
+      <p conref="c_product_about.dita#v3337120/v3337131"/>
+      <p conref="c_product_about.dita#v3337120/p_bv5_rkc_rr"/>
+    </section>
+    <section>
+      <title>Explain how your solution can be leveraged to get the most out of the available
+        infrastructure and data resources?</title>
+      <p>Once resources are registered within <term
+          conkeyref="r_productname_variables/ph_companyname"/>
+        <term conkeyref="r_productname_variables/ph_prodname"/>, administrators can
+        optimize how each resource is ulitized and when. This capability is provided by the robust
+        and extensible scheduling services that underlie the <term
+          conkeyref="r_productname_variables/ph_prodname"/> environment.</p>
+      <p conref="c_efficient_resources.dita#conceptId/p_tr1_hlc_rr"/>
+      <p conref="c_efficient_resources.dita#conceptId/p_s2f_3lc_rr"/>
+      <p conref="c_efficient_resources.dita#conceptId/p_cf1_glc_rr"/>
+      <p conref="c_efficient_resources.dita#conceptId/p_edj_glc_rr"/>
+    </section>
+    <section>
+      <title>What are the hardware and software requirements for your solution?</title>
+      <table conref="r_supported_platforms.dita#referenceId/table_cpb_upj_ae" id="table_l44_kmc_rr">
+        <tgroup cols="cols_vh4_kmc_rr">
+          <tbody>
+            <row>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    
+  </body>
+</topic>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="conceptId">
+ <title><term conkeyref="r_productname_variables/ph_companyname"/>
+  <term conkeyref="r_productname_variables/ph_prodname"/> features and
+  benefits</title>
+ <shortdesc><term conkeyref="r_productname_variables/ph_prodname"/> components work
+  together to give you the advanced cluster management and reporting capabilities that you need
+  within a large computing environment.</shortdesc>
+ <conbody>
+  <section id="section_mtx_smc_rr">
+   <p>The <term conkeyref="r_productname_variables/ph_companyname"/>
+    <term conkeyref="r_productname_variables/ph_prodname"/> computing management
+    solution combines powerful cluster management services with a simple-to-use, intuitive <term
+     conkeyref="r_productname_variables/ph_enduser"/> front-end application. The
+    combination places control of the full resources of your computing infrastructure into the hands
+    of your team members and it does so in a way the establishes, and sustains, the highest levels
+    of security. <fig>
+     <image conkeyref="r_image_warehouse/image_f2g_mft_qr" id="image_zf4_pnc_rr"/>
+    </fig></p>
+  </section>  
+  <section id="section_p1h_jcz_qr">
+   <title>Key <term conkeyref="r_productname_variables/ph_prodname"/> benefits</title>
+   <p>
+    <ul id="ul_ewm_kmj_ae">
+     <li>
+      <p>Maximum flexibility</p>
+     </li>
+     <li>
+      <p>Designed for extensibility</p>
+     </li>
+     <li>
+      <p>Ease of management</p>
+     </li>
+     <li>
+      <p>Extreme scalability</p>
+     </li>
+     <li>Intuitive reports and data visualizations</li>
+     <li>
+      <p>Industry-leading support</p>
+     </li>
+    </ul>
+   </p>
+  </section>
+  <section id="section_tjt_jcz_qr">
+   <title>Key <term conkeyref="r_productname_variables/ph_prodname"/> features</title>
+   <p>
+    <ul id="ul_qub_qmj_ae">
+     <li>
+      <p>Easy to use and manage for onsite administrators</p>
+     </li>
+     <li>
+      <p>High performing, scalable architecture</p>
+     </li>
+     <li>
+      <p>Comprehensive, intelligent scheduling policies</p>
+     </li>
+     <li>Complete customization flexibility for integrators</li>
+     <li>
+      <p>Heterogeneous platform support</p>
+     </li>
+     <li>
+      <p>Continuous live data reporting services</p>
+     </li>
+     <li>
+      <p>Robust security services</p>
+     </li>
+    </ul>
+   </p>
+  </section>
+  <section id="section_glb_kcz_qr">
+   <title>Component architecture delivers maximum scalability and flexibility</title>
+   <p><term conkeyref="r_productname_variables/ph_prodname"/> calls upon the <term
+     conkeyref="r_productname_variables/ph_clusterview"/>, <term
+     conkeyref="r_productname_variables/ph_analytics"/>, <term
+     conkeyref="r_productname_variables/ph_balance"/> and <term
+     conkeyref="r_productname_variables/ph_clustercontrol"/> components become a
+    powerful workload manager for demanding, distributed high-performance computing environments.
+    Not only is a complete set of workload management capabilities available, but the reporting
+    benefits of <term conkeyref="r_productname_variables/ph_clustercontrol"/>, <term
+     conkeyref="r_productname_variables/ph_clusterview"/> and <term
+     conkeyref="r_productname_variables/ph_analytics"/> work together to reduce cycle
+    times and maximize productivity in mission critical environments. Equipped with <term
+     conkeyref="r_productname_variables/ph_enduser"/> mobile interface, your system
+    administration team and designated system users can collaborate to coordinate their business
+    priorities so that the overall effect is improved even more.</p>
+  </section>
+ </conbody>
+</concept>

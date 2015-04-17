@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="v5360335"><title>Configuring idle job detection</title>
+    <shortdesc>Identify all idle jobs in your cluster.</shortdesc>
+                    <prolog>
+                                        <metadata>
+                                                  <keywords>
+                                                  <indexterm>idle job<indexterm>detection</indexterm></indexterm>
+                                                  </keywords>
+                                        </metadata>
+                    </prolog>
+<taskbody id="v5360937"><context id="v5360938"><p id="v5360939">Idle jobs are configured per cluster in the cluster edit page. Specific queues may
+                be excluded in idle job calculation such as jobs submitted to an interactive
+                queue.</p>
+    <p id="v5361094">
+                    <note id="v5361095" type="note"><p id="v5361096">After installing <term conkeyref="r_productname_variables/ph_prodname"
+                                                  />, older settings for idle jobs are no longer in
+                                                  effect. The configuration settings must be
+                                                  updated.</p></note></p></context>
+<steps id="v5360944"><step id="v5360945"><cmd id="v5360946">Click  <uicontrol>Console</uicontrol>.</cmd>
+</step>
+<step id="v5360948"><cmd id="v5360949">Under the Grid Management section of the <term
+                        conkeyref="r_productname_variables/ph_clustercontrol"/>
+                    console menu bar, click <uicontrol>Clusters</uicontrol>.</cmd>
+</step>
+<step id="v5360951"><cmd id="v5360952">Click the cluster name of the cluster in order to set the idle job
+                                                  detection.</cmd>
+</step>
+<step id="v5361099"><cmd id="v5361100">Select <uicontrol>Enable Idle Job Detection</uicontrol> checkbox to search for
+                                                  idle jobs in the cluster.</cmd>
+</step>
+<step id="v5361102"><cmd id="v5361103">Set values for the following fields:</cmd>
+<info id="v5361104"><p id="v5361105"><ul id="v5361106"><li id="v5361107"><p id="v5361108"> <uicontrol>Email Notification Type </uicontrol></p></li><li id="v5361110"><p id="v5361111"> <uicontrol>Minimum Runtime</uicontrol> </p></li><li id="v5361113"><p id="v5361114"> <uicontrol>Floating Window</uicontrol></p></li><li id="v5361116"><p id="v5361117"><uicontrol>CPU Time Threshold</uicontrol></p></li><li id="v5361119"><p id="v5361120"> <uicontrol>Include Job Types</uicontrol> </p></li><li id="v5361122"><p id="v5361123"> <uicontrol>Job Commands</uicontrol></p></li><li id="v5361125"><p id="v5361126"><uicontrol>Idle Jobs Exclude Queues</uicontrol></p></li></ul></p>
+</info>
+</step>
+            <step>
+                <cmd>In the execution cluster, open <filepath>host.params</filepath> and locate
+                        <parmname>HOSTS_PENDING_REASON_UPDATE_INTERVAL</parmname>.</cmd>
+                <info><p>Pending reasons are updated every 60 seconds by default. You can modify
+                    the update interval to get faster feedback when jobs pend.</p></info>
+            </step>
+            <step>
+                <cmd>Specify the update period, in seconds.</cmd>
+                <info>
+                    <p>Zero seconds disables the pending reason.</p>
+                </info>
+            </step>
+<step id="v5371531"><cmd id="v5371532">Click <uicontrol>Save</uicontrol>.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>

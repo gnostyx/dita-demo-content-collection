@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<concept id = "i710794"><title>Command class</title>
+    <shortdesc>The command class is the first word of a command. </shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>command classes</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<conbody>
+        <section>
+            <p>At the top tier of the CLI the command classes can be seen by double-tapping the
+                    <uicontrol>Tab</uicontrol> button with the cursor in the
+                shell.<codeblock>
+cli>
+clear       exit        ping        set         load
+delete      help        quit        show        traceroute
+</codeblock></p>
+            <p id="p_1">A command class has a descendant structure built on command foundations.</p>
+            <p>Each command class is in a section. Special commands are in separate sections.
+                Because special commands have no descendant commands, they are not command
+                classes.</p>
+        </section></conbody></concept>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Composite//EN" "/SysSchema/dita/ditabase.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="i3199154" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic       reference/reference "><title class="- topic/title ">Interface bypass group is in active
+mode</title>
+<shortdesc class="- topic/shortdesc ">This alarm is cleared when the bypass group table operational
+status sets to active (value=1).</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>interface drops<indexterm>active mode</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<refbody class="- topic/body        reference/refbody "><section id="i3199155" class="- topic/section "><table frame="none" colsep="0" rowsep="0" class="- topic/table ">
+<tgroup cols="2" colsep="0" rowsep="0" outputclass="Table" class="- topic/tgroup ">
+<colspec colnum="1" colname="1" colwidth="24*" colsep="0" class="- topic/colspec "/>
+<colspec colnum="2" colname="2" colwidth="76*" colsep="0" class="- topic/colspec "/>
+<tbody class="- topic/tbody ">
+<row rowsep="0" class="- topic/row ">
+<entry colname="1" class="- topic/entry ">Profile</entry>
+<entry colname="2" class="- topic/entry ">Description</entry>
+</row>
+<row rowsep="0" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><p class="- topic/p ">Frequency</p></entry>
+<entry colname="2" class="- topic/entry "><p class="- topic/p ">0 seconds (Immediate)</p></entry>
+</row>
+<row rowsep="0" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><p class="- topic/p ">Severity</p></entry>
+<entry colname="2" class="- topic/entry "><p class="- topic/p ">Cleared</p></entry>
+</row>
+<row rowsep="0" class="- topic/row ">
+<entry colname="1" class="- topic/entry "><p class="- topic/p ">Condition</p></entry>
+<entry colname="2" class="- topic/entry "><p class="- topic/p ">ALPHABET-MIB::svBypassGroupGroupTableOperStatus == 1
+                                    (eBypassWatchdogOperStatus_BYPASS_OPER_STATUS_ACTIVE)</p></entry>
+</row>
+</tbody>
+</tgroup></table></section></refbody></reference>

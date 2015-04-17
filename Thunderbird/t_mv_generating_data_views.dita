@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_mv_generating_data_views" xml:lang="en-us">
+    <title>Generating data views</title>
+    <shortdesc>To analyze your data and generate a data view, you must set the query filters, and then
+        run the query. After you generate the data view, you can work with your results.</shortdesc>
+    <prolog>
+        <metadata>
+            <prodinfo>
+                <prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+                <vrmlist>
+                    <vrm version="1.1" release="GA" modification="b"/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+        <metadata>
+            <keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>generating data views</indexterm></indexterm></keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Customized data views present your data based on the queries you create to analyze the tasks, clusters, and targets associated with your project.</p>
+            <p>The maximum number of results you can receive in <term
+                    conkeyref="r_productname_variables/ph_enduser"/> is 10,000. By
+                default, the maximum number of results is 2,000. This value can be changed in the
+                    <uicontrol>Settings</uicontrol> menu within your <uicontrol>Account</uicontrol>
+                page.</p>
+        </context>
+        <steps>
+            <stepsection>To generate a data view:</stepsection>
+            <step>
+                <cmd>Open an existing data analysis task in the <uicontrol>Entity Pane</uicontrol>, or create a new data analysis task in the <uicontrol>Query Pane</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>In the <uicontrol>Query Pane</uicontrol>, use the query filters to further develop or modify your analysis.</cmd>
+                <info>
+                    <note type="tip">Some of the filters have a <uicontrol>Select All</uicontrol>
+                        button. This button does not appear if there are more than 100 entities to
+                        select from, because if you query too many entities the report takes too
+                        long to generate.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Set a date and time range for the report.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Generate</uicontrol> button.</cmd>
+                <info>
+                    <p>If there are invalid filters, the <uicontrol>Generate</uicontrol> button is unavailable.</p>
+                </info>
+                <stepresult>The query results are displayed in the <uicontrol>Analysis Pane</uicontrol>. You can sort the results by column.</stepresult>
+            </step>
+            <step>
+                <cmd>Analyze the query results.</cmd>
+                <info>
+                    <p>The query results depend on the type of data analysis task.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Work with the query results.</cmd>
+                <info>
+                    <p>Depending on the items in the query results, you can print, export, or save your data analysis as a data view.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>(Optional) Save the data view as a template.</cmd>
+                <info>
+                    <p>This will save your current query filter and report column settings.</p>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

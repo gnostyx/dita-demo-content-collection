@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="v34589345">
+    <title>Setting timeout and wait times</title>
+    <shortdesc>Control job forwarding times.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>job forwarding<indexterm>control times</indexterm></indexterm>
+                <indexterm>timeout</indexterm>
+                <indexterm>wait time</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>By default, timeout and wait time are set to 360 and 10 respectively, but can be
+                changed to suit each individual job-forwarding queue.</p>
+        </context>
+        <steps id="steps_hiu_nnr_yd">
+            <step>
+                <cmd>For the job-forwarding queue define <parmname>MAX_RSCHED_TIME</parmname> in
+                        <filepath>host.queues</filepath>.</cmd>
+                <info>
+                    <p><parmname>MAX_RSCHED_TIME</parmname>=<varname>timeout</varname><varname/>
+                            [<varname>wait_time</varname>]</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Run <cmdname>badmin reconfig</cmdname> for the changes to take effect.</cmd>
+            </step>
+        </steps>
+        <result>
+            <p>Jobs submitted to queue  pend in an execution cluster for up to the specified number
+                of timeout seconds before returning to the submission cluster for rescheduling. Jobs
+                can be forwarded to the same cluster once again after wait time, in seconds.</p>
+        </result>
+        <example>
+            <p>
+                <codeblock><codeph>Begin Queue</codeph><codeph>QUEUE_NAME=Q1</codeph><codeph>PRIORITY=40</codeph><codeph>NICE=10</codeph><codeph>SNDJOBS_TO=cluster_e2+1 cluster_e3</codeph><codeph>MAX_RSCHED_TIME=50 10</codeph><codeph>END QUEUE</codeph></codeblock>
+            </p>
+            <p>and in <filepath>host.params</filepath>, <userinput>MBD_SLEEP_TIME=20</userinput></p>
+            <p>Thus the cluster reselection timeout and wait time are given by:<ul
+                    id="ul_tht_eor_yd">
+                    <li>
+                        <p>timeout = 50x20 seconds = 1000 seconds</p>
+                    </li>
+                    <li>
+                        <p>wait time = 10x20 seconds = 200 seconds</p>
+                    </li>
+                </ul></p>
+        </example>
+    </taskbody>
+</task>

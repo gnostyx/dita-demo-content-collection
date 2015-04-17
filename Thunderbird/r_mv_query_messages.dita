@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xml:lang="en-us" id="t_mv_query_filter_warning_messages">
+ <title>Query warning messages</title>
+ <shortdesc>When you are generating a data view or analyzing entities, you must use filters to
+  specify your search criteria. When a filter is activated, it is indicated with the icon. However,
+  if a filter is invalid, an error or warning message is displayed.</shortdesc>
+ <prolog>
+  <metadata>
+   <prodinfo>
+    <prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+    <vrmlist>
+     <vrm version="1.1" release="GA" modification="b"/>
+    </vrmlist>
+   </prodinfo>
+  </metadata>
+  <metadata>
+   <keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>workspace tab<indexterm>query warning messages</indexterm></indexterm></indexterm></keywords>
+  </metadata>
+ </prolog>
+ <refbody>
+ <properties>
+  <prophead> 
+   <proptypehd>Code Type</proptypehd>
+   <propvaluehd>Value</propvaluehd>
+   <propdeschd>Description</propdeschd> 
+  </prophead>
+  <property><proptype><msgph>A</msgph></proptype>
+   <propvalue><msgnum>12211</msgnum></propvalue>
+   <propdesc><p><msgph>Error</msgph>. There is a problem with the information in the filter. You cannot generate the report or
+    search when there is an error.</p></propdesc>
+  </property>
+  <property><proptype><msgph>B</msgph></proptype><propvalue><msgnum>23324</msgnum></propvalue><propdesc><p><msgph>Warning</msgph>. There is a potential problem with the information in the filter. The report or search might
+   take longer than usual to generate.</p></propdesc></property>
+ </properties>
+  <section>
+   <p>Hover your mouse over the health status icon to see the warning or error message in a tooltip. The following
+    table lists some examples of messages you can receive, and what you can do to fix the issue.</p> 
+   <table frame="topbot" rowsep="1">
+    <tgroup cols="2" rowsep="1">
+     <colspec colnum="1" colname="1" colwidth="33*"/>
+     <colspec colnum="2" colname="2" colwidth="67*"/>
+     <thead>
+      <row rowsep="1">
+       <entry>Warning/Error Message</entry>
+       <entry>Try This</entry>
+      </row>
+     </thead>
+     <tbody>
+      <row rowsep="1">
+       <entry><uicontrol>The search covers multiple days</uicontrol></entry>
+       <entry>Decrease the time range for your report or search.</entry>
+      </row>
+      <row rowsep="1">
+       <entry><uicontrol>There are no selected entities</uicontrol></entry>
+       <entry>Your filter is empty. Select an entity or turn off the filter.</entry>
+      </row>
+      <row rowsep="1">
+       <entry><uicontrol>There is no selection</uicontrol></entry>
+       <entry>Your filter is empty. Select an option or turn off the filter.</entry>
+      </row>
+      <row rowsep="1">
+       <entry><uicontrol>The dates and times are invalid</uicontrol></entry>
+       <entry>The time range is invalid. You might have set the start date and time after the end
+        date and time, or the end date and time before the start date and time. Reconfigure your time
+        range for the report.</entry>
+      </row>
+     </tbody>
+    </tgroup>
+   </table> 
+  </section>
+   
+</refbody>
+</reference>

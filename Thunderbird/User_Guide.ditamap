@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>User Guide</title>
+  <topicgroup props="STA" processing-role="resource-only">
+    <keydef keys="r_productname_variables" href="r_productname_variables.dita" type="topic"
+      format="dita"/>    
+    <keydef keys="r_image_warehouse" href="r_image_warehouse.dita" type="topic"
+      format="dita"/>   
+  </topicgroup>
+  <topicgroup props="STB" processing-role="resource-only">
+    <keydef keys="r_productname_variables" href="r_productname_variables_2.dita" type="topic"
+      format="dita"/>    
+    <keydef keys="r_image_warehouse" href="r_image_warehouse_2.dita" type="topic"
+      format="dita"/>   
+  </topicgroup>
+  <topichead navtitle="Introduction">
+        <topicref href="c_mv_about_mobileview.dita">
+            <topicref href="c_mv_about_guide.dita"/>
+            <topicref href="c_mv_organization.dita"/>
+        </topicref>
+    </topichead>
+    <topichead navtitle="Getting Started">
+        <topicref href="c_architecture_combined.dita"/>
+        <topicref href="t_mv_logging_on.dita"/>
+        <topicref href="c_mv_workspace_tab.dita"/>
+        <topicref href="c_mv_performance_tab.dita"/>
+        <topicref href="c_mv_diagnostics_tab.dita"/>
+        <topicref href="FAQ.dita"/>
+    </topichead>
+    <topichead navtitle="Common Tasks">
+        <topicref href="c_mv_managing_messages.dita"/>
+        <topicref href="c_mv_customize_views.dita">
+            <topicref href="c_cluster_capacity.dita"/>
+            <topicref href="t_mv_generating_data_views.dita"/>
+            <topicref href="r_mv_query_filters.dita"/>
+        </topicref>
+        <topicref href="t_mv_troubleshooting_clusters.dita"/>
+        <topicref href="r_mv_query_messages.dita"/>
+        <topicref href="r_mv_system_notifications.dita"/>
+        <topicref href="r_mv_quickref_dataview.dita"/>
+        <topicref href="r_mv_quickref_health_indicators.dita"/>
+    </topichead>
+    
+    <reltable title="Reltable">
+        <relheader>
+            <relcolspec type="topic"/>
+            <relcolspec type="topic"/>
+        </relheader>
+         <relrow>
+            <relcell>
+                <topicref href="c_cluster_capacity.dita"/>
+            </relcell>
+            <relcell>
+                <topicref href="t_mv_troubleshooting_clusters.dita"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref href="c_cluster_capacity.dita"/>
+            </relcell>
+            <relcell>
+                <topicref href="r_mv_quickref_dataview.dita"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref href="t_mv_generating_data_views.dita"/>
+            </relcell>
+            <relcell>
+                <topicref href="r_mv_query_messages.dita"/>
+            </relcell>
+        </relrow>
+    </reltable>
+</map>

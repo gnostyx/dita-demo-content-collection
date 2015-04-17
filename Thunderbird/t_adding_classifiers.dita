@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<task id = "i713597"><title>Adding classifiers</title>
+ <shortdesc>Filter data sources by class.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>classifiers<indexterm>adding</indexterm><indexterm>filtering data
+     sources</indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+<taskbody>
+  <context>
+   <p>A classifier creates conditions for filtering and classifying data sources. If no conditions
+    are specified, all of the data sources are considered for classification. You can filter data
+    sources by an expression (email, Peer to Peer), protocol or subscriber attribute, for example.
+    These filters are also called "classifier conditions".</p>
+  </context><steps><step id="s_1">
+    <cmd>Click the <uicontrol>Classifiers</uicontrol> icon.</cmd>
+    <info> All <uicontrol>Classifiers</uicontrol> that have been defined will be accessible for
+     selection in the <uicontrol>Classifiers</uicontrol> view. </info>
+    <stepresult>
+     <p> The <uicontrol>Classifiers</uicontrol> view opens.</p>
+    </stepresult>
+   </step>
+<step id="s_2">
+    <cmd>To add a classifier, click <uicontrol>Classify</uicontrol>.</cmd>
+   </step>
+<step><cmd>Enter a name and description for the classifier.</cmd></step>
+<step><cmd>Select the classifier type:</cmd>
+<substeps><substep><cmd>Enumerated: All possible values of the classifier must be specified in the definition</cmd></substep>
+<substep><cmd>Integer: Classifier can be assigned any integer value</cmd></substep>
+<substep><cmd>String: Classifier can be assigned any string value.</cmd></substep></substeps></step>
+<step><cmd>Click <uicontrol>Next</uicontrol>.</cmd></step>
+<step><cmd>Click <uicontrol>Create a new rule</uicontrol>.</cmd></step>
+<step><cmd>Set up one or more rules for the classifer, then click <uicontrol>Next</uicontrol>.</cmd>
+<info>
+     <p> Rules are conditions that, if met, set values for the classifers.</p></info></step>
+<step id="s_8">
+    <cmd>(Optional) Set target(s) for the classifier (which nodes this classifer is available
+     for).</cmd>
+    <info>
+     <p>If no targets are set, then the classifier is available for all elements on all nodes.</p>
+    </info>
+   </step>
+   <step>
+    <cmd>Define additional <uicontrol>Classifiers</uicontrol> by selecting <uicontrol>Customize
+      Classifiers</uicontrol> option.</cmd>
+    <stepxmp>
+     <codeblock conref="t_view_edit_metadata.dita#taskId/code_sxo_zti_ag"/>
+     <codeblock>$AdminTask SetMetadataProperty  {- <option>classifiername</option> <userinput>valueString</userinput> -f%}</codeblock>
+    </stepxmp>
+   </step>
+   <step>
+    <cmd>Remove old alarms and filter match items.</cmd>
+    <info>It is a best practice to remove old alarms or filter match items when they are no longer
+     needed. Failure to regularly remove old alarms or filter match items may result in inconsistent
+     reporting results.</info>
+    <substeps id="substeps_qnf_1ls_mr">
+     <substep>
+      <cmd>Click <uicontrol>Filter match items</uicontrol>.</cmd>
+     </substep>
+     <substep>
+      <cmd>Select <uicontrol>Filter match items</uicontrol> that no longer apply and that you wish
+       to remove.</cmd>
+     </substep>
+     <substep>
+      <cmd>Click the <uicontrol>Delete</uicontrol> button.</cmd>
+      <stepresult>The old alarms and filter match items will be removed.</stepresult>
+     </substep>
+    </substeps>
+   </step>
+<step id="s_9">
+    <cmd>Click <uicontrol>Finish.</uicontrol></cmd>
+   </step></steps>
+  <result>Classifiers have been added to data sources. They can be used to filter and analyze data
+   received from these sources. <note>You can follow the same procedures to change existing
+    Classifiers or to add new ones.</note></result></taskbody></task>

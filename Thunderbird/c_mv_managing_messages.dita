@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_mv_managing_messages"> 
+  <title>Messaging Overview</title> 
+  <shortdesc>Receiving and sending messages and notifications. 
+  </shortdesc> 
+	<prolog>
+		<metadata>
+			<prodinfo>
+				<prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+				<vrmlist>
+					<vrm version="1.1" release="GA" modification="b"/>
+				</vrmlist>
+			</prodinfo>
+		</metadata>
+		<metadata>
+			<keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>messaging overview</indexterm></indexterm></keywords>
+		</metadata>
+	</prolog>
+	<conbody> 
+	 <section> 
+		<title>Introduction</title> 
+		
+	 	<p>The message manager in <term conkeyref="r_productname_variables/ph_enduser"/>
+				allows you to do the following: <ul>
+					<li>Send messages.</li>
+					<li>Receive messages and notifications.</li>
+					<li>Reply to messages.</li>
+					<li>Forward messages to others.</li>
+					<li>Save messages for later reference.</li>
+					<li>Delete unwanted messages.</li>
+					<li>Acknowledge notifications.</li>
+				</ul></p> 
+	 </section> 
+	<section><title>Sending Messages</title>
+		<p>You can send a message to an individual contact or to a group of contacts in <term
+					conkeyref="r_productname_variables/ph_enduser"/>. You can compose
+				a message and then add one or more recipients or you can select one or more
+				recipients and then compose your message. All messages are retained within <term
+					conkeyref="r_productname_variables/ph_persistence"/>.</p></section>	
+		
+	 <section> 
+		<title>Receiving Messages and Notifications</title> 
+	 	<p>You can receive messages from other <term conkeyref="r_productname_variables/ph_enduser"/> users. You can also receive automated notifications regarding alerts or alarms associated with your project.</p> 
+	 </section> 
+	 <section> 
+		<title>Replying to Messages</title> 
+		<p>You can reply to messages you have received using the <uicontrol>Reply</uicontrol> option. You cannot reply to notifications. See the section, "Acknowledging Notifications", below.</p> 
+	 </section> 
+	 <section> 
+		<title>Forwarding Messages</title> 
+		<p>Providing it is not marked as Private, you can forward a
+		  message to an individual or group of people using the <uicontrol>Forward</uicontrol> option. When forwarding, you can include your own message.</p> 
+	 </section> 
+	 <section> 
+		<title>Saving Messages</title> 
+		<p>Saving messages allows you to store messages for reading at a later time. Once you save a message, you can
+		  still reply to the sender or, unless the message is marked as 
+		Private, send it to other people or groups of people. 
+		</p> 
+	 </section> 
+	 <section> 
+		<title>Deleting Messages</title> 
+	 	<p>You can delete messages by selecting one or more messages and using the
+					<uicontrol>Delete</uicontrol> option. Deleted messages are not removed from the
+				message archive within <term
+					conkeyref="r_productname_variables/ph_persistence"/>. These
+				archived messages can be retrieved by a system administrator. </p> 
+	 </section> 
+	 <section> 
+		<title>Acknowledging Notifications</title> 
+		<p>Each notification you receive will include some text describing the issue, as well as direction towards further information and recommended action. Once the appropriate action has been taken, click the <uicontrol>Acknowledge</uicontrol> button at the bottom of the notification message.
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

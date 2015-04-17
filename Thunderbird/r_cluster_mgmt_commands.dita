@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="v3485903">
+  <title>Cluster management basic commands</title>
+  <shortdesc>Lists the basic commands used for managing clusters. The basic commands are:
+      <cmdname>showcluster</cmdname>, <cmdname>badmin showstatus</cmdname>, <cmdname>badmin restart
+      -p</cmdname>, <cmdname>hostload</cmdname>, <cmdname>hostacct</cmdname>,
+      <cmdname>listhosts</cmdname>, <cmdname>hostlimits</cmdname>, and
+      <cmdname>statclusters</cmdname>.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>showcluster</indexterm>
+        <indexterm>commands<indexterm>showcluster</indexterm></indexterm>
+        <indexterm>badmin showstatus</indexterm>
+        <indexterm>commands<indexterm>badmin showstatus</indexterm></indexterm>
+        <indexterm>badmin restart -p</indexterm>
+        <indexterm>commands<indexterm>badmin restart -p</indexterm></indexterm>
+        <indexterm>hostload</indexterm>
+        <indexterm>commands<indexterm>hostload</indexterm></indexterm>
+        <indexterm>hostacct</indexterm>
+        <indexterm>commands<indexterm>hostacct</indexterm></indexterm>
+        <indexterm>listhosts</indexterm>
+        <indexterm>commands<indexterm>listhosts</indexterm></indexterm>
+        <indexterm>hostlimits</indexterm>
+        <indexterm>commands<indexterm>hostslimits</indexterm></indexterm>
+        <indexterm>statclusters</indexterm>
+        <indexterm>commands<indexterm>statclusters</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section><title>showcluster command</title><p>Displays execution cluster resource provider and consumer information, resource flow
+      information, and connection status between the submission cluster and execution
+      cluster.</p>
+      <p><codeph>% <userinput>showcluster report</userinput></codeph></p><p>Use <cmdname>-app</cmdname> to view available application profiles in remote clusters.</p>
+      <p>Information related to <term conkeyref="r_productname_variables/ph_prodname"/>
+        is displayed under the heading <keyword>Job Forwarding Information</keyword>. </p>
+      <p>
+        <parml>
+          <plentry>
+            <pt>local_queue</pt>
+            <pd>
+              <p>Name of a <term conkeyref="r_productname_variables/ph_prodname"/>
+                queue.</p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>job_flow</pt>
+            <pd>
+              <p>Indicates direction of job flow.</p>
+              <ul id="ul_nqx_tir_yd">
+                <li>
+                  <p>send: The local queue is a submission cluster send-jobs queue (SNDJOBS_TO is
+                    defined in the local queue). </p>
+                </li>
+                <li>
+                  <p>recv: The local queue is an execution cluster receive-jobs queue (RCVJOBS_FROM
+                    is defined in the local queue).</p>
+                </li>
+              </ul>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>remote</pt>
+            <pd>
+              <p>Shows the name of the remote queue, always the same as the local queue name.</p>
+              <p>For receive-jobs queues, always “-”. </p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>cluster</pt>
+            <pd>
+              <p>For send-jobs queues, shows the name of the execution cluster containing the
+                receive-jobs queue.</p>
+              <p>For receive-jobs queues, shows the name of the submission cluster that can send
+                jobs to the local queue.</p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>status</pt>
+            <pd>
+              <p>Indicates the connection status between the local queue and remote queue.</p>
+              <p>
+                <ul id="ul_mks_ahr_yd">
+                  <li>
+                    <p>ok: The submission cluster and execution cluster can exchange information and
+                      the system is properly configured.</p>
+                  </li>
+                  <li>
+                    <p>disc: Communication between the two clusters has not been established. This
+                      could occur because there are no jobs waiting to be dispatched, or because the
+                      remote master cannot be located. </p>
+                  </li>
+                  <li>
+                    <p>reject: The remote queue rejects jobs from the send-jobs queue. The local
+                      queue and remote queue are connected and the clusters communicate, but the
+                      queue-level configuration is not correct. </p>
+                  </li>
+                </ul>
+              </p>
+            </pd>
+          </plentry>
+        </parml>
+      </p></section>
+    <section>
+      <title>badmin showstatus command</title>
+      <p>Displays current cluster information. The last two lines only appear during a parallel
+        <cmdname>daemon</cmdname> restart initiated with the <cmdname>badmin restart -p</cmdname>
+        command.</p>
+      <p><codeph>% <userinput>badmin showstatus</userinput></codeph></p>
+    </section>
+    <section><title>badmin restart -p command</title><p>Command to start daemon in parallel.</p>
+      <p><codeph>% <userinput>badmin restart -p</userinput></codeph></p>
+      <p>Starts <cmdname>batchd</cmdname> in parallel, leaving the existing
+      <cmdname>batchd</cmdname> free to respond to queries and run commands while the new
+      <cmdname>batchd</cmdname> restarts, reading configuration files and replaying events. Once
+      all events have been read <cmdname>batchd</cmdname> daemons merge, replaying new events and
+      leaving only the new <cmdname>batchd</cmdname> running.</p>
+      <p>During a parallel <cmdname>batchd</cmdname> restart, new <cmdname>badmin restart</cmdname>
+        and <cmdname>badmin reconfig</cmdname> commands are not accepted. Parallel
+        <cmdname>batchd</cmdname> restart using <cmdname>badmin mbdrestart -p</cmdname> does not
+        work with duplicate event logging (<parmname>LSB_LOCALDIR</parmname> in
+        <filepath>host.conf</filepath>).</p>
+      <p>The existing command <cmdname>badmin restart</cmdname> remains unchanged.</p></section>
+    <section>
+      <title>hostload command</title>
+      <p>This command runs locally (in the execution cluster) when submitted by a running job.</p>
+      <p><codeph>% <userinput>hostload</userinput></codeph></p>
+      <p>
+        <parml>
+          <plentry>
+            <pt>-cname</pt>
+            <pd>
+              <p>The option <cmdname>-cname</cmdname> includes the cluster name for execution
+                cluster hosts and host groups in output for <cmdname>hostload</cmdname>.</p>
+              <p>%<userinput> hostload -cname</userinput>
+              </p>
+            </pd>
+          </plentry>
+        </parml>
+      </p>
+    </section>
+    <section><title>hostacct command</title><p>Displays accounting statistics for finished jobs within all clusters connected by <term
+      conkeyref="r_productname_variables/ph_prodname"/>.</p>
+      <p><codeph>% <userinput>hostacct</userinput></codeph></p>
+      <p>This command runs locally (in the execution cluster) when submitted by a running job.</p>
+      <p>Accounting statistics include:<ul id="ul_xxh_whr_yd">
+        <li>
+          <p>Date and time of submission.</p>
+        </li>
+        <li>
+          <p>Date and time of execution.</p>
+        </li>
+        <li>
+          <p>Time the job took to run.</p>
+        </li>
+        <li>
+          <p>Host the job ran on.</p>
+        </li>
+        <li>
+          <p>Any suspensions or resumptions of the job.</p>
+        </li>
+        <li>
+          <p>The submission user account name.</p>
+        </li>
+      </ul></p></section>
+    <section>
+      <title>listhost command</title>
+      <p>This command runs locally (in the execution cluster) when submitted by a running job.</p>
+      <p>% <userinput>listhosts</userinput></p>
+      <p>
+        <parml>
+          <plentry>
+            <pt>-cname</pt>
+            <pd>
+              <p>The option <cmdname>-cname</cmdname> includes the cluster name for execution
+                cluster hosts and host groups in output for <cmdname>listhosts</cmdname>.</p>
+            </pd>
+          </plentry>
+        </parml>
+      </p>
+    </section>
+    <section id="section_xgm_jyt_qr">
+      <title>hostlimits command</title>
+      <p>Displays cluster limit data across all clusters, including forward limits and aggregated
+        execution cluster limits.</p>
+      <p> All clusters are shown by default.</p>
+      <p id="p_cnz_nyt_qr">To specify a remote limit with the <cmdname>-n</cmdname> option, include
+        the cluster name as well as the limit name: <userinput>hostlimits -n
+            <varname>limit_name</varname>@<varname>cluster_name</varname></userinput>.</p>
+      <p id="p_jbn_4yt_qr">
+        <parml>
+          <plentry>
+            <pt>-fwd</pt>
+            <pd>
+              <p>Displays forward slot allocation limits.</p>
+              <p>Use <cmdname>-fwd</cmdname> with <cmdname>-c</cmdname> to display forward slot
+                limit configuration.</p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>-fwd -C <varname>cluster_name</varname>...</pt>
+            <pd>
+              <p>Displays forward slot allocation limits for one or more specific clusters.
+                  <cmdname>-C</cmdname> cannot be used without <cmdname>-fwd</cmdname>.</p>
+              <p>Use <cmdname>-fwd -C</cmdname> with <cmdname>-c</cmdname> to display forward slot
+                limit configuration for the specified cluster.</p>
+            </pd>
+          </plentry>
+        </parml>
+      </p>
+    </section>
+    <section><title>hostpart command</title>
+      <p>Displays information about host partitions. By default, hostpart displays information about all host partitions. Host partitions are used to configure host-partition fairshare scheduling.</p>
+      <p>ClusterView provides commands for running tasks on remote hosts and ports (LIM_PORT and
+        RES_PORT) for communication. Therefore, even if your cluster restricts users from directly
+        logging into or running commands on remote hosts (therefore restricting your users to using
+        commands to access remote hosts), users can still run some commands to run tasks on remote
+        systems under certain circumstances.</p>
+      <p>The <userinput>hostpart -x</userinput> command where <userinput>x</userinput> defines the
+        host range can be directed to any cluster host. It will be propagated in order to return
+        partition reports from the designated host range. </p></section>
+        <section>
+      <title>statclusters command</title>
+      <p>This command runs locally (in the execution cluster) when submitted by a running job.</p>
+      <p><codeph>% <userinput>statclusters</userinput></codeph></p>
+      <p>Sample command response:</p>
+      <p><systemoutput>CLUSTER_NAME STATUS MASTER_HOST ADMIN HOSTS SERVERS</systemoutput></p>
+      <p><systemoutput>sub_cluster ok hostA admin 1 1</systemoutput></p>
+      <p><systemoutput>cluster2 ok hostB admin 1 1</systemoutput></p>
+      <p><systemoutput>cluster3 ok hostC admin 2 2</systemoutput></p>
+    </section>
+  </refbody>
+</reference>

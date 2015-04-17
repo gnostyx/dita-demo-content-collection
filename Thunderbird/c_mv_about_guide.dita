@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_mv_about_guide" xml:lang="en-us">
+  <title>About this guide</title>
+  <shortdesc>A brief description of notes and notices important for understanding this guide.</shortdesc>
+  <prolog>
+    <metadata>
+      <category>Front matter</category>
+    </metadata>
+  </prolog>
+  <conbody>
+    <section>
+      <title>Notes and notices</title>
+      <p>The following notes and notices might appear in this guide: <ul>
+          <li><b>Tip</b>: Suggests how to apply the information in a topic or step.</li>
+          <li><b>Note</b>: Explains a special case or expands on an important point.</li>
+          <li><b>Important</b>: Points out critical information concerning a topic or step.</li>
+          <li><b>Caution</b>: Indicates that an action or step can cause loss of data, security
+            problems, or performance issues.</li>
+          <li><b>Warning</b>: Indicates that an action or step can result in physical harm or cause
+            damage to hardware.</li>
+        </ul></p>
+    </section>
+  </conbody>
+</concept>
