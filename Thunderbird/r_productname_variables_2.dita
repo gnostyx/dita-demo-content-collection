@@ -27,7 +27,7 @@
                                     <p><ph>Primary product name</ph></p>
                                 </entry>
                                 <entry>
-                                    <p><term id="ph_prodname">Enterprise Collaboration</term></p>
+                                    <p><term id="ph_prodname">ProductName</term></p>
                                     <draft-comment>Change value here when primary
                                         product name changes. </draft-comment>
                                 </entry>
@@ -37,7 +37,7 @@
                                     <p><ph>Company name</ph></p>
                                 </entry>
                                 <entry>
-                                    <p><term id="ph_companyname">Alfresco</term></p>
+                                    <p><term id="ph_companyname">CompanyName</term></p>
                                     <draft-comment>Change value here when the
                                         company name changes. </draft-comment>
                                 </entry>
@@ -47,7 +47,7 @@
                                     <p><ph>Reporting system</ph></p>
                                 </entry>
                                 <entry>
-                                    <p><term id="ph_clusterview">Monitor</term></p>
+                                    <p><term id="ph_clusterview">ReportingSystem</term></p>
                                 </entry>
                             </row>
                             <row>
@@ -55,28 +55,28 @@
                                     <p><ph>Controller system</ph></p>
                                 </entry>
                                 <entry>
-                                    <p><term id="ph_clustercontrol">Cloud Sync</term></p>
+                                    <p><term id="ph_clustercontrol">ControllerSystem</term></p>
                                 </entry>
                             </row>
                             <row>
                                 <entry>
-                                    <p><ph>End User</ph></p>
+                                    <p><ph>End User Interface</ph></p>
                                 </entry>
                                 <entry>
-                                    <p><term id="ph_enduser">Dashboard</term></p>
+                                    <p><term id="ph_enduser">MobileApp</term></p>
                                 </entry>
                             </row>
                             <row>
                                 <entry><p><ph>Data Syncrhonization System</ph></p></entry>
-                                <entry><p><term id="ph_balance">Cloud Sync</term></p></entry>
+                                <entry><p><term id="ph_balance">DataSyncSystem</term></p></entry>
                             </row>
                             <row>
                                 <entry><p><ph>Analytics Server</ph></p></entry>
-                                <entry><p><term id="ph_analytics">Web Script</term></p></entry>
+                                <entry><p><term id="ph_analytics">AnalyticsServer</term></p></entry>
                             </row>
                             <row>
                                 <entry><p><ph>Data Persistence</ph></p></entry>
-                                <entry><p><term id="ph_persistence">Storage Engine</term></p></entry>
+                                <entry><p><term id="ph_persistence">PersistenceService</term></p></entry>
                             </row>                            
                         </tbody>
                     </tgroup>
