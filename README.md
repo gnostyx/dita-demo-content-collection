@@ -3,6 +3,13 @@ Guide to Scenarios
 
 An introduction to the DITA demonstration collection and a description of the maps and scenarios provided.
 
+Eliot Kimber Updates
+--------------------
+
+I have updated this content set to add versions that use keys and key scopes (DITA 1.3)
+in ways that reflect various suggested or potential best practices.
+
+
 Introduction
 ------------
 
