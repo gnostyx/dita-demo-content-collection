@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="v3337120">
+    <title>Analytical reporting with <term
+            conkeyref="r_productname_variables/ph_clusterview"/></title>
+    <shortdesc id="v5667118"><term conkeyref="r_productname_variables/ph_clusterview"/>
+        is an advanced analysis tool for analyzing massive amounts of workload data. </shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm><term conkeyref="r_productname_variables/ph_clusterview"
+                        /><indexterm>introduction to</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody id="v3337129">
+        <section id="v3337130">
+            <title>Data-drive decision making</title>
+            <p id="p_bv5_rkc_rr"><term
+                    conkeyref="r_productname_variables/ph_clusterview"/> enables
+                managers, planners and administrators to easily correlate job and resource data from
+                one or multiple clusters for data-driven decision making. With better insight into
+                datacenter environments, organizations can identify and quickly remove bottlenecks,
+                spot emerging trends, and plan capacity allocations more effectively. <term
+                    conkeyref="r_productname_variables/ph_clusterview"/> relies
+                heavily upon the analytics provided by the <term
+                    conkeyref="r_productname_variables/ph_analytics"/>. <term
+                    conkeyref="r_productname_variables/ph_clusterview"/> then provides
+                the real-time insights that inform and guide <term
+                    conkeyref="r_productname_variables/ph_balance"/> services that
+                actively manage the operation of the distributed computing clusters.</p>
+        </section>
+        <section id="section_ax3_fbz_qr">
+            <title>Data visualization tools</title>
+            <p id="v5667119">Unlike traditional business intelligence solutions that require
+                significant time and multiple steps to translate raw data into usable information,
+                    <term conkeyref="r_productname_variables/ph_clusterview"/>
+                incorporates innovative visualization tools that are built on top of a powerful
+                analytics engine for quick and easy results. Users can utilize the pre-configured
+                dashboards or construct their own, quickly answer questions about their high
+                performance computing infrastructure and the applications running within it so that
+                they can use that information to optimize computing resource utilization.</p>
+        </section>
+        <section id="section_lvs_fbz_qr">
+            <title>Workload intelligence</title>
+            <p id="v3337131"><term conkeyref="r_productname_variables/ph_clusterview"
+                /> is a workload intelligence solution for cluster management. <term
+                    conkeyref="r_productname_variables/ph_clusterview"/> collects
+                data, then assembles it into reports for analysis. <term
+                    conkeyref="r_productname_variables/ph_clusterview"/> provides all
+                the tools you need to collect the data, load it into persistent stores, then convert
+                it into reports for further analysis using a ROLAP (Relational Online Analytical
+                Processing) tool.</p>
+        </section>
+    </conbody>
+</concept>

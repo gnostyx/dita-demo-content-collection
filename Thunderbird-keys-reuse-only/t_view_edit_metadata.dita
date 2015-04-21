@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="taskId">
+    <title>Setting cluster metadata</title>
+    <shortdesc>Cluster services profiled with metadata can be more easily discovered and
+        managed.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>metadata<indexterm>tag objects</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Enabling the metadata settings in <uicontrol>Realm Permissions</uicontrol> allows an
+                administrator to view and edit metadata settings for the <term
+                    conkeyref="r_productname_variables/ph_prodname"/> deployment.
+                Adding metadata services available across the cluster to be efficiently discovered
+                and invoked.</p>
+        </context>
+        <steps id="steps_sfo_zqi_ae">
+            <step>
+                <cmd>Click the <uicontrol>Console</uicontrol> tab.</cmd>
+            </step>
+            <step>
+                <cmd>Under the Utilities section of the <uicontrol>Console</uicontrol> menu bar, click <uicontrol>User
+                        Management</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>On the user Management page, click the administrator who will be granted rights
+                    to apply object metadata.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Realm Permissions</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol> View Metadata</uicontrol> and <uicontrol>Edit
+                        Metadata</uicontrol> checkboxes to enable these settings.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Save</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The <uicontrol>Metadata Settings</uicontrol> button becomes available under
+                        the Configuration section of the <uicontrol>Console</uicontrol> menu bar.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Apply metadata to the node objects.</cmd>
+                <info>From the <uicontrol>Console</uicontrol> menu bar, you can select the option to
+                    define custom metadata fields using the <varname>SetMetadataProperty</varname>
+                    variable. </info>
+                <stepxmp>
+                    <codeblock id="code_sxo_zti_ag">$AdminTask SetMetadataProperty  {- <option>nodeName node1</option> - <option>propertyName</option>}</codeblock>
+                </stepxmp>
+            </step>
+        </steps>
+    </taskbody>
+</task>

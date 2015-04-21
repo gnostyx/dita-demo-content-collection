@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+<task id = "i713528"><title>Registering a resource</title>
+    <shortdesc>Add a new resource file to encapsulate and copy packets. </shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>resource files<indexterm>adding new</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<taskbody><steps><step id="s_1">
+                <cmd>Select the <uicontrol>Open the resource destination</uicontrol> icon. </cmd>
+                <stepresult>
+                    <p>The <uicontrol>resource destinations</uicontrol> view opens.</p>
+                </stepresult>
+            </step>
+<step id="s_2">
+                <cmd>To add a resource destination, click the <uicontrol>Add</uicontrol> button
+                    (+).</cmd>
+            </step>
+<step id="s_3">
+                <cmd>Enter a name for the resource destination.</cmd><info><note type="fastpath">Press <uicontrol>Enter</uicontrol> to browse the directory of registered
+                        resource destinations.</note></info>
+            </step>
+<step id="s_4">
+                <cmd>For the Route option, select <uicontrol>To file Route</uicontrol>.</cmd>
+                <info>
+                    <p conref="c_capture-files.dita#i713072/p_1"/>
+                </info>
+            </step>
+<step id="s_5">
+                <cmd>In the <uicontrol>File name base</uicontrol> field, enter the file name
+                    prefix.</cmd>
+                <info>
+                    <p> This will be used to generate the file names. </p>
+                </info>
+            </step>
+<step id="s_6">
+                <cmd>If required, in the <uicontrol>Max file size</uicontrol>, change the maximum
+                    file size.</cmd>
+            </step>
+<step><cmd>If required, in the <uicontrol>Number of files</uicontrol> field, change number of files.</cmd></step>
+<step><cmd>If required, in the <uicontrol>Flush interval</uicontrol> field, enter a new flush
+                    interval.</cmd></step>
+<step><cmd>Enable/disable <uicontrol>Allow overwrite</uicontrol>.</cmd></step>
+<step id="s_10">
+                <cmd>On the <uicontrol>Description tab</uicontrol>, enter a description for the
+                    resource destination.</cmd>
+            </step>
+<step><cmd>If required, on the <uicontrol>Targets</uicontrol> tab, select nodes for the policy
+                    deployment.</cmd><info><note type="caution">Check the details associated with the policies being provided by a selected node. Unexpected behavior can result when there is a mismatch between the selected node policies and the resources being registered.
+                    </note></info></step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step></steps>
+        <result audience="expert" outputclass="pdf">
+        </result></taskbody></task>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_C06313BF166040BA9C8C4C15D553C8EF"> 
+  <title>System notifications</title> 
+  <shortdesc>Notifications regarding cluster activity.</shortdesc>
+	<prolog>
+		<metadata>
+			<keywords>
+				<indexterm><term conkeyref="r_productname_variables/ph_prodname"/><indexterm>system
+						notifications</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog> 
+  <refbody> 
+	 <section id="refsyn_16AB5B4198DD45C69FE0F3FA23BDDC55"> </section> 
+	 <properties id="properties_4296EF227ACB4B7F8A4A472AF87F42A7"> 
+		<prophead> 
+		  <proptypehd>Code Type</proptypehd>
+			<propvaluehd>Value</propvaluehd>
+		  <propdeschd>Description</propdeschd> 
+		</prophead> 
+		<property> 
+		  <proptype><msgph>A</msgph></proptype>
+			<propvalue><msgnum>65778</msgnum></propvalue>
+		  <propdesc> 
+			 <p><msgph>Error</msgph>. A task has failed to be processed and attempts to complete processing have been halted.</p></propdesc> 
+		</property> 
+		<property><proptype><msgph>B</msgph></proptype>
+			<propvalue><msgnum>70945</msgnum></propvalue><propdesc> 
+			 <p><msgph>Warning</msgph>. A task has not been completed within the expected time frame. The system will contine to attemp to complete the task.</p></propdesc> 
+		</property> 
+		<property><proptype><msgph>G</msgph></proptype>
+			<propvalue><msgnum>10010</msgnum></propvalue>
+			<propdesc> 
+			 <p><msgph>Confirmation</msgph>. Confirmation that a task has been successfully completed.
+						Code extensions are used to provide further information about the time taken
+						to complete the task: <ul
+							id="ul_9E44726A61E44E2CAF48518614C17B9E">
+							<li id="li_54BF809F9BE14B969C684D475E3FFD3F">
+								<p><msgnum>3-a</msgnum>. Task completed within a timeframe &lt;
+									20m   </p>
+							</li>
+							<li id="li_FA43142D959F4E718EE4311639048FF7"><msgnum>3-b</msgnum>.
+								Task completed within a timeframe &lt; 40m</li>
+							<li id="li_36A45623852E4AF39142C1E49ABE8D31"><msgnum>3-c</msgnum>.
+								Task completed within a timeframe = 50m</li>
+							<li id="li_35118D1183764205BE314752FF68A0DC">
+								<p><msgnum>3-d</msgnum>. Task completed within a timeframe &gt;
+									60m</p>
+							</li>
+							<li id="li_89BFC27B1C0D4E3589E6F79EC8F4531B"><msgnum>3-e</msgnum>.
+								Task completed within a timeframe &gt; 80m</li>
+						</ul>
+					</p></propdesc> 
+		</property> 
+		<property><proptype><msgph>X</msgph></proptype>
+			<propvalue><msgnum>99999</msgnum></propvalue>
+			<propdesc> 
+			 <p>
+						<msgph>Log</msgph>. Supplemental message transaction log has been
+						generated (in response to a configuration setting).</p></propdesc> 
+		</property> 
+	 </properties> 
+  </refbody> 
+</reference> 

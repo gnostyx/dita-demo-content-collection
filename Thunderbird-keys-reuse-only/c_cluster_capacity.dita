@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="v3453543">
+ <title>Cluster capacity reports</title>
+ <shortdesc>Reports the usage of all slots in the cluster.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>cluster<indexterm>capacity</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+ <conbody>
+        <section id="v5815406">
+            <p id="v5827470">With the <term>cluster capacity</term> capability provided by <term
+                    conkeyref="r_productname_variables/ph_clusterview"/> and <term
+                    conkeyref="r_productname_variables/ph_analytics"/>, implementation
+                teams can:</p>
+            <p id="v5815408">
+                <ul id="v5815409">
+                    <li id="v5815410">
+                        <p id="v5815411">Analyze activity by project and user</p>
+                    </li>
+                    <li id="v5815412">
+                        <p id="v5815413">Understand and improve service levels</p>
+                    </li>
+                    <li id="v5815414">
+                        <p id="v5815415">Monitor and improve scheduling policies</p>
+                    </li>
+                    <li id="v5815416">
+                        <p id="v5815417">Alleviate bottlenecks and boost productivity</p>
+                    </li>
+                    <li>
+                        <p>Manage the performance of the <term
+                                conkeyref="r_productname_variables/ph_prodname"/>
+                            environment</p>
+                    </li>
+                    <li><p>Analyze capability in order to:
+                        <ul>
+                            <li><p>Analyze capacity</p></li>
+                            <li><p>Tune cluster service level definitions</p></li>
+                            <li><p>Refine job scheduling rules</p></li></ul></p>
+                </li></ul>
+            </p>
+            <p id="v5815418">Worksheets in the <term
+                    conkeyref="r_productname_variables/ph_analytics"/>
+                <term>Dashboard</term>:</p>
+            <p id="v5815419">
+                <ul id="v5815420">
+                    <li id="v5815421">
+                        <p id="v5815422"><uicontrol>Capacity Summary</uicontrol>: Shows a map of the clusters, which you
+                            can customize to show locations within a data center. You can view and
+                            manage efficiently many years of data.</p>
+                    </li>
+                    <li id="v5815423">
+                        <p id="v5815424"><uicontrol>Cluster Usage</uicontrol>: View the number of slots in each state that
+                            varies over the time period.</p>
+                    </li>
+                    <li id="v5815425">
+                        <p id="v5815426"><uicontrol>Host Usage</uicontrol>: Drill down to the host level and see what
+                            servers are used by individuals working on a particular project.</p>
+                    </li>
+                    <li id="v5815427">
+                        <p id="v5815428"><uicontrol>Cluster Workload</uicontrol>: Slot status for a particular cluster
+                            based on the selected dimension.</p>
+                    </li>
+                    <li id="v5815429">
+                        <p id="v5815430"><uicontrol>Data</uicontrol>: Visualize average slots, average CPU usage, and
+                            average memory usage data by changing the values on the right.</p>
+                    </li>
+                </ul>
+            </p>
+        </section>
+    </conbody>
+</concept>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"><task xml:lang="en-us" id="T_SC_TroubleshootingEntities">
+  <title>Troubleshooting cluster reporting problems</title>
+  <shortdesc>You can troubleshoot clusters using the <uicontrol>Diagnostic</uicontrol> tool.</shortdesc>
+  <prolog>
+      <metadata>
+         <prodinfo>
+            <prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+            <vrmlist>
+               <vrm version="1.1" release="GA" modification="b"/>
+            </vrmlist>
+         </prodinfo>
+      </metadata>
+      <metadata>
+         <keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><term conkeyref="r_productname_variables/ph_clustercontrol"/><indexterm>cluster reporting<indexterm>troubleshooting</indexterm></indexterm></indexterm></keywords>
+      </metadata>
+  </prolog>
+  <taskbody>
+      <context>
+         <p>A cluster that is not properly configured is displayed in yellow. A cluster that is
+        offline is displayed in red. The <uicontrol>Diagnostic</uicontrol> tool can help you troubleshoot the
+        problem with the cluster.</p>
+      </context>
+      <steps>
+         <stepsection>To troubleshoot a cluster:</stepsection>
+         <step>
+            <cmd>Open the <uicontrol>Diagnostics</uicontrol> tab.</cmd>
+         </step>
+         <step>
+            <cmd>Select the data view for the cluster or task in question.</cmd>
+         </step>
+         <step>
+            <cmd>From the <uicontrol>Data View</uicontrol> widget, the diagnose tool.</cmd>
+            <info><note type="important">The diagnose tool is only available in <uicontrol>Data View</uicontrol> widget in the <uicontrol>Diagnostics</uicontrol> tab. It is not available as an option in the data views for the <uicontrol>Operations</uicontrol> or <uicontrol>System Performance</uicontrol> tabs.</note></info>
+            <stepresult>
+               <p>A troubleshooting tab is displayed, showing the results from the diagnostic test
+                  performed on the selected entity. </p>
+            </stepresult>
+         </step>
+         <step>
+            <cmd>You can save or share the results of the diagnostic test.</cmd>
+            <choices>
+               <choice>To save the results of the test, click <uicontrol>Save</uicontrol>.</choice>
+               <choice>To share the results of the test, click <uicontrol>Send</uicontrol>.</choice>
+            </choices>
+         </step>
+         <step>
+            <cmd>Click <uicontrol>Close</uicontrol> to end the diagnostic session.</cmd>
+         </step>
+      </steps>
+  </taskbody>
+</task>

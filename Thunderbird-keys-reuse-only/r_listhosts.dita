@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="v3485903">
+  <title>listhosts</title>
+  <shortdesc>Shows host information for all hosts within all clusters connected by <ph
+      conkeyref="r_productname_variables/ph_prodname"/>.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>listhosts</indexterm>
+        <indexterm>commands<indexterm>hosts</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <p>This command runs locally (in the execution cluster) when submitted by a running job.</p>
+      <p>% <userinput>listhosts</userinput></p>
+      <p>
+        <parml>
+          <plentry>
+            <pt>-cname</pt>
+            <pd>
+              <p>The option <cmdname>-cname</cmdname> includes the cluster name for execution
+                cluster hosts and host groups in output for <cmdname>listhosts</cmdname>.</p>
+            </pd>
+          </plentry>
+        </parml>
+      </p>
+    </section>
+  </refbody>
+</reference>

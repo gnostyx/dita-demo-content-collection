@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="troubleshooting_cannot_add_cluster">
+    <title>Troubleshooting the inability to add a cluster</title>
+    <shortdesc>Immediate actions to take when a cluster cannot be added to <term
+            conkeyref="r_productname_variables/ph_clustercontrol"/>.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>Adding Clusters<indexterm>troubleshoot</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>If you have attempted to target a new cluster
+                but you cannot get the addition acknowledged within <term
+                    conkeyref="r_productname_variables/ph_clustercontrol"/>, then use the following steps to isolate and resolve the problem. This situation can arise for clusters deployed in either execution or submission roles.</p>
+        </context>
+        <steps id="steps_hdv_nqk_ake">
+                <stepsection>To troubleshoot why a cluster cannot be
+                added:</stepsection>
+ <step>
+            <cmd>If you fail to receive any message during the cluster reporting poll, then try directly polling the unresponsive cluster directly.</cmd>
+                    <substeps>
+                        <substep>
+                            <cmd>In Configuration Tool <uicontrol>Connections</uicontrol> task, select the applicable cluster.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>At the bottom of the <uicontrol>Connections</uicontrol> task, click
+                                <uicontrol>Poll</uicontrol>.</cmd>
+                            <info>
+                                <ul>
+                                    <li>If there is no reply, the cluster may be offline (the hardware infrastructure could be malfunctioning), or there is a problem with your network connectivity. Contact the approriate system administrators in order to isolate any problems at the physical connectivity layer.</li>
+                                    <li>If you can poll the cluster, and get a response, then continue with the next step.</li>
+                                </ul>
+                            </info>
+                        </substep>
+                    </substeps></step>
+                <step>
+                    <cmd>Open the cluster’s configuration web page by typing its IP address into the <uicontrol>configuration lookup panel</uicontrol>.</cmd>
+                    <info>This is also where you can determine if you have the correct credentials for the cluster.</info>
+                </step>
+                <step>
+                    <cmd>Restart the cluster.</cmd>
+                    <substeps>
+                        <substep>
+                            <cmd>In Configuration Tool <uicontrol>Control</uicontrol> task, select select the applicable cluster.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>At the bottom of the Configuration Tool <uicontrol>Control</uicontrol> task panel, click <uicontrol>Reboot</uicontrol>.</cmd>
+                        </substep>
+                    </substeps>
+                </step>
+                <step>
+                    <cmd>Try adding the cluster to <term
+                        conkeyref="r_productname_variables/ph_clustercontrol"
+                    />again.</cmd>
+                </step>
+                <step id="UnitIsSupported_Step">
+                    <cmd>Make sure the hardware configuration deployed for the cluster is supported
+                    by <term conkeyref="r_productname_variables/ph_clustercontrol"/>,
+                    and that it is running the certified firmware.</cmd>
+                    <info>For a list of supported hardware configurations, and for known
+                    compatibility issues, see the register of supported hardware.</info>
+                </step>
+                <step>
+                    <cmd>Make sure you are using the correct credentials when trying to add the
+                    unit. For some hardware manufacturers, you may have to set the default
+                    credentials for the respective hardware before resetting the credentials after
+                    the cluster has been added.</cmd>
+                    <substeps>
+                        <substep>
+                            <cmd>Consult the hardware manufacturer's reference documentation in order to locate the default credentials for the applicable hardware.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Reset the hardware to the default credentials using the applicable hardware configuration interface.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>In <term
+                                conkeyref="r_productname_variables/ph_clustercontrol"
+                            />, access the Configuration Tool <uicontrol>Set up</uicontrol>
+                            task.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Click the <uicontrol>Add Clusters</uicontrol> tab.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>To add the new cluster unit, click <uicontrol>Add a
+                                cluster</uicontrol>, select the extension type, and click
+                                <uicontrol>Add</uicontrol>.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>When prompted by the <uicontrol>Enter credentials</uicontrol> dialogue, input the default hardware credentials.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Select the new cluster.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>In the <uicontrol>Default logon</uicontrol> section, enter the new
+                            username and password for the cluster.</cmd>
+                        </substep>
+                    </substeps>
+                </step>
+                <step>
+                    <cmd>Make sure the Cluster is connected to the correct <term
+                        conkeyref="r_productname_variables/ph_persistence"/> database, as
+                    follows:</cmd>
+                    <substeps>
+                        <substep>
+                            <cmd>In Configuration Tool <uicontrol>Cluster</uicontrol> task, select
+                            the  the applicable cluster.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Click the <uicontrol>Resources</uicontrol> tab.</cmd>
+                            <info>
+                                <ul>
+                                    <li>If the database status is <uicontrol>Connected</uicontrol>,
+                                    go to the next step.</li>
+                                    <li>If the database status is
+                                        <uicontrol>Disconnected</uicontrol> or
+                                        <uicontrol>Unavailable</uicontrol>, click <uicontrol>Connect
+                                        to database</uicontrol>. <p>
+                                        <note type="caution">Do not overwrite the disconnected or
+                                            unavailable database connection, as this can lead to
+                                            data loss. Be use to save copies of any database
+                                            connection configurations before deleting or modifying
+                                            them.</note>
+                                        <note>When you create a new database connection, searches or
+                                            administrative routines that were in place for previous
+                                            connections will need to be respecified for the new
+                                            database connection.</note>
+                                    </p>
+                                </li>
+                                </ul>
+                            </info>
+                        </substep>
+                    </substeps>
+                </step>
+                <step>
+                    <cmd>Make sure the associated execution clusters are also connected to the
+                    correct <term conkeyref="r_productname_variables/ph_persistence"/>
+                    database.</cmd><info>If there is an issue with associated execution clusters, this may be a sign that there are
+                    more serious problems with the configuration of the <term
+                        conkeyref="r_productname_variables/ph_clustercontrol"/>
+                    environment or with the network environment.</info>
+                    <substeps>
+                        <substep>
+                            <cmd>In Configuration Tool <uicontrol>System</uicontrol> task, select
+                                the <uicontrol>Job Router</uicontrol>.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Click the <uicontrol>Resources</uicontrol> tab.</cmd>
+                            <info>
+                                <ul>
+                                    <li>If the Job Router database status is <uicontrol>Connected</uicontrol>, go to the next step.</li>
+                                    <li>If the Job Router database status is
+                                        <uicontrol>Disconnected</uicontrol> or
+                                        <uicontrol>Unavailable</uicontrol>, click <uicontrol>Connect
+                                        to database</uicontrol> .</li>
+                                </ul>
+                            </info>
+                        </substep>
+                    </substeps>
+                </step>
+                <step>
+                    <cmd>Try adding the unit with the network firewall turned off. This will
+                    determine if the problems are related to interference in network connectivity
+                    due to secutity settings. </cmd>
+                    <info>For information about how to disable the network firewall, request
+                    assistance from your network administrator. <note type="important">Do not turn
+                        off the firewall permanently. Reactivate it after your tests are
+                        complete.</note>
+                </info>
+                </step>
+                <step>
+                    <cmd>Make sure your networks are configured properly, as follows:</cmd>
+                    <substeps>
+                        <substep>
+                            <cmd>In the Configuration Tool <uicontrol>Network view</uicontrol> task,
+                            select a network.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Click the <uicontrol>Properties</uicontrol> tab, and make sure all the settings are correct
+                                (IP prefix, subnet mask, routes, and so on).</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Initiate a network diagnosis by selecting <uicontrol>Test
+                                Network</uicontrol>.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Repeat these steps for all the networks on your system.</cmd>
+                        </substep>
+                    </substeps>
+                    <info>This activity should be done in collaboration with your network
+                    administrators.</info>
+                </step>
+                <step>
+                    <cmd>Make sure the Cluster, Job Router, and all redirectors are using the
+                    correct addresses in their requests.</cmd>
+                    <substeps>
+                        <substep>
+                            <cmd>In the Configuration Tool <uicontrol>System</uicontrol> task, click
+                            the <uicontrol>Directory</uicontrol> view.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Select the Physical view, and click the
+                                <uicontrol>Resources</uicontrol> tab.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>From the <uicontrol>Resources</uicontrol> drop-down list, select
+                            the appropriate resources in sequence and verify the associated network
+                            addresses.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>In the Logical view, select the Job Router role, and click the
+                                <uicontrol>Resources</uicontrol> tab.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Under the <uicontrol>Servers</uicontrol> section, click <uicontrol>Advanced</uicontrol>.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Select the appropriate <uicontrol>Network address</uicontrol> for
+                            each server, and click <uicontrol>Validate</uicontrol>.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Click the <uicontrol>Properties</uicontrol> tab.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Select a <uicontrol>Redirector</uicontrol>, and click <uicontrol>Edit the item</uicontrol>.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>From the <uicontrol>cluster interface</uicontrol> drop-down list,
+                            select the appropriate cluster.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>Repeat the last two steps for each redirector.</cmd>
+                        </substep>
+                    </substeps>
+                </step>
+                <step>
+                    <cmd>Try adding the cluster to <term
+                        conkeyref="r_productname_variables/ph_clustercontrol"/>.</cmd>
+                </step>
+                <step>
+                    <cmd>Make sure the Job Router process is online, as follows:</cmd>
+                    <substeps>
+                        <substep>
+                            <cmd>In the Config Tool <uicontrol>System</uicontrol> task, select the
+                            Job Router process.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>At the bottom of the <uicontrol>System</uicontrol> task, click <uicontrol>Diagnose</uicontrol>.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>If there are issues, try to fix them.</cmd>
+                        </substep>
+                    </substeps>
+                </step>
+            <step>
+                <cmd>Make sure the <term conkeyref="r_productname_variables/ph_persistence"
+                    /> database is online, as follows:</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>In the Config Tool <uicontrol>System</uicontrol> task, select the
+                            Database.</cmd><info>Confirm that the correct Database has been selected.</info>
+                    </substep>
+                    <substep>
+                        <cmd>At the bottom of the <uicontrol>System</uicontrol> task, click <uicontrol>Diagnose</uicontrol>.</cmd>
+                        <info>The diagnosis process will identify a series of issues. The most
+                            common issues relate to incorrect identifiers having been included in
+                            the Database.</info>
+                    </substep>
+                    <substep>
+                        <cmd>For each of the issues identified, take corrective action as directed
+                            by the diagnosis instructions.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            
+            <step>
+                    <cmd>Make sure the Execution Clusters are online, as follows:</cmd>
+                    <substeps>
+                        <substep>
+                            <cmd>In the Config Tool <uicontrol>System</uicontrol> task, select each
+                            of the applicable Clusters.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>At the bottom of the <uicontrol>System</uicontrol> task, click
+                                <uicontrol>Diagnose</uicontrol>.</cmd>
+                        </substep>
+                        <substep>
+                            <cmd>For each of the issues identified, take corrective action as
+                            directed by the diagnosis instructions.</cmd>
+                        </substep>
+                    </substeps>
+                </step>
+            <step>
+                <cmd>Restart the cluster.</cmd>
+            </step>
+            <step>
+                <cmd>Try adding the cluster to <term
+                    conkeyref="r_productname_variables/ph_clustercontrol"/>.</cmd>
+            </step>
+<step>
+    <cmd>Test the Cluster connection.</cmd>
+</step>
+            <step>
+                    <cmd>If you still cannot add the cluster, contact <term
+                        conkeyref="r_productname_variables/ph_companyname"/> technical
+                    support.</cmd>
+                </step>
+                
+        </steps>
+    </taskbody>
+</task>

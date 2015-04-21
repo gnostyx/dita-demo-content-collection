@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+    <booktitle>
+        <mainbooktitle>Integrator Administrator Guide</mainbooktitle>
+    </booktitle>
+    <bookmeta>
+        <audience experiencelevel="expert" job="cluster_admin" type="admin"/>
+    </bookmeta>
+    <frontmatter>
+      <topicgroup props="STA" processing-role="resource-only">
+        <keydef keys="r_productname_variables" href="r_productname_variables.dita" type="topic"
+          format="dita"/>    
+        <keydef keys="r_image_warehouse" href="r_image_warehouse.dita" type="topic"
+          format="dita"/>   
+      </topicgroup>
+      <topicgroup props="STB" processing-role="resource-only">
+        <keydef keys="r_productname_variables" href="r_productname_variables_2.dita" type="topic"
+          format="dita"/>    
+        <keydef keys="r_image_warehouse" href="r_image_warehouse_2.dita" type="topic"
+          format="dita"/>   
+      </topicgroup>
+      <booklists>
+            <toc/>
+            <figurelist/>
+        </booklists>
+    </frontmatter>
+    <chapter href="c_architecture_combined.dita">
+        <topicref href="c_architecture_overview.dita"/>
+        <topicref href="c_product_about.dita"/>
+        <topicref href="c_security.dita"/>
+        <topicref href="c_ease_of_management.dita"/>
+        <topicref href="c_efficient_resources.dita"/>
+    </chapter>
+    <chapter href="t_activate.dita" navtitle="Installation and Configuration">
+        <topicref href="r_supported_platforms.dita"/>
+        <topicref href="t_add_cluster.dita"/>
+        <topicref href="t_add_host_cluster_client.dita"/>
+        <topicref href="t_set_host_preference.dita"/>
+        <topicref href="t_diverting_hosts.dita"/>
+        <topicref href="t_view_edit_metadata.dita"/>
+        <topicref href="t_set_resource_definitions.dita"/>
+        <topicref href="t_registering_file.dita"/>
+        <topicref href="r_resource_files.dita"/>
+        <topicref href="t_configure_grid_control.dita"/>
+        <topicref href="t_set_memory_limits.dita"/>
+        <topicref href="t_set_timeout.dita"/>
+        <topicref href="r_logical_drive.dita"/>
+        <topicref href="r_physical_drive_not_faulted.dita"/>
+        <topicref href="r_faulty_physical_drive.dita"/>
+        <topicref href="t_troubleshooting_cluster_not_reporting.dita"/>
+        <topicref href="t_troubleshooting_cannot_add_cluster.dita"/>
+    </chapter>
+    <chapter href="c_cluster_management.dita">
+        <topicref href="r_manage_clusters.dita"/>
+        <topicref href="c_cluster_management.dita" navtitle="Cluster management"/>
+        <topicref href="t_configure_idle_detection.dita"/>
+        <topicref href="t_acknowledge_alert.dita"/>
+        <topicref href="c_cluster_reselection.dita"/>
+        <topicref href="r_interface_drops.dita"/>
+        <topicref href="r_interface-bypass-group-is-in-active-mode.dita"/>
+        <topicref href="r_cluster_mgmt_commands.dita"/>
+        <topicref href="c_cluster_capacity.dita">
+            <topicref href="t_adding_classifiers.dita"/>
+            <topicref href="t_creating_dynamic_tables.dita"/>
+            <topicref href="t_adding_columns_dynamic_table.dita"/>
+            <topicref href="t_creating_limiter.dita"/>
+            <topicref href="t_defining_subscriber_attributes.dita"/>
+            <topicref href="r_dimensions_reports.dita"/>
+            <topicref href="r_mv_analysis_columns.dita"/>
+            <topicref href="r_mv_query_filters.dita"/>
+        </topicref>
+    </chapter>
+    <chapter href="c_components.dita" navtitle="Advanced Topics in Component Interaction">
+        <topicref href="c_resource_destinations.dita"/>
+        <topicref href="c_about_defining_payload.dita"/>
+        <topicref href="c_bitrate.dita"/>
+        <topicref href="c_capture-files.dita"/>
+        <topicref href="c_command_foundation.dita">
+            <topicref href="c_command_class.dita"/>
+            <topicref href="c_attribute_parameter_syntax.dita"/>
+            <topicref href="c_jobconf_description.dita"/>
+            <topicref href="r_jobconf.dita"/>
+            <topicref href="c_jtub_description.dita"/>
+            <topicref href="r_jtub.dita"/>
+        </topicref>
+        <topicref href="c_notification_templates.dita"/>
+    </chapter>
+    <backmatter>
+        <booklists>
+            <indexlist/>
+        </booklists>
+    </backmatter>
+    <reltable title="Reltable">
+        <relheader>
+            <relcolspec type="topic"/>
+            <relcolspec type="topic"/>
+        </relheader>
+        <relrow>
+            <relcell>
+                <topicref href="t_add_host_cluster_client.dita"/>
+            </relcell>
+            <relcell>
+                <topicref href="t_set_memory_limits.dita"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref href="r_manage_clusters.dita"></topicref>
+            </relcell>
+            <relcell>
+                <topicref href="r_cluster_mgmt_commands.dita"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref href="r_manage_clusters.dita"/>
+            </relcell>
+            <relcell>
+                <topicref href="t_view_edit_metadata.dita"/>
+            </relcell>
+        </relrow>
+    </reltable>
+</bookmap>

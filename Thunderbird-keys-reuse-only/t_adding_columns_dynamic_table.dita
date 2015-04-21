@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<task id = "i713607"><title>Adding columns to a dynamic reporting table</title>
+    <shortdesc>Enhance your reports by adding new columns to reporting tables.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>columns<indexterm>expanding dynamic reporting
+                    tables</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<taskbody>
+        <context>
+            <p>Expand dynamic reporting tables to show the columns you need. Once a column is added,
+                reports may be run against all of the fields represented.</p>
+        </context><steps><step><cmd>Go to the Columns tab of the <uicontrol>Dynamic
+            tables view</uicontrol>.</cmd></step>
+<step><cmd>Select <uicontrol>Add a column</uicontrol>. </cmd>
+                <stepresult>
+                    <p>The Columns tab expands.</p>
+                </stepresult></step>
+<step><cmd>In the <uicontrol>Name</uicontrol> field, select a column.</cmd></step>
+<step><cmd>Select a data type.</cmd></step>
+<step><cmd>Select a default value:</cmd>
+<info><ul><li><uicontrol>Null:</uicontrol> no value</li>
+<li><uicontrol>Specified:</uicontrol> enter a default value.</li>
+<li><uicontrol>Expression:</uicontrol> to allow the expression to be reused by other columns, select
+                                <uicontrol>Reusable</uicontrol>. For reusable expressions, you can
+                            select an existing expression or click the ellipsis (...) and create a
+                            new expression. Otherwise, select <uicontrol>One time</uicontrol>
+                            (expression can be used only by this column).</li></ul></info></step>
+<step><cmd>Select the radial button to the left of the <uicontrol>Reusable</uicontrol> or <uicontrol>One
+                        time</uicontrol> option to indicate whether the expression is exclusively
+                    for this column or can be reused in other columns. </cmd>
+<info>
+                    <p>While working with expressions, the following toolbar options are
+                            available:<ul id="ul_qqq_kex_ce">
+                            <li>Click the <uicontrol>Undo</uicontrol> button to undo the last
+                                action.</li>
+                            <li>Click the <uicontrol>Redo</uicontrol> button to redo the last undone
+                                action.</li>
+                            <li>Click the <uicontrol>Search for text</uicontrol> button to locate
+                                text within the <uicontrol>Description</uicontrol> box.</li>
+                            <li>Click the <uicontrol>Change panel fonts and/or colors</uicontrol>
+                                button to change the panel fonts and/or colors.</li>
+                        </ul></p>
+                </info></step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step></steps></taskbody></task>

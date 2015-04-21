@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/task.dtd">
+<task id="v43593845">
+    <title>Adding or editing clusters </title>
+    <shortdesc>Clusters can be monitored once they are added to the console.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>cluster<indexterm>add</indexterm><indexterm>edit</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody id="v2782574">
+        <context id="v2782575">
+            <p id="v2782576">Use the <uicontrol>Console</uicontrol> to add a cluster.</p>
+        </context>
+        <steps id="v2782577">
+            <step id="v2782578">
+                <cmd id="v2782579">Click <uicontrol>Console</uicontrol>.</cmd>
+            </step>
+            <step id="v2782581">
+                <cmd id="v2782582">Under the Grid Management section of the Console menu bar, click
+                        <uicontrol>Clusters</uicontrol>.</cmd>
+                <stepresult id="v2782584">
+                    <p id="v2782585">The <uicontrol>Clusters Console</uicontrol> page displays.</p>
+                </stepresult>
+            </step>
+            <step id="v3512701">
+                <cmd id="v3512702">Add or edit a cluster.</cmd>
+                <choices id="v3512703">
+                    <choice id="v3512704">
+                        <p id="v3512705">To add a new cluster, click <uicontrol>Add</uicontrol>.</p>
+                    </choice>
+                    <choice id="v3512707">
+                        <p id="v3512708">To edit an existing cluster, click the name of the cluster
+                            that you want to edit.</p>
+                    </choice>
+                </choices>
+                <stepresult id="v3512709">
+                    <p id="v3512710">The <uicontrol>Cluster Edit</uicontrol> page displays.</p>
+                </stepresult>
+            </step>
+            <step id="v2782593">
+                <cmd id="v2782594">Specify (or update) the required fields describing your
+                    cluster.</cmd>
+                <info id="v2782595">
+                    <p id="v4060580">At a minimum, the following fields must be specified to add the
+                        cluster: <uicontrol>Cluster Name</uicontrol>, <uicontrol> Master LIM
+                            Hostname</uicontrol>, <uicontrol>Master LIM Port</uicontrol>,
+                            <uicontrol>Grid Poller</uicontrol>, and <uicontrol>Primary Administrator
+                            Username</uicontrol>. </p>
+                    <p id="v5516345">If you want to monitor multiple clusters and if the host is
+                        a server, make sure the clusters use different LIM Ports. However, it
+                        is recommended to install on the client host.</p>
+                    <p id="v4060586">For the <uicontrol>Grid Poller</uicontrol> field, select the
+                        appropriate poller for your version of the cluster.</p>
+                     </info>
+            </step>
+            <step><cmd>Specify a host for primary job submission.</cmd>
+                <info>Submit a job using <userinput>bsub -m
+                    <varname>host_name</varname></userinput>.</info>
+                <stepxmp><p>For example:</p>
+                    <p>
+                        <codeblock><codeph><userinput>bsub -m "hostA"</userinput></codeph></codeblock>
+                    </p>
+                    <p>The submission cluster forwards the job to the cluster containing
+                        <keyword>hostA</keyword>. </p>
+                </stepxmp>
+            </step>
+            <step id="v2782598">
+                <cmd id="v2782599">Click <uicontrol>Create</uicontrol> (or
+                        <uicontrol>Save</uicontrol>) to save the settings for your cluster.</cmd>
+            </step>
+        </steps>
+        <postreq id="v2782601">
+            <p id="v4182114">
+                <ul id="v4182115">
+                    <li id="v4182116">
+                        <p id="v2782602">If you edited a cluster that was already in the <term
+                                conkeyref="r_productname_variables/ph_prodname"/>
+                            Console, you do not have to do anything else.</p>
+                    </li>
+                    <li id="v4182118">
+                        <p id="v4182119">If you added a cluster to the <term
+                                conkeyref="r_productname_variables/ph_prodname"/>
+                            Console, you must add the <term
+                                conkeyref="r_productname_variables/ph_prodname"/> host
+                            to the cluster.</p>
+                    </li>
+                </ul>
+            </p>
+        </postreq>
+    </taskbody>
+</task>

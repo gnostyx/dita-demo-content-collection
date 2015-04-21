@@ -9,6 +9,10 @@ Eliot Kimber Updates
 I have updated this content set to add versions that use keys and key scopes (DITA 1.3)
 in ways that reflect various suggested or potential best practices.
 
+- Thunderbird-keys-reuse-only: Puts keys on all references to topics such that there is exactly one URI reference to each topic and each such reference has an associated keys. In addition, every navigation topicref has a key. Resource-only keys are defined for all images and for all topics that are used two or more times within the different maps in the information set.
+
+- Thunderbird-keys-all-resonly: Declares a resource-only key for every topic (and image). All navigation topicrefs have keys and use keyrefs to the topics they place in the publication structure.
+
 
 Introduction
 ------------

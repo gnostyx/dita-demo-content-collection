@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<reference xml:lang="en-us" id="r_mv_report_columns">
+    <title>Analysis pane columns</title>
+    <shortdesc>The results of your investigation or maintenance query are listed in the <term
+            conkeyref="r_productname_variables/ph_clusterview"/>
+        <uicontrol>Analysis Pane</uicontrol>. You can choose what information to view by showing or
+        hiding columns. This section lists the columns available. This list is organized
+        alphabetically by column.</shortdesc>
+    <prolog>
+         <metadata>
+            <prodinfo>
+                <prodname><term conkeyref="r_productname_variables/ph_clusterview"
+                    /></prodname>
+                <vrmlist>
+                    <vrm version="1.1" release="GA" modification="b"/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+        <metadata>
+            <keywords><indexterm><term conkeyref="r_productname_variables/ph_clusterview"/><indexterm>analysis pane columns</indexterm></indexterm></keywords>
+        </metadata>
+    </prolog>
+    <refbody>
+        <section>
+            <table frame="topbot" rowsep="1">
+                <tgroup cols="3" rowsep="1">
+                    <colspec colnum="1" colname="1" colwidth="19*"/>
+                    <colspec colnum="2" colname="2" colwidth="23*"/>
+                    <colspec colnum="3" colname="3" colwidth="35*"/>
+                   
+                    <thead>
+                        <row rowsep="1">
+                            <entry>Column</entry>
+                            <entry>Associated reports</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                         <row rowsep="1">
+                            <entry><uicontrol>Access rules</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Access rule configuration</li>
+                                </ul>
+                            </entry>
+                            <entry>Name of the access rule.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Acknowledged by</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>User who acknowledged the alarm. When the alarm is acknowledge
+                                automatically by the system, <wintitle>Service</wintitle> is
+                                indicated.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Acknowledged on</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Time the alarm was acknowledged.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Action</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Inventory report</li>
+                                </ul>
+                            </entry>
+                            <entry>The change in state: added, removed, or no
+                                change.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Alarm</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm monitoring</li>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Alarm entity name.</entry>
+                        </row>
+                         <row rowsep="1">
+                            <entry><uicontrol>Calculation status</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health statistics</li>
+                                </ul>
+                            </entry>
+                            <entry>If health statistics area unavailable, the reason is shown
+                                here.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Created by</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Incidents</li>
+                                </ul>
+                            </entry>
+                            <entry>User who originally reported the incident.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Creation time</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Incidents</li>
+                                </ul>
+                            </entry>
+                            <entry>Time the incident was reported.</entry>
+                        </row>
+                         <row rowsep="1">
+                            <entry><uicontrol>Custom fields</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Most reports</li>
+                                </ul>
+                            </entry>
+                            <entry>If custom fields are defined for the entity you are
+                                investigating, they can be included in the report.<note>You might
+                                    not see the custom fields filter, depending on whether your user
+                                    is configured to view that custom field.</note></entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Description</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Activity trails</li>
+                                    <li>Archiver events</li>
+                                    <li>Audit trails</li>
+                                    <li>Health history</li>
+                                </ul>
+                            </entry>
+                            <entry>Event or entity description.<p>In the <i>Activity trails</i>
+                                    task, this column represents the activity description.</p><p>In
+                                    the <i>Audit trails</i> task, this column represents the
+                                    description of the entity modification.</p></entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Device</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Access control health history</li>
+                                    <li>Hits</li>
+                                    <li>IO configuration</li>
+                                    <li>Reads</li>
+                                </ul>
+                            </entry>
+                            <entry>Device involved on the unit.</entry>
+                        </row>
+                       <row rowsep="1">
+                            <entry><uicontrol>Entity</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Audit trails</li>
+                                </ul>
+                            </entry>
+                            <entry>Name of the entity affected by the modification.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Entity type</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Audit trails</li>
+                                </ul>
+                            </entry>
+                            <entry>Type of entity affected by the modification.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Error number</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health history</li>
+                                </ul>
+                            </entry>
+                            <entry>Identification number of the health error.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Expected down-time</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health statistics</li>
+                                </ul>
+                            </entry>
+                            <entry>How many days/hours/minutes the entity has been offline or
+                                unavailable through user intent or <i>Maintenance mode</i>. For
+                                example, deactivating a server role, or disconnecting a client
+                                application causes expected down-time. Expected down-time is never
+                                used in the <i>Availability</i> percentage calculation.</entry>
+                        </row>
+                       <row rowsep="1">
+                            <entry><uicontrol>Event</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Access control health history</li>
+                                    <li>Access control unit events</li>
+                                    <li>Archiver events</li>
+                                    <li>Incidents</li>
+                               </ul>
+                            </entry>
+                            <entry>Event name.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Event timestamp</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Access control health history</li>
+                                    <li>Access control unit events</li>
+                                    <li>Activity trails</li>
+                                    <li>Archiver events</li>
+                                    <li>Health history</li>
+                                    <li>Hits</li>
+                                    <li>Inventory report</li>
+                                    <li>Reads</li>
+                                  </ul>
+                            </entry>
+                            <entry>Date and time that the event occurred.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Failures</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health statistics</li>
+                                </ul>
+                            </entry>
+                            <entry>How many failures have occurred.</entry>
+                        </row>
+                       
+                        <row rowsep="1">
+                            <entry><uicontrol>Health event</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health history</li>
+                                </ul>
+                            </entry>
+                            <entry>Name of the health event.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Hits</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Hits</li>
+                                </ul>
+                            </entry>
+                            <entry>Number of hits. <note>If the <i>Hit rules</i> and <i>Hit type</i>
+                                    query filters are used, this value might not be the total number
+                                    of hits in the day.</note></entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Impacted entity</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Activity trails</li>
+                                </ul>
+                            </entry>
+                            <entry>Which entities were impacted by this activity.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Impacted entity type</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Activity trails</li>
+                                </ul>
+                            </entry>
+                            <entry>The type of entity impacted by this activity.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Incident time</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Incidents</li>
+                                </ul>
+                            </entry>
+                            <entry>The timestamp of the referenced alarm or event. If no event is
+                                referenced, it corresponds to the incident creation time.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Initiator</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Activity trails</li>
+                                    <li>Audit trails</li>
+                                </ul>
+                            </entry>
+                            <entry>
+                                <ul>
+                                    <li>In the <i>Activity trails</i> task: Who performed the
+                                        activity.</li>
+                                    <li>In the <i>Audit trails</i> task: Who made entity
+                                        modification.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Initiator application</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Activity trails</li>
+                                    <li>Audit trails</li>
+                                </ul>
+                            </entry>
+                            <entry>
+                                <ul>
+                                    <li>In the <i>Activity trails</i> task: The application used for
+                                        this activity.</li>
+                                    <li>In the <i>Audit trails</i> task: The application used to
+                                        make the change.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Initiator application version</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Activity trails</li>
+                                    <li>Audit trails</li>
+                                </ul>
+                            </entry>
+                            <entry>The version number of the application. This field is empty if the
+                                activity is initiated by a role entity.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Initiator machine</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Activity trails</li>
+                                    <li>Audit trails</li>
+                                </ul>
+                            </entry>
+                            <entry>
+                                <ul>
+                                    <li>In the <i>Activity trails</i> task: Which computer the
+                                        activity was performed on.</li>
+                                    <li>In the <i>Audit trails</i> task: The computer used to make
+                                        the change.</li>
+                                </ul>
+                                <note>If the entity change was initiated from a Mobile app, this
+                                    column represents the phone identification number (for example,
+                                    a serial number).</note>
+                            </entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Initiator type</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Activity trails</li>
+                                    <li>Audit trails</li>
+                                </ul>
+                            </entry>
+                            <entry>
+                                <ul>
+                                    <li>In the <i>Activity trails</i> task: The type of entity that
+                                        initiated the activity.</li>
+                                    <li>In the <i>Audit trails</i> task: The type of entity
+                                        initiating the entity modifications.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                       <row rowsep="1">
+                            <entry><uicontrol>Investigated by</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Which user put the alarm into the <i>under investigation</i>
+                                state.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Investigated on</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>The timestamp when the alarm was put into the <i>under
+                                    investigation</i> state.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Machine</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health history</li>
+                                </ul>
+                            </entry>
+                            <entry>Computer where the health event occurred.</entry>
+                        </row>
+                       <row rowsep="1">
+                            <entry><uicontrol>Modification time</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Audit trails</li>
+                                    <li>Incidents</li>
+                                </ul>
+                            </entry>
+                            <entry>
+                                <ul>
+                                    <li>In the <i>Audit trails</i> task: Time the entity was last
+                                        modified.</li>
+                                    <li>In the <i>Incidents</i> task: Time the incident was last
+                                        modified.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Modified by</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Incidents</li>
+                                </ul>
+                            </entry>
+                            <entry>User who last modified the incident.</entry>
+                        </row>
+                       <row rowsep="1">
+                            <entry><uicontrol>Notes</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Incidents</li>
+                                </ul>
+                            </entry>
+                            <entry>Incident description. Point to this field to see the formatted
+                                text in a tooltip.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Occurrence count</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health history</li>
+                                </ul>
+                            </entry>
+                            <entry>Number of times this health event occurred on the selected
+                                entity.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Occurrence period</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Access control unit events</li>
+                                    <li>Alarm monitoring</li>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Period when the event
+                                occurred.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Offload timestamp</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Hits</li>
+                                    <li>Reads</li>
+                                </ul>
+                            </entry>
+                            <entry>The date and time that the user offloaded the reads/hits.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Operating time</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Daily usage per user</li>
+                                </ul>
+                            </entry>
+                            <entry>Total number of minutes in a day that the <term conkeyref="r_productname_variables/ph_enduser"/> application
+                                is open. </entry>
+                        </row>
+                       <row rowsep="1">
+                            <entry><uicontrol>Priority</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm monitoring</li>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Alarm priority.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>References</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Incidents</li>
+                                </ul>
+                            </entry>
+                            <entry>List of entities referenced by the incident.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Reject reason</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Hits</li>
+                                </ul>
+                            </entry>
+                            <entry>Reason selected by the user when rejecting a
+                                hit.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Rejected hits</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Hits</li>
+                                </ul>
+                            </entry>
+                            <entry>Number of hits that were rejected.</entry>
+                        </row>
+                         <row rowsep="1">
+                            <entry><uicontrol>Severity</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health history</li>
+                                </ul>
+                            </entry>
+                            <entry>Severity level of the health event:</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Source (entity)</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Access control health history</li>
+                                    <li>Alarm monitoring</li>
+                                    <li>Alarm report</li>
+                                    <li>Archiver events</li>
+                                    <li>Health history</li>
+                                    <li>Health statistics</li>
+                                    <li>Incidents</li>
+                                </ul>
+                            </entry>
+                            <entry>Source entity associated to the alarm or event.<ul>
+                                    <li>In the <i>Alarm monitoring</i> and <i>Alarm report</i>
+                                        tasks, this column represents the source entity that
+                                        triggered the alarm, when the alarm is triggered by an
+                                        event-to-action. It shows a username when the alarm is
+                                        triggered manually.</li>
+                                    <li>In the <i>Incidents</i> task, this column is empty if the
+                                        incident is not based on an alarm or event.</li>
+                                </ul></entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Source time</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm monitoring</li>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Time of the alarm triggering event. The only time <i>Source
+                                    time</i> and <i>Triggering time</i> are different is when the
+                                event occurred while the access control unit was offline.</entry>
+                        </row>
+                       <row rowsep="1">
+                            <entry><uicontrol>State</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm monitoring</li>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Current state of the alarm.<dl>
+                                    <dlentry>
+                                        <dt>Active</dt>
+                                        <dd>Alarm is not yet acknowledged. Selecting an active alarm
+                                            shows the alarm acknowledge buttons in the report
+                                            pane.</dd>
+                                    </dlentry>
+                                    <dlentry>
+                                        <dt>Acknowledged (Default)</dt>
+                                        <dd>Alarm was acknowledged using the default mode.</dd>
+                                    </dlentry>
+                                    <dlentry>
+                                        <dt>Acknowledged (Alternate)</dt>
+                                        <dd>Alarm was acknowledged using the alternate mode.</dd>
+                                    </dlentry>
+                                    <dlentry>
+                                        <dt>Acknowledged (Forcibly)</dt>
+                                        <dd>Alarm was forced to be acknowledged by an
+                                            administrator.</dd>
+                                    </dlentry>
+                                    <dlentry>
+                                        <dt>Under investigation</dt>
+                                        <dd>Alarm with an acknowledgement condition that is still
+                                            active was put under investigation.</dd>
+                                    </dlentry>
+                                    <dlentry>
+                                        <dt>Acknowledgement required</dt>
+                                        <dd>Alarm with an acknowledgement condition that was cleared
+                                            is ready to be acknowledged.</dd>
+                                    </dlentry>
+                                </dl></entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Triggering event</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm monitoring</li>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Event that triggered the alarm (if triggered through an
+                                event-to-action). <i>Manual action</i> is indicated when the alarm
+                                was manually triggered by a user.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Trigger time </uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Alarm monitoring</li>
+                                    <li>Alarm report</li>
+                                </ul>
+                            </entry>
+                            <entry>Time the alarm was triggered in <term conkeyref="r_productname_variables/ph_enduser"/>.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Type</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Access rule configuration</li>
+                                </ul>
+                            </entry>
+                            <entry>Affected entity type.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Unexpected down-time</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health statistics</li>
+                                </ul>
+                            </entry>
+                            <entry>How many days/hours/minutes the entity has been offline or
+                                unavailable after not having been set in <i>Maintenance mode</i>.
+                                Unexpected down-time is not caused by user intent.</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry><uicontrol>Up-time</uicontrol></entry>
+                            <entry>
+                                <ul>
+                                    <li>Health statistics</li>
+                                </ul>
+                            </entry>
+                            <entry>How many days/hours/minutes the entity has been online and
+                                available.</entry>
+                        </row>
+                     </tbody>
+                </tgroup>
+            </table>
+        </section>
+    </refbody>
+</reference>

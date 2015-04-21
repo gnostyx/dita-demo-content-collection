@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="conceptId">
+ <title>Security architecture</title>
+ <shortdesc>The <term conkeyref="r_productname_variables/ph_prodname"/> solution
+  provides a scalable and robust security architecture.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>security<indexterm>architecture</indexterm></indexterm>
+    <indexterm>security<indexterm>threats</indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <section id="section_abv_hbz_qr">
+   <title>Security Services</title>
+   <p id="p_wjp_nhc_rr">The security architecture of the <term
+     conkeyref="r_productname_variables/ph_companyname"/>
+    <term conkeyref="r_productname_variables/ph_prodname"/> solution relies on two
+    independent sub-systems that continuously coordinate their operation in order to achieve and
+    sustain a very high level of system security. These two independent sub-systems are:<ul
+     id="ul_sys_4rt_qr">
+     <li>Internal Security Services</li>
+     <li>External Security Services</li>
+    </ul> These two independent sub-systems manage access to the <term
+     conkeyref="r_productname_variables/ph_balance"/> services by internal nodes and
+    access to the entire <term conkeyref="r_productname_variables/ph_prodname"/>
+    solution by external parties, including the <term
+     conkeyref="r_productname_variables/ph_enduser"/> client interface. </p>
+  </section>
+  <section id="section_anf_3bz_qr">
+   <title>Security Threats</title>
+   <p>By default, <term conkeyref="r_productname_variables/ph_clustercontrol"/> refuses
+    to accept client requests from hosts not listed in the cluster. If the system is started on the
+    unlisted host, the daemons continue to retry the connection. The master host rejects these
+    requests, but if there are many unlisted hosts doing the same thing, it may become overloaded
+    and be unable to respond to valid requests.</p>
+   <p>Since <term conkeyref="r_productname_variables/ph_clustercontrol"/> can handle
+    large clusters (several thousand hosts in a cluster) and is designed to be resistant to this
+    type of attack, a malicious attack needs to simulate a larger scale of false hosts in order to
+    be successful, but theoretically <term
+     conkeyref="r_productname_variables/ph_clustercontrol"/> still remains potentially
+    vulnerable to a very large-scale attack. Administrators must still plan their security
+    architecture and establish continuous monitoring processes. </p>
+   <p>With effective security administration procedures in place, the security of <term
+     conkeyref="r_productname_variables/ph_prodname"/> is formidable. The scalability
+    of the security regime is derived from the fact that administrative controls are applied in a
+    top-down fashion while rights to resources are defined in a bottom-up fashion. Clusters will
+    have specific rights assigned regarding the resources that they can request and process.</p>
+  </section>
+ </conbody>
+</concept>

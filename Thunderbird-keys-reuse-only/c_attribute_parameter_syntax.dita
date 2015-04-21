@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<concept id = "i710910"><title>Attribute and parameter syntax</title>
+    <shortdesc>Use attributes and parameters together in commands.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>attributes<indexterm>syntax</indexterm></indexterm>
+                <indexterm>parameters<indexterm>syntax</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<conbody><p>An attribute and a parameter can co-exist in one command.
+Multiple attributes and multiple parameters can co-exist in a single
+command.</p>
+<p>General syntax guidelines for attribute parameters:
+            <ul id="ul_qrw_xdm_mr">
+                <li>
+                    <p>Attributes and parameters can appear in any order after the command
+                        foundation, either attribute before parameter, or parameter before
+                        attribute.</p>
+                </li>
+                <li>
+                    <p>Sub-attributes are usually a scale of fixed measurements, for example the
+                        attribute severity takes the alarms scale sub-attributes of: all, minor,
+                        major, warning.</p>
+                </li>
+                <li>
+                    <p>Sub-attributes are applied as a group of possible choices to delimit an
+                        attribute or concatenated attributes.</p>
+                </li>
+                <li>
+                    <p>All possible expressions of a foundation class are in the Syntax section of
+                        the command.</p>
+                </li>
+                <li>
+                    <p>The order of attributes and parameters is in part defined by user choices and
+                        in part by the design structure of the CLI, to provide as much flexibility
+                        in access to information possible.</p>
+                </li>
+            </ul>
+        </p>
+    <section><title>Syntax Examples</title>
+<p>Reference example syntax for setting namespace qualifiers within an attribute. </p>
+        <codeblock>var currentPerformanceCounterCategory =  new System.Diagnostics.
+    PerformanceCounterCategory();</codeblock>
+        <p>Reference example syntax for initializing arrays on the declaration line.</p>
+        <codeblock>// Preferred syntax. Note that you cannot use var here instead of string[].  
+string[] vowels1 = {  "a",  "e",  "i",  "o",  "u" };
+
+ // If you use explicit instantiation, you can use var.  
+var vowels2 =  new  string[] {  "a",  "e",  "i",  "o",  "u" };
+
+ // If you specify an array size, you must initialize the elements one at a time.  
+var vowels3 =  new  string[5];
+vowels3[0] =  "a";
+vowels3[1] =  "e";</codeblock>
+        <p>Reference example syntax for avoiding exceptions and increase performance by skipping
+            unnecessary comparisons, use &amp;&amp; instead of &amp; and || instead of | when you
+            perform comparisons.</p>
+        <codeblock>Console.Write("Enter a dividend: ");
+ var dividend = Convert.ToInt32(Console.ReadLine());
+
+Console.Write( "Enter a divisor: ");
+ var divisor = Convert.ToInt32(Console.ReadLine());
+
+// If the divisor is 0, the second clause in the following condition  
+// causes a run-time error. The &amp;&amp; operator short circuits when the  
+// first expression is false. That is, it does not evaluate the  
+// second expression. The &amp; operator evaluates both, and causes   
+// a run-time error when divisor is 0.  
+
+if ((divisor != 0) &amp;&amp; (dividend / divisor &gt; 0))
+{
+    Console.WriteLine( "Quotient: {0}", dividend / divisor);
+}
+ else
+{
+    Console.WriteLine( "Attempted division by 0 ends up here.");
+}</codeblock></section></conbody></concept>

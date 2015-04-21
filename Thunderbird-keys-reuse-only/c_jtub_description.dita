@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="v8932432">
+ <title>Description of jtub command</title>
+ <shortdesc>Use <cmdname>jtub</cmdname> to submit and control a flow definition.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>jtub<indexterm>description</indexterm></indexterm>
+    
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <section>
+   <title>Description</title>
+   <p>You use the <cmdname>jtub</cmdname> command to submit a flow definition. When you submit the
+    flow definition, you may specify the event that triggers the flow, if applicable. If you do not
+    specify an event to trigger the flow, it requires a manual trigger. You must be the owner of the
+    flow definition or have the administrator authority to submit a flow definition.</p>
+   <p>
+    <note>
+     <p>The flow definition you are submitting may contain pre-defined events that trigger the flow.
+      When you submit this flow using the <cmdname>jtub</cmdname> command, those events are
+      overwritten by any specified in the command. If the flow definition contains triggering
+      events, and you submit the flow definition without specifying a triggering event, those events
+      are deleted from the definition that is submitted, and the flow definition requires a manual
+      trigger.</p>
+    </note>
+   </p>
+   <p><note><term conkeyref="r_productname_variables/ph_prodname"/> supports commands issued
+     by jobs running on execution clusters. All <cmdname>jtub</cmdname> commands issued by running
+     jobs are sent to the submission cluster, and then forwarded to an appropriate execution cluster
+     to run. This is necessary because <term
+      conkeyref="r_productname_variables/ph_prodname"/> execution clusters do not
+     accept local job submissions.</note></p>
+  </section>
+ </conbody>
+</concept>

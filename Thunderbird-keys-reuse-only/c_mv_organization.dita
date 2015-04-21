@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<concept xml:lang="en-us" id="c_mv_organization">
+    <title>How <term conkeyref="r_productname_variables/ph_enduser"/> is organized</title>
+    <shortdesc><term conkeyref="r_productname_variables/ph_enduser"/> is organized
+        according to system operator tabs.</shortdesc>
+    <prolog>
+        <metadata>
+            <prodinfo>
+                <prodname><term conkeyref="r_productname_variables/ph_enduser"
+                    /></prodname>
+                <vrmlist>
+                    <vrm version="1.1" release="GA" modification="b"/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+        <metadata>
+            <keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>organization</indexterm></indexterm></keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Using <term conkeyref="r_productname_variables/ph_enduser"/>, a system
+            operator can monitor and maintain cluster activity tabs associated with active projects.
+            You can view reports that demonstrate how the project is leveraging cluster resources,
+            how the project is progressing towards targets, and whether the system is performing as
+            expected.</p>
+        <p>Some reports provide a more detailed view of your project's progress, allowing you to view the progression of your project's subordinate tasks towards their targets. This provides more nuanced reporting and manipulation, ensuring that you can manage your project more effectively.</p>
+    </conbody>
+</concept>

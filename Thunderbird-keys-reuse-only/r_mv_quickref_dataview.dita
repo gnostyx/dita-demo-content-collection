@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_mv_quickref_dataview_widget"> 
+  <title>Quick reference: data views</title> 
+  <shortdesc>Use the data views to see different metrics about your project.</shortdesc>
+	<prolog>
+		<metadata>
+			<keywords>
+				<indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>data
+					views</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog> 
+  <refbody>
+		<section>
+			<table>
+				<title>Data views</title>
+				<tgroup cols="2">
+					<colspec colnum="1" colname="col2" colwidth="1.06*"/>
+					<colspec colnum="2" colname="col3" colwidth="1.06*"/>
+					<thead>
+						<row>
+							<entry colname="col2">
+								<p>Subject</p>
+							</entry>
+							<entry colname="col3">
+								<p>Data View</p>
+							</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry colname="col2">
+								<p>Cluster requests</p>
+							</entry>
+							<entry colname="col3">
+								<p>
+									<ul>
+										<li><uicontrol>Workspace</uicontrol> tab</li>
+										<li><uicontrol>System Performance</uicontrol> tab</li>
+									</ul>
+								</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col2">
+								<p>Cluster workload</p>
+							</entry>
+							<entry colname="col3">
+								<p>
+									<ul>
+										<li><uicontrol>Workspace</uicontrol> tab</li>
+									</ul>
+								</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col2">
+								<p>System health indicators</p>
+							</entry>
+							<entry colname="col3">
+								<p>
+									<ul>
+										<li><uicontrol>System Support</uicontrol> tab</li>
+										<li><uicontrol>Diagnostics</uicontrol> sub-tab</li>
+									</ul>
+								</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col2">
+								<p>Memory usage</p>
+							</entry>
+							<entry colname="col3">
+								<p>
+									<ul>
+										<li><uicontrol>System Performance</uicontrol> tab</li>
+									</ul>
+								</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col2">								
+								<p>Job progress</p>
+							</entry>
+							<entry colname="col3">
+								<p>
+									<ul>
+										<li><uicontrol>Workspace</uicontrol> tab</li>
+										<li><uicontrol>System Performance</uicontrol> tab</li>
+									</ul>
+								</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col2">
+								<p>Processing speed</p>
+							</entry>
+							<entry colname="col3">
+								<p>
+									<ul>
+										<li><uicontrol>System Performance</uicontrol> tab</li>
+									</ul>
+								</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col2">
+								<p>Response time</p>
+							</entry>
+							<entry colname="col3">
+								<p>
+									<ul>
+										<li><uicontrol>Workspace</uicontrol> tab</li>
+										<li><uicontrol>System Performance</uicontrol> tab</li>
+									</ul>
+								</p>
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</section> 
+  </refbody> 
+</reference> 

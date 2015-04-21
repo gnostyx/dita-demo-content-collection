@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="troubleshooting_cluster_not_reporting">
+    <title>Troubleshooting non-reporting clusters</title>
+    <shortdesc>Immediate actions to take when a cluster is not
+        reporting.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm> Non-Reporting Cluster<indexterm>troubleshoot</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>If you installed a cluster
+                but it is not reporting in response to the polling sequence, it might be due to the
+                configuration or operation of the cluster hardware or the activation of the cluster environment.</p>
+            <p>Some of the ways you can tell the cluster is not reporting properly are the
+                following: <ul>
+                    <li>The cluster issues reporting messages with identifiers that do not
+                        correspond to a recognized list within <term
+                            conkeyref="r_productname_variables/ph_clustercontrol"
+                        /></li>
+                    <li>The cluster fails to issue a reporting message in reponse to a scheduled, or
+                        a forced, polling sequence</li>
+                    <li>The cluster only intermittantly issues reporting messages</li>
+                </ul>
+            </p>
+        </context>
+        <steps id="steps_hdv_nqk_ae">
+            <step id="steps_hdv_nqk_ae1">
+                <cmd>In the <term conkeyref="r_productname_variables/ph_clustercontrol"
+                    /> interface to the execution cluster, open <filepath>host.params</filepath> and
+                    locate <parmname>HOSTS_PENDING_REASON_UPDATE_INTERVAL</parmname>.</cmd>
+            </step>
+            <step id="steps_hdv_nqk_ae2">
+                <cmd>Verify the submission cluster reporting schedule is set to a valid
+                    interval.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>In Configuratoin Tool <uicontrol>Schedule</uicontrol> task, select the
+                            applicable submission cluster.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Click the <uicontrol>Intervals</uicontrol> tab.</cmd>
+                        <info>
+                            <ul>
+                                <li>If the <uicontrol>Interval settings</uicontrol> option is set to
+                                        <uicontrol>Custom</uicontrol> settings, check that all the
+                                    reporting settings are correct, and then click
+                                        <uicontrol>Apply</uicontrol>.</li>
+                                <li>If the <uicontrol>Interval settings</uicontrol> option is set to
+                                        <uicontrol>Inherit from Parent</uicontrol>, continue with
+                                    the next substep.</li>
+                            </ul>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>In the <uicontrol>Relationships</uicontrol> task, select the
+                            <uicontrol>Parent</uicontrol>.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Click the <uicontrol>Cluster reporting</uicontrol> tab.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>In the <uicontrol>Default settings</uicontrol> section, make sure the
+                            <uicontrol>Reporting intervals</uicontrol> is set to <uicontrol>Synchronize</uicontrol>,
+                            and that the reporting <uicontrol>Mode</uicontrol> is not set to
+                            <uicontrol>Off</uicontrol>.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Specify the reporting interval, in seconds.</cmd>
+                        <info>
+                            <p>Zero seconds disables the pending reason.</p>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Restart the polling sequence.</cmd>
+                        <stepresult>The issue has been resolved if the cluster successfully responds to the polling sequence. If this does not happen, proceed to the next step.</stepresult>
+                    </substep>
+                </substeps>
+            </step>
+            
+            <step id="steps_hdv_nqk_ae3">
+                <cmd>In the <uicontrol>Interval settings</uicontrol> menu, confirm that the <uicontrol>reporting mode</uicontrol> is set to <parmname>dynamic</parmname>.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>In the <uicontrol>Interval settings</uicontrol> menu, select the
+                            applicable submission cluster.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Click the <uicontrol>Intervals</uicontrol> tab.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Verify the <uicontrol>reporting mode</uicontrol> is set to the <parmname>dynamic</parmname>.</cmd>
+                        <info>If the <uicontrol>reporting mode</uicontrol> is set to the <parmname>scheduled</parmname>, then the cluster will only report at specific times which may not align with the reporting poll schedule.</info>
+                    </substep>
+                    <substep>
+                        <cmd>Restart the polling sequence.</cmd>
+                        <stepresult>The issue has been resolved if the cluster successfully responds to the polling sequence. If this does not happen, proceed to the next step.</stepresult>
+                    </substep>
+                </substeps>
+            </step>            
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="v324323423">
+  <title>hostload</title>
+  <shortdesc>Shows host load information for all hosts within all clusters connected by <ph
+      conkeyref="r_productname_variables/ph_prodname"/>.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>hostload</indexterm>
+        <indexterm>commands<indexterm>hostload</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <p>This command runs locally (in the execution cluster) when submitted by a running job.</p>
+      <p><codeph>% <userinput>hostload</userinput></codeph></p>
+      <p>
+        <parml>
+          <plentry>
+            <pt>-cname</pt>
+            <pd>
+              <p>The option <cmdname>-cname</cmdname> includes the cluster name for execution
+                cluster hosts and host groups in output for <cmdname>hostload</cmdname>.</p>
+              <p>%<userinput> hostload -cname</userinput>
+              </p>
+            </pd>
+          </plentry>
+        </parml>
+      </p>
+    </section>
+  </refbody>
+</reference>

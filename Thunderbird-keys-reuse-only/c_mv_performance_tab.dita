@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_mv_performance_tab" xml:lang="en-us">
+ <title>System performance</title>
+ <shortdesc><term conkeyref="r_productname_variables/ph_enduser"/> reports on system
+  performance.</shortdesc>
+ <prolog>
+  <metadata>
+   <prodinfo>
+    <prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+    <vrmlist>
+     <vrm version="1.1" release="GA" modification="b"/>
+    </vrmlist>
+   </prodinfo>
+  </metadata>
+  <metadata>
+    <keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>system performance tab</indexterm></indexterm></keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <p>The <uicontrol>System Performance Tab</uicontrol> provides a data view of your project's progress towards its targets. Using the <uicontrol>Data View</uicontrol> widget in the top right hand corner, you can manipulate the data stream:
+  <ul>
+   <li>Change the time period displayed using the (insert time period icon) icon.</li>
+   <li>Select different tasks to see how specific aspects of your project are progressing using the (insert task icon) icon.</li>
+  </ul>
+   You can use the real-time System Performance readings to better manage your project and subordinate tasks. 
+  </p>
+  <fig conkeyref="r_image_warehouse/fig_eqw_2lh_mr" id="fig_lkc_ggm_mr"/>
+  <section>Monitoring <uicontrol>System Performance</uicontrol>
+   <p>The <uicontrol>System Performance</uicontrol> tab provides the ability to monitor the
+    performance of selected cluster hosts and specific processing jobs. In order to facilitate this,
+    the <uicontrol>System Performance</uicontrol> tab provides simple mechanisms for selecting
+     <uicontrol>active jobs</uicontrol> (tasks), setting the <uicontrol>time period</uicontrol>
+    within which analysis and reporting will occur, and the type of <uicontrol>graphical
+     layout</uicontrol> and <uicontrol>event type</uicontrol> will be applied. <ul
+     id="ul_q31_5st_mr">
+     <li><uicontrol>Active Jobs</uicontrol> Analysis<ul id="ul_d3n_xst_mr">
+       <li>Based on the <uicontrol>Active Clusters</uicontrol> selected in the
+         <uicontrol>Workspace</uicontrol> view, the subordinate active jobs will be displayed.</li>
+       <li>The data stream in the data view will be updated to reflect the active jobs selected. </li>
+       <li>These settings will be maintained until changed.</li>
+       <li>These settings can be saved for later use or shared with colleagues. </li>
+      </ul></li>
+     <li><uicontrol>Time Periods</uicontrol>
+      <ul id="ul_znp_wtt_mr">
+       <li>Use the <uicontrol>Time Period</uicontrol> controls in the <uicontrol>System
+         Performance</uicontrol> view to constrain the analysis being performed to a specific time
+        period.</li>
+       <li>Use the date controls to set a start and end time for the analysis window.<ul
+         id="ul_jqz_h5t_mr">
+         <li>When you select a date control, a <uicontrol>Calendar View</uicontrol> will open.</li>
+         <li>Within the <uicontrol>Calendar View</uicontrol>, start and end dates can be
+          chosen.</li>
+         <li>The <uicontrol>Calendar View</uicontrol> provides fields for designating specific start
+          and end times.</li>
+         <li>The <uicontrol>Calendar View</uicontrol> provides the option to define rules that will
+          be used to automatically select date and time ranges.</li>
+        </ul></li>
+       <li>The data stream in the data view will be updated to reflect the time period
+        selected.</li>
+       <li>These settings will be maintained until changed.</li>
+       <li>These settings can be saved for later use or shared with colleagues.</li>
+      </ul></li>
+    </ul></p>
+  </section>
+  
+  
+  
+   </conbody>
+</concept>

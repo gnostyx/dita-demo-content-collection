@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+
+  <topic id="mobileview_FAQ"> 
+	 <title>Frequently Asked Questions</title> 
+  	<shortdesc>Answers to your frequently asked questions about <term conkeyref="r_productname_variables/ph_enduser"/>. 
+	 </shortdesc> 
+	 <body> 
+	 	<section> 
+	 		<title>How do I change my password?</title> 
+	 		<p>You can change your password after you log on to <term conkeyref="r_productname_variables/ph_enduser"/>.</p>
+	 		<p>Select the <uicontrol>Account</uicontrol> button in the top right hand corner, then select the <uicontrol>Settings</uicontrol> option. In the Settings tab, click the 
+	 			<uicontrol>Change Password</uicontrol> button. In the Are-you-sure-you-want-to-change-your-password? dialog
+	 			box, enter your old password, enter your new password twice, and click <uicontrol>OK</uicontrol>.</p>
+	 	</section>
+
+	 	<section> 
+	 		<title>Can I create a custom data view?</title> 
+	 		<p>Yes. You can create custom data 
+	 			views that provide analytics specific to the needs of your project in the <uicontrol>Customize Views</uicontrol> page. 
+	 			You can analyze the tasks, targets, and clusters associated with your project.</p> 
+	 	</section>
+	 	
+	 	<section> 
+	 		<title>How do I generate a custom query?</title> 
+	 		<p>You can generate customized queries on the tasks, clusters, and targets in your 
+	 			<term conkeyref="r_productname_variables/ph_enduser"/> system for investigation or 
+	 			maintenance purposes.</p>
+	 		<p>Within the <uicontrol>Customize Views</uicontrol> tab, use the filters in the
+					<uicontrol>Query Pane</uicontrol> to set up your query. Click on a filter
+				heading to turn it on or off and click the <uicontrol>Generate</uicontrol> button to
+				run your data analysis.</p>
+	 	</section>
+		
+				
+		<section>
+			<title>How do I diagnose an issue with cluster activity?</title>
+			<p>If the data views in the <uicontrol>Troubleshooting</uicontrol> sub-tab have either the error
+				icon or the warning icon, you will want to get more details regarding the issue.
+				Initiate the applicable diagnostics sequence of tests.</p>
+			<table
+				conref="r_mv_quickref_health_indicators.dita#r_mv_quickref_dataview_widget/table_uw5_y24_mr"
+				id="table_odf_gf4_mr">
+				<tgroup cols="cols_yt2_gf4_mr">
+					<tbody>
+						<row>
+							<entry/>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			
+			<p>Click on the <uicontrol>Data View</uicontrol> widget, and then select the <uicontrol>Diagnose</uicontrol> option. The system will return a detailed account of the issue and recommended action for amending the problem.</p>
+		</section> 
+	 </body> 
+  </topic> 
+ 

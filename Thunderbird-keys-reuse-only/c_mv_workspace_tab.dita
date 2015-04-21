@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_mv_operations_tab" xml:lang="en-us">
+ <title>Workspace environment</title>
+ <shortdesc>View analysis of cluster operations.</shortdesc>
+ <prolog>
+  <author>Technical writing</author>
+  <metadata>
+   <prodinfo>
+    <prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+    <vrmlist>
+     <vrm version="1.1" release="GA" modification="b"/>
+    </vrmlist>
+   </prodinfo>
+  </metadata>
+  <metadata>
+   <keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>workspace tab</indexterm></indexterm></keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <p>The <uicontrol>Workspace Tab</uicontrol> includes four different data views to provide a
+   detailed overview of how your project is using cluster resources. These data views display: <ul>
+    <li>Cluster response time.</li>
+    <li>Cluster requests.</li>
+    <li>Active host servers.</li>
+    <li>Cluster workload.</li>
+   </ul>
+  </p>
+  <fig conkeyref="r_image_warehouse/fig_enw_2lh_mr" id="fig_a5k_zfm_mr"/>
+  
+  
+  
+  <p>Content is automatically updated in these data views when events occur related to the project you are
+   monitoring. This provides you with real-time information that is crucial for monitoring your project's use of cluster resources as effectively and efficiently as possible.</p>
+   
+  <table frame="topbot" rowsep="1">
+   <tgroup cols="2" rowsep="1">
+    <colspec colname="c2" colnum="1" colwidth="16*"/>
+    <colspec colname="c3" colnum="2" colwidth="50*"/>
+    <tbody>
+     <row>
+      <entry><b><uicontrol>Account Information</uicontrol></b></entry>
+      <entry>Access and modify account information.</entry>
+     </row>
+     <row>
+      <entry><b><uicontrol>Task List</uicontrol></b></entry>
+      <entry>Access assigned tasks.</entry>
+     </row>
+     <row>
+      <entry><b><uicontrol>Notifications</uicontrol></b></entry>
+      <entry>View notifications.</entry>
+     </row>
+     <row>
+      <entry><b><uicontrol>Contacts</uicontrol></b></entry>
+      <entry>View a list of contacts and interact using messaging. </entry>
+     </row>
+     <row>
+      <entry><b>Search</b></entry>
+      <entry>Search for documentation, cluster hosts, reports, and other resources.</entry>
+     </row>
+     <row>
+      <entry><b>Session Details</b></entry>
+      <entry>Displays current session details including date, time, and location.</entry>
+     </row>
+     <row>
+      <entry><b><uicontrol>Workspace Tab</uicontrol></b></entry>
+      <entry>
+       <p>View reports on cluster operations. The <uicontrol>Workspace</uicontrol> tab includes
+        different data views to provide a detailed overview of how your tasks are using cluster
+        resources.</p>
+      </entry>
+     </row>
+     <row>
+      <entry><b><uicontrol>Customize Views Tab</uicontrol></b></entry>
+      <entry>Access the <uicontrol>Customize View</uicontrol> tab to reconfigure the: <ul
+        id="ul_nkd_2qm_mr">
+        <li>reports are displayed in the <uicontrol>Workspace</uicontrol> tab</li>
+        <li>the layout of reports within the <uicontrol>Workspace</uicontrol> tab</li>
+        <li>the definition of individual reports</li>
+        <li>the design of customer reports</li>
+       </ul></entry>
+     </row>
+     <row>
+      <entry><b><uicontrol>System Performance</uicontrol></b></entry>
+      <entry>
+       <p>View reports on task progression and cluster activity. These reports provide in depth,
+        real-time analytic information about current jobs and the associated cluster activity.</p>
+       <p>View reports on job progression. The <uicontrol>System Performance</uicontrol> tab
+        displays your current jobs as they progress towards their targets.You can modify the reports
+        according to the time period and tasks displayed.</p>
+      </entry>
+     </row>
+     <row>
+      <entry><b>System Support</b></entry>
+      <entry>
+       <p>The <uicontrol>System Support</uicontrol> tab provides access to three important
+         sub-tabs:<ul id="ul_brn_frm_mr">
+         <li><uicontrol>Troubleshooting</uicontrol> which provides access to structured diagnostic
+          procedures to be used to isolate and resolve system problems.</li>
+         <li><uicontrol>Documentation</uicontrol> which can be searched using a combination of
+          full-text queries and filter selections.</li>
+         <li><uicontrol>Discussion board</uicontrol> where past and ongoing moderated discussions
+          can be accessed and participated in. </li>
+        </ul></p>
+       <p><uicontrol>Contact Support</uicontrol> if you have trouble using <term
+         conkeyref="r_productname_variables/ph_enduser"/> and cannot find the answers
+        you need on the Troubleshooting or Documentation pages. </p>
+      </entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+ 
+ </conbody>
+</concept>

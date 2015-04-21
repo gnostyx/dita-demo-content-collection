@@ -1,0 +1,78 @@
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_mv_logging_on" xml:lang="en-us">
+    <title>Logging on to <term conkeyref="r_productname_variables/ph_enduser"/></title>
+    <shortdesc>To log on to <term conkeyref="r_productname_variables/ph_enduser"/>,
+        you must open the <term conkeyref="r_productname_variables/ph_enduser"/>
+        application and connect to the <term
+            conkeyref="r_productname_variables/ph_clustercontrol"/>
+        server.</shortdesc>
+    <prolog>
+        <metadata>
+            <prodinfo>
+                <prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+                <vrmlist>
+                    <vrm version="1.1" release="GA" modification="b"/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+        <metadata>
+            <keywords>
+                <indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>logging in</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <prereq>
+            <p>Make sure that you have your username, password, and the name of the server that you want to connect to.</p>
+        </prereq>
+        <context>
+            <p>Once you are logged on, you can log off and disconnect from a particular project without closing 
+					<term conkeyref="r_productname_variables/ph_enduser"/>. Logging off without closing
+                the application is helpful if you plan to log on again using a different username
+                and password.</p>
+            <note>You might automatically be logged off after a period of inactivity.</note>
+        </context>
+        <steps>
+            <stepsection>To log on to <term conkeyref="r_productname_variables/ph_enduser"/>:</stepsection>
+            <step>
+                <cmd>To open <term conkeyref="r_productname_variables/ph_enduser"/>,
+                    click <menucascade>
+                        <uicontrol>Start</uicontrol>
+                        <uicontrol>All programs</uicontrol>
+                    </menucascade><term
+                        conkeyref="r_productname_variables/ph_companyname"/>
+                    <term conkeyref="r_productname_variables/ph_enduser"/>.</cmd>
+                <info>You will see the <term
+                        conkeyref="r_productname_variables/ph_enduser"/> Login
+                        Screen.<fig conkeyref="r_image_warehouse/fig_jzz_ykh_mr"
+                        id="fig_wpx_glm_mr"/></info>
+            </step>
+            <step>
+                <cmd>In the dialog box, do
+                    one of the following:</cmd>
+                <choices>
+                    <choice>Enter your <term conkeyref="r_productname_variables/ph_enduser"/>
+                        username and password.</choice>
+                    <choice>Log on using your Windows user account by selecting the <uicontrol>Windows</uicontrol> selection button.</choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>In the directory field, enter the name or IP address of the main <term
+                        conkeyref="r_productname_variables/ph_prodname"/>
+                    <term conkeyref="r_productname_variables/ph_clustercontrol"/>
+                    server.</cmd>
+            </step>
+            <step>
+                <cmd>If you are required to log on with supervision, your supervisor must provide a
+                    username and password.</cmd>
+            </step>
+            <step>
+                <cmd>Click log in button.</cmd>
+            </step>
+            <step>
+                <cmd>To log off, click the <uicontrol>Home</uicontrol> tab and
+                    then click <uicontrol>Log Off</uicontrol> button.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<task id = "i713425"><title>Creating a limiter</title>
+    <shortdesc>A new limiter acts as a buffer between aggregate views.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>limiters<indexterm>creating</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<taskbody>
+        <context>
+            <p id="p_1">A limiter controls the value of a threshold, providing control over when
+                actions are executed. They can be used to apply actions after a threshold (like
+                number of connections) is exceeded, or can be used to define a control system to
+                manage the amount of bandwidth on the network. </p>
+            <p id="p_2">Limiters are used in:<ul id="ul_fvw_msz_ce">
+                <li>
+                    <p>limit threshold condition</p>
+                </li>
+                <li>
+                    <p>published expressions template</p>
+                </li>
+            </ul></p>
+            <p conref="r_cluster_mgmt_commands.dita#v3485903/p_cnz_nyt_qr"/>
+            <p conref="r_cluster_mgmt_commands.dita#v3485903/p_jbn_4yt_qr"/>
+            
+        </context><steps><step><cmd>Click the <uicontrol>Limiter view</uicontrol> toolbar button. The
+                        <uicontrol>Limiters</uicontrol> view opens.</cmd></step>
+<step><cmd>To create a limiter, click the <uicontrol>Add</uicontrol> button (+).</cmd></step>
+<step><cmd>Enter a name and description for the limiter.</cmd></step>
+<step><cmd>In the <uicontrol>Threshold</uicontrol> fields, enter a threshold value and unit of
+                    measurement.</cmd></step>
+            <step><cmd>If the threshold unit of measurement is <keyword>Connections</keyword>, select a <uicontrol>Unique by</uicontrol>
+                    option.</cmd></step>
+<step><cmd>For all other threshold units of measurement, select
+a flow direction.</cmd></step>
+<step><cmd>You can set up conditions on the Conditions tab and define
+targets on the Targets tab.</cmd></step></steps></taskbody></task>

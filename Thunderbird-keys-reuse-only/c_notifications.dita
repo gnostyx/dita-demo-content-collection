@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<concept id = "i740691"><title>Notifications</title>
+<shortdesc>Overview of alarm notifications.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>alarm notifications</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<conbody>
+        <section>
+            <p conref="c_bitrate.dita#i725137/p_1"/>
+            <p>Notifications are the communication tool for alarms. They follow the structure
+                derived from:<ul id="ul_dxs_www_ce">
+                    <li>
+                        <p>ABC 3413 SNMP-NOTIFICATION-MIB</p>
+                    </li>
+                    <li>
+                        <p>ABC 3014 NOTIFICATION-LOG-MIB</p>
+                    </li>
+                    <li>
+                        <p>ABC 3413 SNMP-TARGET-MIB</p>
+                    </li>
+                    <li>
+                        <p>ABC 3877 Alarm MIB</p>
+                    </li>
+                </ul></p>
+            <p id="p_1">Managers can review alarm models in the Alarm MIB to determine if a
+                notification is of interest for alarm management. If no entries in the
+                alarmModelTable can match a particular notification, then that notification is not
+                relevant to the alarm models defined.</p>
+            <p>Information in the alarm model such as the Notification ID or the description specify
+                which error or warning condition the alarm indicates. If the ITU-ALARM-MIB is also
+                supported, additional information is provided via the probable cause.</p>
+        </section>
+</conbody></concept>

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_mv_quickref_dataview_widget"> 
+  <title>Quick reference: System health indicators</title> 
+  <shortdesc>Health icons indicate the current condition of cluster modules.</shortdesc>
+	<prolog>
+		<metadata>
+			<keywords>
+				<indexterm><term conkeyref="r_productname_variables/ph_prodname"/><indexterm>system health indicators</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog> 
+  <refbody>
+		<section>
+			<table id="table_uw5_y24_mr">
+				<title>System health indicators</title>
+				<tgroup cols="3">
+					<colspec colnum="1" colname="col2" colwidth="1.06*"/>
+					<colspec colnum="2" colname="col3" colwidth="1.0*"/>
+					<colspec colnum="3" colname="col4" colwidth="1.0*"/>
+					<thead>
+						<row>
+							<entry colname="col2">
+								<p>Indicator</p>
+							</entry>
+							<entry colname="col3">
+								<p>Status</p>
+							</entry>
+							<entry colname="col4">
+								<p>Description</p>
+							</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry colname="col2">
+								<p><image conkeyref="r_image_warehouse/image_gpx_n3m_mr" id="image_tbr_qms_mr"
+									/></p>
+							</entry>
+							<entry colname="col3">
+								<p>Healthy</p>
+							</entry>
+							<entry colname="col4">
+								<p>Indicates regular and sustained cluster performance.</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col2">
+								<p><image conkeyref="r_image_warehouse/image_yxw_m3m_mr" id="image_t3f_rms_mr"
+									/></p>
+							</entry>
+							<entry colname="col3">
+								<p>Warning</p>
+							</entry>
+							<entry colname="col4">
+								<p>Indicates that the cluster is not performing optimally or cannot
+									address projected workloads.</p>
+							</entry>
+						</row>
+						<row>
+							<entry colname="col2">
+								<p><image conkeyref="r_image_warehouse/image_dx2_m3m_mr" id="image_l2t_rms_mr"
+									/></p>
+							</entry>
+							<entry colname="col3">
+								<p>Error</p>
+							</entry>
+							<entry colname="col4">
+								<p>Indicates that the cluster has stopped processing a task.</p>
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</section> 
+  </refbody> 
+</reference> 

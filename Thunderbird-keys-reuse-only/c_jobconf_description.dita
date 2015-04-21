@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="conceptId">
+ <title>Description of jobconf command</title>
+ <shortdesc>Use to <cmdname>jobconf</cmdname> to submit live job reconfiguration
+  requests.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>jobconf<indexterm>description</indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <section>
+   <p>The command <cmdname>jojobconf</cmdname> is enabled
+     when <parmname>CLUSTER_LIVE_CONFDIR</parmname> is defined in<filepath> cluster.conf</filepath>. </p>
+   <p>This command allows configuration changes without restarting the cluster or any daemons.
+    Changes are made in active memory, and updated configuration files are written to the directory
+    defined by parameter <parmname>CLUSTER_LIVE_CONFDIR</parmname>. Original configuration files are
+    not changed. Configuration changes made using <cmdname>jobconf</cmdname> cannot be rolled back.
+    Undo unwanted configuration changes by undoing configuration changes with
+    reverse <cmdname>jobconf</cmdname> requests or by manually removing or replacing configuration files
+     in <parmname>CLUSTER_LIVE_CONFDIR</parmname> before restart or reconfiguration. </p>
+   <p>The first <cmdname>jobconf</cmdname> command executed after restart or reconfiguration backs
+    up the files that were loaded into memory. All files that <cmdname>jobconf</cmdname> can change
+    are backed up in <parmname>CLUSTER_LIVE_CONFDIR</parmname> as *.bak files. The backup files
+    always represent the configuration before any <cmdname>jobconf</cmdname> commands were executed. </p>
+   <p>Only cluster administrators can run all <cmdname>jobconf</cmdname> commands. All users can
+     run <cmdname>jobconf hist</cmdname> queries. All <cmdname>jobconf</cmdname> requests must be
+    made from static servers. All configuration files should be free from warning messages before
+    enabling live reconfiguration, and multiple sections in configuration files should be merged
+    where possible. </p>
+   <p>It is recommended that the order of sections and the syntax used in the configuration file
+    templates be maintained in all configuration files used with live reconfiguration.</p>
+   <p>
+    <note type="important">
+     <p>Remove <parmname>LIVE_CONFDIR</parmname> configuration files or merge files into
+       <parmname>CONFDIR</parmname> before upgrading or applying patches.
+      <cmdname>jobconf</cmdname> supports common configuration changes; not all configuration
+      changes can be made using <cmdname>jobconf</cmdname>. </p>
+    </note>
+   </p>
+   <p>When using time-based configuration, changes to global configuration are changed globally, and
+    changes to configuration for the active time window are changed only for the time window.
+    Configuration files changed by <cmdname>jobconf</cmdname>:<ul id="ul_hrv_qdk_ae">
+     <li>
+      <p><filepath>cluster.resources</filepath></p>
+     </li>
+     <li>
+      <p><filepath>cluster.queues</filepath></p>
+     </li>
+     <li>
+      <p><filepath>cluster.users</filepath></p>
+     </li>
+     <li>
+      <p><filepath>cluster.hosts</filepath></p>
+     </li>
+     <li>
+      <p><filepath>live.cluster.</filepath><varname>clustername</varname></p>
+     </li>
+     <li>
+      <p><filepath>cluster.serviceclasses</filepath></p>
+     </li>
+    </ul></p>
+   <p>Making manual changes to the configuration files above while <cmdname>jobconf</cmdname> is
+    enabled automatically disables this feature and further live reconfiguration requests will be
+    rejected. <cmdname>jobconf</cmdname> makes changes to objects, or configuration blocks enclosed
+    in Begin and End statements in the configuration files. One <cmdname>jobconf</cmdname> request
+    can affect several configured objects. </p>
+  </section>
+ </conbody>
+</concept>

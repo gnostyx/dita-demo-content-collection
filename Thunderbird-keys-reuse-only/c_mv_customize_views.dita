@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_mv_customize_views" xml:lang="en-us">
+ <title>Customize Views</title>
+ <shortdesc>Create custom data views that provide analytics specific to the needs of your project.</shortdesc>
+ <prolog>
+  <metadata>
+   <prodinfo>
+    <prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+    <vrmlist>
+     <vrm version="1.1" release="GA" modification="b"/>
+    </vrmlist>
+   </prodinfo>
+  </metadata>
+  <metadata>
+   <keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>customize views tab</indexterm></indexterm></keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <p>In the <uicontrol>Customize Views</uicontrol> page, you can query a range of different entities in order to analyze different aspects of your project and associated cluster activity.
+   You can analyze the tasks, targets, and clusters associated with your project. 
+   This allows you to gain more powerful insights into the status and progress of your project.
+  </p>
+  <fig conkeyref="r_image_warehouse/fig_zxw_2lh_mr" id="fig_l4w_bjm_mr"/>
+ 
+  <p>There are a variety of existing data analysis tasks available for constructing your queries or you can develop your own. Once you have developed your custom data view, you can save, print, or export the results.</p>
+ 
+  <table frame="topbot">
+   <tgroup cols="2">
+    <colspec colname="c2" colnum="1" colwidth="1.77*"/>
+    <colspec colname="c3" colnum="2" colwidth="7*"/>
+    <tbody>
+     <row>
+      <entry><uicontrol>Analysis Pane</uicontrol></entry>
+      <entry>Displays the returned results. The data will be displayed differently and
+       different commands will be available, depending on the type of data analyzed and the
+       types of queries enacted.</entry>
+     </row>
+     <row>
+      <entry>Number of Results</entry>
+      <entry>Displays the number of returned results. A warning is issued when your query
+       returns too many rows. If this happens, adjust your query filters to reduce the number
+       of results.</entry>
+     </row>
+     <row>
+      <entry>Data columns</entry>
+      <entry>Right-click a column heading to determine whether a column is displayed in the
+       report pane.</entry>
+     </row>
+     <row>
+      <entry><uicontrol>Entity Pane</uicontrol></entry>
+      <entry>Lists the data analysis tasks and other parameters - including tasks, clusters,
+       users, and hosts - that are available for analysis.</entry>
+     </row>
+     <row>
+      <entry><uicontrol>Query Pane</uicontrol></entry>
+      <entry>Use the <uicontrol>Query Pane</uicontrol> to set up the queries from your
+       analysis.</entry>
+     </row>
+     <row>
+      <entry>Query filters</entry>
+      <entry>Use the filters in the <uicontrol>Query Pane</uicontrol> tab to set up your
+       query. Click on a filter heading to turn it on or off. Invalid filters display as
+       <i>Warning</i> or <i>Error</i>. Hover your mouse over the filter to view the reason
+       it is invalid.</entry>
+     </row>
+     <row>
+      <entry><uicontrol>Generate</uicontrol></entry>
+      <entry>Click the <uicontrol>Generate</uicontrol> to run your data analysis.</entry>
+     </row>
+     <row>
+      <entry><uicontrol>Export</uicontrol> button</entry>
+      <entry>Click to export your data analysis once it is generated.</entry>
+     </row>
+     <row>
+      <entry><uicontrol>Print</uicontrol> button</entry>
+      <entry>Click to print your data analysis once it is generated.</entry>
+     </row>
+     <row>
+      <entry><uicontrol>Save</uicontrol> button</entry>
+      <entry>Click to save your data analysis as a data view.</entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+ </conbody>
+</concept>
