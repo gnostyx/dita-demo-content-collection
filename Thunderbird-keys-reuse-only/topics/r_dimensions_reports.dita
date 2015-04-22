@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="referenceId">
+  <title>Analysis dimensions</title>
+  <shortdesc>Table of dimensions you can run reports from.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>reports<indexterm>dimensions for running</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <p>
+        <table frame="topbot" colsep="0" rowsep="0" id="table_nlx_lrk_ae">
+          <title>Dimensions or filters for running reports</title>
+          <tgroup outputclass="SimpleTable" cols="2" colsep="0" rowsep="0">
+            <colspec colnum="1" colname="1" colwidth="1.427in" colsep="0"/>
+            <colspec colnum="2" colname="2" colwidth="5.094in" colsep="0"/>
+            <thead>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Measure</p>
+                </entry>
+                <entry colname="2">
+                  <p>Description</p>
+                </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Date</p>
+                </entry>
+                <entry colname="2">
+                  <p>Jobs finish date (shows local time zone).</p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>ISO Week Number</p>
+                </entry>
+                <entry colname="2">
+                  <p>Jobs finish week.</p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Clusters</p>
+                </entry>
+                <entry colname="2">
+                  <p>Hosts running jobs that work together as a single unit.</p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Project</p>
+                </entry>
+                <entry colname="2">
+                  <p>Jobs assigned for specified project. This is the <option>-P</option><varname>
+                      project_name</varname> option in <parmname>jobsub</parmname>.</p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Queue</p>
+                </entry>
+                <entry colname="2">
+                  <p>Jobs submitted to one of the specified queues. This is the
+                      <option>-Q</option><varname> queue_name</varname> option in
+                      <parmname>jobsub</parmname>.</p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Users</p>
+                </entry>
+                <entry colname="2">
+                  <p>One who submits jobs.</p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Host Type</p>
+                </entry>
+                <entry colname="2">
+                  <p>The combination of operating system version and host CPU architecture. </p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Host Model</p>
+                </entry>
+                <entry colname="2">
+                  <p>The combination of host type and CPU speed (CPU factor) of the computer. </p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Host Group</p>
+                </entry>
+                <entry colname="2">
+                  <p>A group of hosts running jobs.</p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Application</p>
+                </entry>
+                <entry colname="2">
+                  <p>Jobs submitted to the specified application profile. This is the
+                      <option>-app</option><varname> application_profile_name</varname> option in
+                      <parmname>jobsub</parmname>.</p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>SLA Tag</p>
+                </entry>
+                <entry colname="2">
+                  <p>Service class where the job runs. This is the <option>-sla </option><varname>
+                      servi ce_class_name</varname> option in <parmname>jobsub</parmname>.</p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Job Exit Status</p>
+                </entry>
+                <entry colname="2">
+                  <p>Traditionally jobs finishing normally report a status of
+                      <systemoutput>Done</systemoutput>, which usually means the job has finished
+                    normally. <systemoutput>Exit</systemoutput> status means that the job has exited
+                    abnormally.</p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Memory Ranking</p>
+                </entry>
+                <entry colname="2">
+                  <p>Memory reservation of jobs.</p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Run Time Ranking</p>
+                </entry>
+                <entry colname="2">
+                  <p>Ranking of run time jobs.</p>
+                </entry>
+              </row>
+              <row rowsep="1">
+                <entry colname="1">
+                  <p>Pending Time Ranking</p>
+                </entry>
+                <entry colname="2">
+                  <p>Ranking of pending jobs. </p>
+                </entry>
+              </row>
+              <row rowsep="0">
+                <entry colname="1">
+                  <p>Number of Processors</p>
+                </entry>
+                <entry colname="2">
+                  <p>Number of slots used by a job.</p>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </section>
+  </refbody>
+</reference>

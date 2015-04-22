@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="v686787">
+  <title>Quick Reference: basic cluster management commands</title>
+  <shortdesc>Basic commands to manage the <term
+      conkeyref="r_productname_variables/ph_prodname"/> hosts status.</shortdesc>
+  <refbody>
+    <section>
+      <p>
+        <table frame="all" id="table_fur_qao_zd">
+          <title>Frequently used commands for cluster management</title>
+          <tgroup cols="2">
+            <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+            <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+            <thead>
+              <row>
+                <entry>
+                  <p>Action</p>
+                </entry>
+                <entry>
+                  <p>Command</p>
+                </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>
+                  <p>Display resource and activity information about the cluster</p>
+                </entry>
+                <entry>
+                  <p><cmdname>showcluster</cmdname></p>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <p>Status of all clusters</p>
+                </entry>
+                <entry>
+                  <p><cmdname>badmin showstatus</cmdname></p>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <p>Cluster restart</p>
+                </entry>
+                <entry>
+                  <p><cmdname>badmin restart -p</cmdname></p>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <p>Host load information</p>
+                </entry>
+                <entry>
+                  <p><cmdname>hostload</cmdname></p>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <p>Accounting information</p>
+                </entry>
+                <entry>
+                  <p><cmdname>hostacct</cmdname></p>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <p>List and status of all hosts in cluster</p>
+                </entry>
+                <entry>
+                  <p><cmdname>listhosts</cmdname></p>
+                </entry>
+              </row>
+              <row>
+                <entry><p>Cluster limit data across all clusters</p></entry><entry><cmdname>hostlimits</cmdname></entry>
+              </row>
+              <row>
+                <entry>
+                  <p>Status of submission and execution clusters</p>
+                </entry>
+                <entry>
+                  <p><cmdname>statclusters</cmdname></p>
+                </entry>
+              </row>
+ 
+
+
+
+
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </section>
+  </refbody>
+</reference>

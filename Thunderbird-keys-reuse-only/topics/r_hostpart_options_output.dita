@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="referenceId">
+  <title>Options and output for hostpart</title>
+  <shortdesc>Short reference description.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>hostpart<indexterm>options and output</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <title>Options</title>
+      <p>
+        <parml>
+          <plentry>
+            <pt>-r</pt>
+            <pd>
+              <p> Displays the entire information tree associated with the host partition
+                recursively. </p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt><varname>host_partition_name</varname></pt>
+            <pd>
+              <p> Displays information about the specified host partitions only. </p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>-h</pt>
+            <pd>
+              <p>Prints command usage to stderr and exits.</p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>-V</pt>
+            <pd>
+              <p>Prints the release version to stderr and exits.</p>
+            </pd>
+          </plentry>
+        </parml>
+      </p>
+    </section>
+    <section>
+      <title>Output</title>
+      <p>
+        <parml>
+          <plentry>
+            <pt>HOST_PARTITION_NAME </pt>
+            <pd>
+              <p> Name of the host partition. </p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>HOSTS</pt>
+            <pd>
+              <p> Hosts or host groups that are members of the host partition. The name of a host
+                group is appended by a slash (/).</p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>USER/GROUP </pt>
+            <pd>
+              <p>Name of users or user groups who have access to the host partition.</p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>SHARES</pt>
+            <pd>
+              <p> Number of shares of resources assigned to each user or user group in this host
+                partition, as configured in the file <filepath>share.hosts</filepath>. The shares
+                affect dynamic user priority for when fairshare scheduling is configured at the host
+                level. </p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt> PRIORITY</pt>
+            <pd>
+              <p>Dynamic user priority for the user or user group. Larger values represent higher
+                priorities. Jobs belonging to the user or user group with the highest priority are
+                considered first for dispatch.</p>
+              <p>In general, users or user groups with larger SHARES, fewer STARTED and RESERVED,
+                and a lower CPU_TIME and RUN_TIME have higher PRIORITY.</p>
+            </pd>
+          </plentry>
+        </parml>
+      </p>
+    </section>
+  </refbody>
+</reference>

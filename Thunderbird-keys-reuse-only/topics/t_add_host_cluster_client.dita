@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/task.dtd">
+<task id="v34o948359034">
+    <title>Adding a host to the cluster as a client</title>
+    <shortdesc>Add any cluster so that it can be monitored.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>hosts<indexterm>add as a client</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody id="v2782666">
+        <context id="v2782667">
+            <p id="v2782668">For any cluster that <term
+                    conkeyref="r_productname_variables/ph_prodname"/> monitors, you
+                need to add the host to the cluster as a client to give access to cluster data.</p>
+            <p id="v3876721">Since you can enable the installer to automatically add the host to the
+                cluster, you can normally skip this task.</p>
+            <p id="v3876722">However, if you did not have the installer add the
+                host to the cluster, and the host is not a server or a client, you need to manually
+                add the host to the cluster as a client to give access to cluster data. You also
+                need to do this to any cluster that you did not use the installer to add.</p>
+        </context>
+        <steps id="v2782669">
+            <step id="v2782670">
+                <cmd id="v2782671">Log into the master host.</cmd>
+            </step>
+            <step id="v4197909">
+                <cmd id="v4197910">If the master host cannot resolve the host name to an IP address,
+                    edit the <filepath id="v4197911">/etc/hosts</filepath> file and add the IP
+                    address and host name of your host.</cmd>
+                <info id="v4197912">
+                    <p id="v4197913">
+                        <note id="v4197914">
+                            <p id="v4197915">If you can successfully ping the host name from the
+                                master host, you can skip this step.</p>
+                        </note>
+                    </p>
+                </info>
+            </step>
+            <step id="v2782675">
+                <cmd id="v2782676">Edit the <filepath id="v2782677"
+                        >host.cluster.</filepath><varname>cluster_name</varname> file and add the
+                    host to the Host section.</cmd>
+            </step>
+            <step id="v2782680">
+                <cmd id="v2782681">Reconfigure the daemon and restart <cmdname id="v2782682"
+                        >daemon</cmdname> to apply your changes to the cluster.</cmd>
+            </step>
+            <step id="v2782688">
+                <cmd id="v2782689">Test that you added the host successfully to the cluster.</cmd>
+                <substeps id="v2782690">
+                    <substep id="v2782691">
+                        <cmd id="v2782692">Log into the host.</cmd>
+                    </substep>
+                    <substep id="v2782693">
+                        <cmd id="v2782694">From the host, use <cmdname id="v2782695"
+                                >telnet</cmdname> to log into the port of your host.</cmd>
+                        <info id="v2782696">
+                            <p id="v2782697">The default port is 6879.</p>
+                        </info>
+                        <stepxmp id="v2782698">
+                            <p id="v2782699">For example, for 7.x clusters,</p>
+                            <p id="v2782700"><userinput>telnet&lt;<varname>Master
+                                    IP</varname>>6879</userinput></p>
+                        </stepxmp>
+                        <stepresult id="v2782702">
+                            <p id="v2782703">If you connect to the IP address of the master host,
+                                you added the host successfully.</p>
+                        </stepresult>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+        <result id="v4182145">
+            <p id="v4182146"><term conkeyref="r_productname_variables/ph_prodname"/> can
+                now monitor the cluster.</p>
+        </result>
+        <postreq id="v4182147">
+            <p id="v4182148">If you want <term
+                    conkeyref="r_productname_variables/ph_prodname"/> to be able to
+                monitor all individual hosts in the cluster, add all hosts in the cluster to <term
+                    conkeyref="r_productname_variables/ph_prodname"/>.</p>
+        </postreq>
+    </taskbody>
+</task>

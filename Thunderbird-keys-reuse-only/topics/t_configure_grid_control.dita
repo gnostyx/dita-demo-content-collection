@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="v4re539854">
+    <title>Enabling grid control</title>
+    <shortdesc>Enable grid control on a cluster to grant access to that cluster. This allows you to
+        run commands on that cluster.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>grid control<indexterm>enable</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Enable grid control to control clusters using the <term
+                    conkeyref="r_productname_variables/ph_clustercontrol"/>
+                <uicontrol>Console</uicontrol>.</p>
+        </context>
+        <steps id="steps_hyt_vzr_yd">
+            <step>
+                <cmd>Click the <uicontrol>Console</uicontrol> tab.</cmd>
+            </step>
+            <step>
+                <cmd>Enable grid control for each applicable user in the host.</cmd>
+                <substeps id="substeps_dzt_vzr_yd">
+                    <substep>
+                        <cmd>Under the Utilities section of the <uicontrol>Console</uicontrol> menu
+                            bar, click <uicontrol>User Management</uicontrol>.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Click the name of the user for which you want to enable grid
+                            control.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>In the <uicontrol>Realm Permissions</uicontrol> section, select the
+                                <uicontrol>Cluster Management</uicontrol> field, if it is currently
+                            unchecked.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Under the Grid Management section of the <uicontrol>Console</uicontrol> menu
+                    bar, click <uicontrol>Clusters</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Enable grid control on clusters.</cmd>
+                <info>
+                    <p>Perform the following for each cluster that you want to control:</p>
+                </info>
+                <substeps id="substeps_lzt_vzr_yd">
+                    <substep>
+                        <cmd>Click the name of the cluster that you want to control.</cmd>
+                        <stepresult>
+                            <p>The <uicontrol>Cluster Edit</uicontrol> page displays.</p>
+                        </stepresult>
+                    </substep>
+                    <substep>
+                        <cmd>Click <uicontrol>Control</uicontrol> tab.</cmd>
+                        <stepresult>
+                            <p>The <uicontrol>User Authentication settings </uicontrol>section
+                                appears.</p>
+                        </stepresult>
+                    </substep>
+                    <substep>
+                        <cmd>In the <uicontrol>User Authentication settings</uicontrol> section,
+                            specify the settings for the Primary administrator account in the master
+                            host.</cmd>
+                        <info>
+                            <p>To ensure that the <term
+                                    conkeyref="r_productname_variables/ph_clustercontrol"
+                                /> component of <term
+                                    conkeyref="r_productname_variables/ph_prodname"/>
+                                has access to the appropriate commands, you must consider the
+                                following:</p>
+                            <p>
+                                <ul id="ul_zzt_vzr_yd">
+                                    <li>
+                                        <p>The specified Primary administrator user name is the name
+                                            of the adminsitrator account in the cluster for which
+                                            you are enabling grid control. You must specify the
+                                            username of the Primary Administrator for the machine.
+                                            You need to set the cluster username before executing
+                                            cluster via advocate, otherwise, invalid credentials/no
+                                            username specified error appears.</p>
+                                        <p>This account is used by the Host-, Queue-, and Job-level
+                                            controls using <cmdname>eauth</cmdname> in the master
+                                            host to invoke the control actions. After saving these
+                                            settings, this user name is created as a disabled Unix
+                                            local account in the host.</p>
+                                    </li>
+                                    <li>
+                                        <p>If you are connecting to the master host using
+                                                <cmdname>ssh</cmdname> private key authentication,
+                                            you need to provide the private key path pointing to the
+                                            private key file. As shown in the prerequisites, the
+                                            public key of this file is added to the
+                                                <filepath>authorized_keys</filepath> file of the
+                                            master host root user.</p>
+                                    </li>
+                                    <li>
+                                        <p>The server top directory is the top-level installation
+                                            directory (<filepath>TOP</filepath>).</p>
+                                    </li>
+                                </ul>
+                            </p>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Test grid control configuration by specifying a cluster at job
+                    submission.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>Submit your job using <userinput>jobsub -m
+                            <varname>cluster_name</varname></userinput>.</cmd>
+                        <stepresult>
+                            <p>The job is forwarded to the selected cluster for scheduling.</p>
+                        </stepresult>
+                    </substep>
+                    <substep>
+                        <cmd>Check the results of the job submission using <userinput>hostacct <varname>cluster_name</varname></userinput></cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                        <cmd>Click <uicontrol>Save</uicontrol> to commit your changes.</cmd>
+                    </step>
+                
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Admin Control Map</title>
+  <topicgroup props="STA" processing-role="resource-only">
+    <keydef keys="r_productname_variables" href="topics/r_productname_variables.dita" type="topic"
+      format="dita"/>    
+    <keydef keys="r_image_warehouse" href="topics/r_image_warehouse.dita" type="topic"
+      format="dita"/>   
+  </topicgroup>
+  <topicgroup props="STB" processing-role="resource-only">
+    <keydef keys="r_productname_variables" href="topics/r_productname_variables_2.dita" type="topic"
+      format="dita"/>    
+    <keydef keys="r_image_warehouse" href="topics/r_image_warehouse_2.dita" type="topic"
+      format="dita"/>   
+  </topicgroup>
+  <topichead navtitle="General Files">
+        <topicref href="topics/c_guide_to_scenarios.dita"/>
+        <topicref href="topics/r_productname_variables.dita"/>
+        <topicref href="topics/r_image_warehouse.dita"/>
+    </topichead>    
+    <topichead navtitle="ThunderBird StormCluster System">
+        <topicref href="topics/c_architecture_overview.dita"/>
+        <topicref href="topics/c_product_about.dita"/>
+        <topicref href="topics/c_security.dita"/>
+        <topicref href="topics/c_ease_of_management.dita"/>
+        <topicref href="topics/c_efficient_resources.dita"/>
+        <topicref href="topics/c_architecture_combined.dita"/>
+        <topicref href="topics/c_components.dita"/>
+        <topicref href="topics/r_supported_platforms.dita"/>
+        <topicref href="topics/r_manage_clusters.dita"/>
+        <topicref href="topics/r_cluster_mgmt_commands.dita"/>
+        <topicref href="topics/r_jobconf.dita"/>
+        <topicref href="topics/r_jtub.dita"/>
+        <topicref href="topics/c_jobconf_description.dita"/>
+        <topicref href="topics/c_jtub_description.dita"/>
+        <topicref href="topics/c_cluster_capacity.dita"/>
+        <topicref href="topics/c_cluster_management.dita"/>
+        <topicref href="topics/c_notification_templates.dita"/>
+        <topicref href="topics/c_cluster_reselection.dita"/>
+        <topicref href="topics/t_troubleshooting_cluster_not_reporting.dita"/>
+        <topicref href="topics/t_troubleshooting_cannot_add_cluster.dita"/>
+        <topicref href="topics/t_activate.dita"/>
+        <topicref href="topics/t_configure_idle_detection.dita"/>
+        <topicref href="topics/t_acknowledge_alert.dita"/>
+        <topicref href="topics/t_add_cluster.dita"/>
+        <topicref href="topics/t_add_host_cluster_client.dita"/>
+        <topicref href="topics/t_view_edit_metadata.dita"/>
+        <topicref href="topics/t_configure_grid_control.dita"/>
+        <topicref href="topics/t_set_memory_limits.dita"/>
+        <topicref href="topics/t_set_host_preference.dita"/>
+        <topicref href="topics/t_adding_classifiers.dita"/>
+        <topicref href="topics/t_adding_columns_dynamic_table.dita"/>
+        <topicref href="topics/t_creating_dynamic_tables.dita"/>
+        <topicref href="topics/t_creating_limiter.dita"/>
+        <topicref href="topics/t_defining_subscriber_attributes.dita"/>
+        <topicref href="topics/t_diverting_hosts.dita"/>
+        <topicref href="topics/t_set_resource_definitions.dita"/>
+        <topicref href="topics/t_registering_file.dita"/>
+        <topicref href="topics/t_set_timeout.dita"/>
+        <topicref href="topics/c_resource_destinations.dita"/>
+        <topicref href="topics/c_about_defining_payload.dita"/>
+        <topicref href="topics/c_attribute_parameter_syntax.dita"/>
+        <topicref href="topics/c_bitrate.dita"/>
+        <topicref href="topics/c_capture-files.dita"/>
+        <topicref href="topics/c_command_class.dita"/>
+        <topicref href="topics/c_command_foundation.dita"/>
+        <topicref href="topics/r_dimensions_reports.dita"/>
+        <topicref href="topics/r_interface-bypass-group-is-in-active-mode.dita"/>
+        <topicref href="topics/r_resource_files.dita"/>
+        <topicref href="topics/r_faulty_physical_drive.dita"/>
+        <topicref href="topics/r_interface_drops.dita"/>
+        <topicref href="topics/r_physical_drive_not_faulted.dita"/>
+        <topicref href="topics/r_logical_drive.dita"/>
+        <topicref href="topics/r_mv_query_filters.dita"/>
+        <topicref href="topics/r_mv_analysis_columns.dita"/>
+    </topichead>
+    <topichead navtitle="MobileView Application">
+        <topicref href="topics/c_mv_about_mobileview.dita"/>
+        <topicref href="topics/c_mv_about_guide.dita"/>
+        <topicref href="topics/c_mv_organization.dita"/>
+        <topicref href="topics/c_mv_workspace_tab.dita"/>
+        <topicref href="topics/c_mv_performance_tab.dita"/>
+        <topicref href="topics/c_mv_diagnostics_tab.dita"/>    
+        <topicref href="topics/c_mv_customize_views.dita"/>
+        <topicref href="topics/c_mv_managing_messages.dita"/>     
+        <topicref href="topics/t_mv_logging_on.dita"/>
+        <topicref href="topics/t_mv_generating_data_views.dita"/>
+        <topicref href="topics/t_mv_troubleshooting_clusters.dita"/>
+        <topicref href="topics/r_mv_query_messages.dita"/>
+        <topicref href="topics/r_mv_system_notifications.dita"/>
+        <topicref href="topics/r_mv_quickref_dataview.dita"/>
+        <topicref href="topics/r_mv_quickref_health_indicators.dita"/>
+        <topicref href="FAQ.dita"/>
+    </topichead>   
+</map>

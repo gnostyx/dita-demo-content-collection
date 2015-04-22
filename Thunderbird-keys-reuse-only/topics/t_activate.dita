@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/task.dtd"><task id="v4178785"><title>Activating <term conkeyref="r_productname_variables/ph_prodname"/></title>
+    <shortdesc>After installing, you must activate your product.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm><term conkeyref="r_productname_variables/ph_prodname"/><indexterm>activation</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<taskbody id="v4181421"><prereq id="v4181434"><p id="v4181436"><ul id="v4181437">
+                    <li id="v4181438">
+                        <p id="v4181439">You have a valid license key for <term
+                            conkeyref="r_productname_variables/ph_prodname"
+                            />.</p>
+                    </li>
+                    <li id="v4181442">
+                        <p id="v4181443">Your local host (the computer that you will use to access
+                            the <term conkeyref="r_productname_variables/ph_prodname"/>
+                            Console) is running Firefox 3.6 or later and Internet Explorer (IE) 8 or
+                            later.</p>
+                    </li>
+                </ul></p></prereq>
+<context id="v4181422"><p id="v4181423">You must perform some initial post-installation and configuration steps for <term
+                    conkeyref="r_productname_variables/ph_prodname"/> to function
+                properly.</p></context>
+<steps id="v4181424">
+            <step>
+                <cmd>Obtain a valid license code from <term
+                        conkeyref="r_productname_variables/ph_companyname"/>.</cmd>
+            </step><step id="v4181446"><cmd id="v4181447">Log into your local host.</cmd>
+</step>
+<step id="v4186820"><cmd id="v4186821">Add the license to your <term
+                        conkeyref="r_productname_variables/ph_prodname"/>
+                    installation.</cmd>
+<substeps id="v4181445"><substep id="v4181448"><cmd id="v4181449">Use your web browser to launch the <term
+                                conkeyref="r_productname_variables/ph_prodname"/>
+                            Console.</cmd>
+<info id="v4181450"><p id="v4181451">The URL for the <term conkeyref="r_productname_variables/ph_prodname"/>
+                                Console is
+                                    <userinput>http://<varname>host</varname>/console</userinput>
+                                where <filepath id="v4190908"><varname>host</varname></filepath> is
+                                either the <term
+                                    conkeyref="r_productname_variables/ph_prodname"/>
+                                host name or IP address.</p>
+<p id="v5396314">The URL for the <term conkeyref="r_productname_variables/ph_persistence"/>
+                                database is
+                                    <userinput>http://<varname>host</varname>/clusterstore</userinput>
+                                where <filepath id="v5396317"><varname>host</varname></filepath> is
+                                either the <term
+                                    conkeyref="r_productname_variables/ph_persistence"/>
+                                host name or IP address.</p>
+</info><stepxmp id="v4181454"><p id="v4181455">For example, if your <term
+                                    conkeyref="r_productname_variables/ph_prodname"/>
+                                host name is <filepath id="v4181456">hostA.example.com</filepath>
+                                with IP address 192.168.1.5, you can use either of the following
+                                URLs to launch the <term
+                                    conkeyref="r_productname_variables/ph_prodname"/>
+                                Console:</p><p id="v4181458"><ul id="v4181459"><li id="v4181460"><p id="v4181461"><userinput>http://hostA.example.com/console</userinput></p></li><li id="v4181463"><p id="v4181464"><userinput>http://192.168.1.5/console</userinput></p></li></ul></p><p id="v5396322"><ul id="v5396323"><li id="v5396324"><p id="v5396325"><userinput>http://hostA.example.com/clusterstore</userinput></p></li><li id="v5396327"><p id="v5396328"><userinput>http://192.168.1.5/clusterstore</userinput></p></li></ul></p></stepxmp></substep>
+<substep id="v4181466"><cmd id="v4181467">Specify the <term conkeyref="r_productname_variables/ph_prodname"/>
+                            administrator name and password.</cmd>
+<info id="v4181468"><p id="v4181469">The default administrator name is <userinput>admin</userinput>, and the default password for this account is <userinput>admin</userinput>.</p>
+</info><stepresult id="v4181472"><p id="v4181473">To see the <uicontrol>License Info</uicontrol> page, click  <menucascade>
+                                    <uicontrol>Admin</uicontrol>
+                                    <uicontrol>License</uicontrol>
+                                </menucascade>.</p>
+</stepresult>
+</substep>
+<substep id="v4181477"><cmd id="v4181478">Add the license file to <term
+                                conkeyref="r_productname_variables/ph_prodname"
+                            />.</cmd>
+<info id="v4181479"><p id="v4181480">You can add the license file to <term
+                                    conkeyref="r_productname_variables/ph_prodname"/>
+                                using one of the following methods:</p>
+<p id="v4186856"><ul id="v4181481"><li id="v4181482"><p id="v4181483">Click <uicontrol>Browse</uicontrol> and navigate to your license file.</p></li><li id="v4181485"><p id="v4181486">Open your license file with a text editor and copy the text to the clipboard, then paste this text to the <uicontrol>License Text</uicontrol> field in the <uicontrol>License Info</uicontrol> page.</p></li></ul></p>
+</info></substep>
+<substep id="v4181489"><cmd id="v4181490">Click <uicontrol>Save</uicontrol> to save the license file to <term
+                                conkeyref="r_productname_variables/ph_prodname"
+                            />.</cmd>
+</substep>
+</substeps>
+</step>
+<step id="v4186868"><cmd id="v4186869">Add clusters for <term
+                        conkeyref="r_productname_variables/ph_prodname"/> to
+                    monitor.</cmd>
+<info id="v4186870"><p id="v4186871">Follow the steps described in the <term
+                            conkeyref="r_productname_variables/ph_prodname"/>
+                        Administration guide for every cluster that you want <term
+                            conkeyref="r_productname_variables/ph_prodname"/> to
+                        monitor.</p>
+</info>
+</step>
+<step id="v4207561"><cmd id="v4207562">Set up the <term conkeyref="r_productname_variables/ph_persistence"/>
+                    database on a remote host.</cmd>
+<info id="v4207563"><p id="v4207564">By default, the <term conkeyref="r_productname_variables/ph_prodname"/>
+                        host runs using a single <term
+                            conkeyref="r_productname_variables/ph_persistence"/> database
+                        host. You may choose to set up multiple <term
+                            conkeyref="r_productname_variables/ph_persistence"/> database
+                        hosts to distribute activity across the cluster.</p>
+<p id="v4207565">Follow the steps in the <term
+                            conkeyref="r_productname_variables/ph_prodname"/>
+                        Administration guide to set up the database on a remote host.</p>
+</info>
+</step>
+<step id="v4271511"><cmd id="v4271512">Optional. Click the <uicontrol>Admin</uicontrol> tab to verify and configure the
+                    date and time of your <term
+                        conkeyref="r_productname_variables/ph_prodname"/> host.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>

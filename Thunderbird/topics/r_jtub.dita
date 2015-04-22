@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="referenceId">
+  <title>Command: jtub</title>
+  <shortdesc>Specifies the <cmdname>jtub</cmdname> and lists the options for the job configuration
+    command.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>jtub<indexterm>options</indexterm></indexterm>
+        <indexterm>syntax</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn>
+      <title>Synopsis</title><synph>
+      <kwd>jtub</kwd> [<kwd>-H</kwd>] [<kwd>-r</kwd>|<kwd>-d</kwd>]
+      [<kwd>-m</kwd>&nbsp;"<var>ver_comment</var>"] [[[<kwd>-T</kwd>&nbsp;<var>time_event</var>]
+      ...] [[<kwd>-F</kwd>&nbsp;"<var>file_event</var>"] ...]
+      [[<kwd>-p</kwd>&nbsp;"<var>proxy_event</var>"] ...]
+      [<kwd>-C</kwd>&nbsp;<var>combination_type</var>]] <var>flow_file_name</var>
+    </synph><synph>
+      <kwd>jtub</kwd> [<kwd>-h</kwd>]|[<kwd>-V</kwd>] </synph>
+    </refsyn>
+    <section>
+      <title>Options</title>
+      <p>
+        <parml outputclass="sidehead">
+          <plentry>
+            <pt>-H</pt>
+            <pd>
+              <p>Submits the flow definition on hold. No automatic events can trigger this
+                definition until it has been explicitly released. Use this option when the flow
+                definition is complete, but you are not yet ready to start running flows on its
+                defined schedule. When a definition is on hold, it can still be triggered manually,
+                such as for testing purposes.</p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>-r</pt>
+            <pd>
+              <p>Replace. Specifies that, if a flow definition with the same name already exists, it
+                is replaced with the definition being submitted. If you do not specify
+                  <cmdname>-r</cmdname> and the flow definition already exists, the submission
+                fails.</p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>-d</pt>
+            <pd>
+              <p>Duplicate. Specifies that, if a flow definition with the same name already exists,
+                a unique number is appended to the flow definition name to make it unique. The new
+                name of the flow definition is displayed in the confirmation message when the flow
+                definition is successfully submitted.</p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>-m&nbsp;"<varname>ver_comment</varname>"</pt>
+            <pd>
+              <p>Submit the flow with version comments. <cmdname>jsub</cmdname> returns a flow
+                version number after each successful submission.</p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt>-T&nbsp;<varname>time_event</varname></pt>
+            <pd>
+              <p>Specifies to automatically trigger a flow when the specified time events are true.
+                Specify the time event in the following format:</p>
+              <p>[<varname>cal_name</varname>[<userinput>@</userinput><varname>username</varname>]<userinput>:</userinput>]<varname>hour</varname><userinput>:</userinput><varname>minute</varname>[<userinput>%</userinput><varname>duration</varname>]][<userinput>#</userinput><varname>occurences</varname>][<userinput>+</userinput><varname>time_zone_id</varname>]</p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt><varname>cal_name</varname></pt>
+            <pd>
+              <p>Specify the name of an existing calendar, which is used to calculate the days on
+                which the flow runs. If you do not specify a calendar name, it defaults to
+                Daily@Sys. If you do not specify a user name, the submitter’s user name is assumed.
+                Therefore, the calendar must exist under that user name.</p>
+            </pd>
+          </plentry>
+          <plentry>
+            <pt><varname>hour</varname>:<varname>minute</varname></pt>
+            <pd>
+              <p>Specify the time within each calendar day that the time event begins. You can
+                specify the time in the following formats:</p>
+            </pd>
+          </plentry>
+        </parml>
+      </p>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<reference id = "i740893"><title>Faulty physical drive</title>
+<shortdesc>Provides a notification on the physical drive.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>faulty physical drive</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<refbody><section id = "i740881"><p>Faulty/not faulty physical drive notifications share these MIB references: <ul
+                    conref="r_logical_drive.dita#i740750/ul_1" id="ul_frd_sb4_mr">
+                    <li/>
+                </ul></p><p>The
+faulted physical drive notification is sent when a physical device
+enters a state other than online or hot spare.</p>
+    <p><table frame = "all"
+    colsep = "1" rowsep = "0">
+<tgroup cols = "2" colsep = "1" rowsep = "0" outputclass = "Basic">
+<colspec colnum = "1" colname = "1" colwidth = "20*"/>
+<colspec colnum = "2" colname = "2" colwidth = "80*"/>
+<thead>
+<row rowsep = "0">
+<entry colname = "1" colsep = "0">Severity</entry>
+<entry colname = "2">Description</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" colsep = "0"><p>Warning</p></entry>
+<entry colname = "2"><p>Drive is ready</p></entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" colsep = "0"><p>Minor</p></entry>
+<entry colname = "2"><p>Drive is rebuilding</p></entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" colsep = "0"><p>Major</p></entry>
+<entry colname = "2"><p>Drive has failed</p></entry>
+</row>
+</tbody>
+</tgroup></table></p>
+    <p><table frame = "all" colsep = "1" rowsep = "0">
+<tgroup cols = "2" colsep = "1" rowsep = "0" outputclass = "Basic">
+<colspec colnum = "1" colname = "1" colwidth = "20*"/>
+<colspec colnum = "2" colname = "2" colwidth = "80*"/>
+<thead>
+<row rowsep = "0">
+<entry colname = "1" colsep = "0">Profile</entry>
+<entry colname = "2">Description</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" colsep = "0"><p>MIB reference</p></entry>
+    <entry colname = "2"><p>ALPHABET-RAIDMON-MIB</p><p>SNMPv2-MIB<ul
+        conref="r_logical_drive.dita#i740750/ul_1">
+        <li/>
+    </ul></p></entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" colsep = "0"><p>Trap Name</p></entry>
+<entry colname = "2"><p>svRaidMonPhysicalDeviceFaultedNotification</p></entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" colsep = "0"><p>Varbinds</p></entry>
+<entry colname = "2"><p>svClusterConfigName</p></entry>
+</row>
+</tbody>
+</tgroup></table></p></section></refbody></reference>

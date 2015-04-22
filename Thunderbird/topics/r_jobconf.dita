@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="referenceId">
+  <title>Command: jobconf</title>
+  <shortdesc>Submits live job reconfiguration requests, updating configuration settings in active
+    memory without restarting daemons. </shortdesc>
+  <refbody>
+    <refsyn><title>Synopsis</title><synph><kwd>jobconf</kwd> <var>action</var> <var>object_type=object_name</var> "<var>value_pair</var>[;<var>value_pair</var>...]"]
+          <kwd>[-c "comment"</kwd>] <kwd>[-f</kwd>]
+            <synph><kwd>jobconf</kwd> <kwd>hist</kwd> <kwd>[-l|-w</kwd>]
+            [<kwd>-o </kwd><var>object_type</var>] [<kwd>-u</kwd><var> user_name</var>]
+            [<kwd>-T</kwd><var> time_period</var>] [<kwd>-a</kwd> <var>action</var>]
+            [<kwd>-f</kwd> <var>config_file</var>] [<var>history_file</var>]</synph>
+        <synph><kwd>jobbconf   disable
+            </kwd></synph><synph><kwd>bconf -h</kwd> [<var>action</var> [<var>object_type</var>]]</synph>
+        <synph><kwd>jobbconf   -V</kwd>
+        </synph>
+      </synph></refsyn>
+    <refsyn><title>Action synopsis</title><synph>
+        <kwd>addmember usergroup</kwd> | <kwd>hostgroup</kwd> | <kwd>queue</kwd> | <kwd>limit</kwd> | <kwd>gpool=</kwd><var>object_name</var> "<var>value_pair</var>[;<var>value_pair ...</var>]"
+          [<kwd>-c</kwd> "<var>comment</var>"]   </synph></refsyn>
+  </refbody>
+</reference>

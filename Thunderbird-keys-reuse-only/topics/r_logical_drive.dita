@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<reference id = "i740750"><title>Logical drive strength</title>
+<shortdesc>Provides a notification on the optimal health of logical drives.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>logical drive strength</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <refbody><section id = "i740738"><p>Logical drive strength (strong/weak) notifications share these MIB references:<ul id="ul_1">
+                    <li>
+                        <p><term conkeyref="r_productname_variables/ph_prodname"
+                            />sysName</p>
+                    </li>
+                    <li>
+                        <p><term conkeyref="r_productname_variables/ph_prodname"
+                            />svSeverity</p>
+                    </li>
+                    <li>
+                        <p>svRaidMonDataLogicalDriveDeviceName</p>
+                    </li>
+                    <li>
+                        <p>svRaidMonDataLogicalDriveRaidLevel</p>
+                    </li>
+                    <li>
+                        <p>svRaidMonDataPhysicalDriveRaidState</p>
+                    </li>
+                </ul></p><p>A strong logical drive notification is sent when the state of the logical drive returns to
+                    optimal.<table frame="all" colsep="1" rowsep="0">
+                    <tgroup cols="2" colsep="1" rowsep="0" outputclass="Basic">
+                        <colspec colnum="1" colname="1" colwidth="20*"/>
+                        <colspec colnum="2" colname="2" colwidth="80*"/>
+                        <thead>
+                            <row rowsep="0">
+                                <entry colname="1" colsep="0">Profile</entry>
+                                <entry colname="2">Description</entry>
+                            </row>
+                            <row rowsep="1">
+                                <entry colname="1" colsep="0">
+                                    <p>Trap Name</p>
+                                </entry>
+                                <entry colname="2">
+                                    <p>svRaidMonLogicalDriveStrongStateNotification</p>
+                                </entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row rowsep="0">
+                                <entry colname="1" colsep="0">
+                                    <p>Varbinds</p>
+                                </entry>
+                                <entry colname="2">
+                                    <p>svClusterConfigName</p>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table></p>
+        <p>A weak logical drive notification is sent when the state of the logical drive is anything other
+            than optimal.</p>
+        
+        <p>  
+            <table frame="all" colsep="1" rowsep="0">
+                <tgroup cols="2" colsep="1" rowsep="0" outputclass="Basic">
+                    <colspec colnum="1" colname="1" colwidth="20*"/>
+                    <colspec colnum="2" colname="2" colwidth="80*"/>
+                    <thead>
+                        <row rowsep="0">
+                            <entry colname="1" colsep="0">Severity</entry>
+                            <entry colname="2">Description</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry colname="1" colsep="0">
+                                <p>Warning</p>
+                            </entry>
+                            <entry colname="2">
+                                <p>Drive is rebuilding</p>
+                            </entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row rowsep="1">
+                            <entry colname="1" colsep="0" rowsep="0">
+                                <p>Major</p>
+                            </entry>
+                            <entry colname="2" rowsep="0">
+                                <p>Drive has degraded</p>
+                            </entry>
+                        </row>
+                        <row rowsep="0">
+                            <entry colname="1" colsep="0">
+                                <p>Critical</p>
+                            </entry>
+                            <entry colname="2">
+                                <p>Drive has either failed or is offline</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+        <p>
+            <table frame="all" colsep="1" rowsep="0">
+                <tgroup cols="2" colsep="1" rowsep="0" outputclass="Basic">
+                    <colspec colnum="1" colname="1" colwidth="20*"/>
+                    <colspec colnum="2" colname="2" colwidth="80*"/>
+                    <thead>
+                        <row rowsep="0">
+                            <entry colname="1" colsep="0">Profile</entry>
+                            <entry colname="2">Description</entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry colname="1" colsep="0">
+                                <p>Trap Name</p>
+                            </entry>
+                            <entry colname="2">
+                                <p>svRaidMonLogicalDriveWeakStateNotification</p>
+                            </entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row rowsep="0">
+                            <entry colname="1" colsep="0">
+                                <p>Varbinds</p>
+                            </entry>
+                            <entry colname="2">
+                                <p>svClusterConfigName</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+    </section></refbody></reference>

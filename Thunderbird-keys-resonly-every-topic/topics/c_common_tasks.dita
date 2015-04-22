@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_zrd_gld_5r">
+ <title>Common Tasks</title>
+ <shortdesc>The tasks common to all configurations of the product.</shortdesc>
+  <conbody>
+    <p>Use <xref
+      keyref="mv_quickref_dataview"/> and <xref
+      keyref="mv_quickref_health_indicators"/> for reference while performing these tasks.</p>
+  </conbody>
+</concept>

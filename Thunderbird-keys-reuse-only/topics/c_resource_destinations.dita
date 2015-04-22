@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+<?Fm Validation Off?>
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<concept id = "i713535"><title>Resource actions and destinations</title>
+    <shortdesc>The resource action enables packet-by-packet copying with optional
+        encapsulation.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>resource<indexterm>action</indexterm><indexterm>destinations</indexterm></indexterm>
+                
+            </keywords>
+        </metadata>
+    </prolog>
+<conbody>
+        <section>
+            <p>
+                <table frame="topbot" colsep="0" rowsep="0" id="table_yiv_fvw_ce">
+                    <title>Capture  ports</title>
+                    <tgroup cols="2" colsep="0" rowsep="0" outputclass="Basic">
+                        <colspec colnum="1" colname="1" colwidth="1*" colsep="0"/>
+                        <colspec colnum="2" colname="2" colwidth="4.77*" colsep="0"/>
+                        <thead>
+                            <row rowsep="1">
+                                <entry colname="1">Capture port</entry>
+                                <entry colname="2">Description</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row rowsep="0">
+                                <entry colname="1">
+                                    <p>From client</p>
+                                </entry>
+                                <entry colname="2">
+                                    <p>All packets are received from the client before any policy is
+                                        applied</p>
+                                </entry>
+                            </row>
+                            <row rowsep="0">
+                                <entry colname="1">
+                                    <p>To server</p>
+                                </entry>
+                                <entry colname="2">
+                                    <p>All packets are transmitted in the direction of the server
+                                        after policy has been applied. This is exactly what the
+                                        server will receive.</p>
+                                </entry>
+                            </row>
+                            <row rowsep="0">
+                                <entry colname="1">
+                                    <p>From server</p>
+                                </entry>
+                                <entry colname="2">
+                                    <p>All the packets are received from the server before policy
+                                        has been applied</p>
+                                </entry>
+                            </row>
+                            <row rowsep="0">
+                                <entry colname="1">
+                                    <p>To client</p>
+                                </entry>
+                                <entry colname="2">
+                                    <p>All packets generated are transmitted in the direction of the
+                                        client after policy has been applied. This is exactly what
+                                        the client will receive.</p>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </p>
+            <p>The copied packets can be sent to up to four specified destinations. In this example,
+                the packet is weed to two databases — one on the same layer 2 network and one that
+                is multiple hops away on a different layer 2 network:</p>
+            <p>Weed traffic can be balanced across a group of destinations by specifying a
+                destination group.
+                <ul id="ul_pkv_fvw_ce">
+                    <li>
+                        <p>The enforced maximum number of destinations is 1024 individual
+                            destinations. If you are resourcing by IP, you can select up to 1024
+                            different IPs and send each IP to a different destination. This limit is
+                            across resource destinations.</p>
+                    </li>
+                    <li>
+                        <p>Resource actions support a maximum of 4096 individual headers.</p>
+                    </li>
+                </ul></p>
+        </section></conbody></concept>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="map_65EC78EE098944839E0FBDDE941D43BD">
+  <title>Customer Proposal Template</title>
+  <topicgroup props="STA" processing-role="resource-only">
+    <keydef keys="r_productname_variables" href="topics/r_productname_variables.dita" type="topic"
+      format="dita"/>
+    <keydef keys="r_image_warehouse" href="topics/r_image_warehouse.dita" type="topic" format="dita"/>
+  </topicgroup>
+  <topicgroup props="STB" processing-role="resource-only">
+    <keydef keys="r_productname_variables" href="topics/r_productname_variables_2.dita" type="topic"
+      format="dita"/>
+    <keydef keys="r_image_warehouse" href="topics/r_image_warehouse_2.dita" type="topic" format="dita"/>
+  </topicgroup>
+  <topichead navtitle="Introduction">
+    <topicref href="topics/c_architecture_combined.dita"/>
+    <topicref href="topics/c_architecture_overview.dita" navtitle="About capture file names"/>
+  </topichead>
+  <topichead navtitle="Standard RFP question responses">
+    <topicref href="proposal_standard_responses.dita"/>
+  </topichead>
+</map>

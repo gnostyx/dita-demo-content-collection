@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="conceptId">
+ <title>Ease of management</title>
+ <shortdesc>The <term conkeyref="r_productname_variables/ph_prodname"/> solution has
+  been designed for ease of management.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>management<indexterm>overview</indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <section id="section_mzb_jbz_qr">
+   <title>Delegation of administrative rights</title>
+   <p id="p_tct_h3c_rr">Rather than relying on a single cluster administrator for your <term
+     conkeyref="r_productname_variables/ph_companyname"/>
+    <term conkeyref="r_productname_variables/ph_prodname"/> deployment, you can now
+    delegate administrative rights within <term
+     conkeyref="r_productname_variables/ph_clustercontrol"/> to trusted people
+    throughout your organization. With fine-grained control, you can easily establish limits for
+    administrators to slowly gain more responsibility throughout the <term
+     conkeyref="r_productname_variables/ph_prodname"/> system. By enabling project
+    managers and business owners to control their own workloads and resource allocation policies,
+    users enjoy better service and the burden on cluster administrators is substantially
+    reduced.</p>
+   <p id="p_y5d_33c_rr">An administrator can delegate specific sub-sets of rights to
+    sub-administrators, with the ability to manage other users within their domain or to project
+    owners with limited control over data resources within their domain.</p>
+  </section>
+  <section id="section_qkk_jbz_qr">
+   <title>Live customization </title>
+   <p id="p_srn_33c_rr">Administrators can quickly and easily make changes to a wide range of <term
+     conkeyref="r_productname_variables/ph_prodname"/> system parameters and <term
+     conkeyref="r_productname_variables/ph_clusterview"/> reporting definitions and
+    they can do so at any time “on the fly” without the need to restart cluster daemons. This means
+    that you no longer have to wait for scheduled maintenance periods to make configuration changes
+    to your cluster resources. This “live” reconfiguration capability boosts productivity, and
+    minimizes downtime while reacting more swiftly to changing business priorities.</p>
+  </section>
+ </conbody>
+</concept>

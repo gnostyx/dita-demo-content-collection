@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>Key definitions for images in the Images2 directory</title>
+  <keydef
+    keys="Architecture"
+    href="Architecture.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Architecture.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Customization"
+    href="Customization.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Customization.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Login"
+    href="Login.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Login.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Marketing"
+    href="Marketing.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Marketing.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Performance"
+    href="Performance.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Performance.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Troubleshooting"
+    href="Troubleshooting.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Troubleshooting.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Workspace"
+    href="Workspace.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Workspace.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="error_icon a_error_icon"
+    href="topics/a_error_icon.png"
+    format="png">
+    <topicmeta>
+      <navtitle>a_error_icon.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="operational_icon a_operational_icon"
+    href="topics/a_operational_icon.png"
+    format="png">
+    <topicmeta>
+      <navtitle>a_operational_icon.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="warning_icon a_warning_icon"
+    href="topics/a_warning_icon.png"
+    format="png">
+    <topicmeta>
+      <navtitle>a_warning_icon.png</navtitle>
+    </topicmeta>
+  </keydef>
+</map>

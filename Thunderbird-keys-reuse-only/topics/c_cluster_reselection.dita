@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="v3248232">
+ <title>Cluster reselection rules</title>
+ <shortdesc>Set rules on when jobs are forwarded to clusters that have available
+  resources.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>cluster<indexterm>reselection</indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <section>
+   <p>Jobs are forwarded to the execution cluster based on swp, mem, type, ncpu, model, boolean
+    resources, cpu factors, and user-defined shared resource requirements. In some cases, however,
+    jobs may reach the execution cluster and find other required resources are not available. The
+    cluster reselection policy sets the length of time jobs pend, and allows returned jobs to be
+    forwarded to other execution clusters that may have different resources available.</p>
+   <p>Intelligence is built into execution clusters so that in the event that required resources are
+    no longer available on a given execution cluster, the job will be automatically forwarded to an
+    execution cluster that does have the required resources.</p>
+   <p>The time forwarded jobs spend in being forwarded between execution clusters before returning to the submission cluster
+    for rescheduling can be configured for each queue.</p>
+   <p>The wait time before the same job is returned to the same execution cluster can also be set.
+    Both values are defined in <parmname>MAX_RSCHED_TIME</parmname> in
+     <filepath>host.queues</filepath> and are multiplied by <parmname>MBD_SLEEP_TIME</parmname>
+     (<filepath>host.params</filepath>):</p>
+   <p><userinput>MAX_RSCHED_TIME = timeout [wait_time]</userinput></p>
+   <p>
+    <parml>
+     <plentry>
+      <pt>timeout </pt>
+      <pd>
+       <p>timeout*<parmname>MBD_SLEEP_TIME</parmname> determines how long a job stays pending in the
+        execution cluster before returning to the submission cluster.</p>
+       <p> The timeout value can be customized based on average job runtime and
+         <parmname>XL_RES_RATIO</parmname> for the cluster. For example:</p>
+       <p>timeout = MAX(job_runtime, (<parmname>XL_RES_RATIO</parmname> - 1) * job_runtime) * 2 /
+         <parmname>MBD_SLEEP_TIME</parmname></p>
+      </pd>
+     </plentry>
+     <plentry>
+      <pt>wait time</pt>
+      <pd>
+       <p>wait_time*<parmname>MBD_SLEEP_TIME</parmname> determines how long the submission cluster
+        waits for other execution clusters to become available before returning to the same
+        execution cluster. The wait time only applies when there are execution clusters the job has
+        not yet tried.</p>
+      </pd>
+     </plentry>
+    </parml>
+   </p>
+  </section>
+ </conbody>
+</concept>

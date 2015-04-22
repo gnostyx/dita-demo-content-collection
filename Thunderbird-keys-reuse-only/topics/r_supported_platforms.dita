@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="referenceId">
+  <title>Hardware and software requirements</title>
+  <shortdesc>List of hardware and software requirements.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>requirements<indexterm>hardware</indexterm><indexterm>software</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <table frame="all" id="table_cpb_upj_ae">
+        <title>Hardware and software requirements for <term
+            conkeyref="r_productname_variables/ph_prodname"/></title>
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+          <colspec colname="c2" colnum="2" colwidth="2.0*"/>
+          
+          <tbody>
+            <row>
+              <entry>
+                <p>Supported hardware platforms for all <term
+                    conkeyref="r_productname_variables/ph_prodname"/> components</p>
+              </entry>
+              <entry>
+                <p>
+                  <ul id="ul_toy_wpj_ae">
+                    <li>
+                      <p>Linux® on x64 architectures including RHEL 2.1, 3, 4, 5.x, 6, SUSE Linux
+                        Enterprise Server including SLES 8, 9, 10, 11 and generic Linux
+                        distributions using 2.6 or greater kernels with glibc 2.3 (Debian, CentOS,
+                        Ubuntu, Scientific Linux and others).</p>
+                    </li>
+                    <li>
+                      <p>Linux on ia64 systems including RHEL 4,5, SLES 9,10,11 and generic Linux
+                        distributions using 2.6 kernels and glibc 2.3 and later.</p></li> 
+                     <li><p>Microsoft Windows® on x32 &amp; x64 platforms including Windows 8, Windows 7, Windows Vista,
+                        Windows XP, Windows Server 2003 &amp; 2008 standard &amp; enterprise
+                        editions, Windows HPC server 2008 </p></li>
+                    <li>
+                      <p>MacOS X 10.4.x, 10.5.x on Apple hardware </p>
+                    </li>
+                    <li>
+                      <p>HP-UX 11i1, 11i2, and 11i3 on HP hardware </p>
+                    </li>
+                    <li>
+                      <p>IBM AIX 5.3,6 &amp; 7 on IBM hardware</p>
+                    </li>
+                    <li>
+                      <p>Sun/Oracle Solaris 7,8,9 on SPARC 32 &amp; 64 bit, Solaris 10 on SPARC 64
+                        bit and x86_64 systems</p>
+                    </li>
+                    <li>
+                      <p>Cray Unicos/Ic 2.x</p>
+                    </li>
+                  </ul>
+                </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p><term conkeyref="r_productname_variables/ph_prodname"/> Master host
+                  conifguration</p>
+              </entry>
+              <entry>
+                <p>
+                  <ul id="ul_jki_iqj_ae">
+                    <li>
+                      <p>Minimum 5 GB of physical memory (RAM) recommended </p>
+                    </li>
+                    <li>
+                      <p>Available SWAP space three times physical memory</p>
+                    </li>
+                    <li>
+                      <p>100 GB of free disk space</p>
+                    </li>
+                    <li>
+                      <p>Minimum of two high-speed network interfaces</p>
+                    </li>
+                    <li>
+                      <p>Secondary master host recommended in large clusters (more than 2000
+                        hosts)</p>
+                    </li>
+                  </ul>
+                </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p><term conkeyref="r_productname_variables/ph_prodname"/> Computation
+                  host conifguration</p>
+              </entry>
+              <entry>
+                <p>
+                  <ul id="ul_cyw_nqj_ae">
+                    <li>
+                      <p>2 GB of physical memory (RAM) recommended </p>
+                    </li>
+                    <li>
+                      <p>80 GB of free disk space</p>
+                    </li>
+                    <li>
+                      <p>Minimum one high-speed network interface</p>
+                    </li>
+                  </ul>
+                </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

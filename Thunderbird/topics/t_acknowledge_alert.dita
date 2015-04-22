@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="v435934">
+    <title>Acknowledging threshold alerts</title>
+    <shortdesc>Set configurations to acknowledge all threshold alerts.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>alerts<indexterm>acknowledgements</indexterm></indexterm>
+                <indexterm>thresholds<indexterm>status</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <steps id="steps_xaa_hcs_yd">
+            <step>
+                <cmd>Click the <uicontrol>Threshold</uicontrol> tab.</cmd>
+                <info>
+                    <p>If there are several thresholds, use the <uicontrol>Threshold
+                            Status</uicontrol> menu bar to filter the threshold view.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Under the Management section of the <uicontrol>Console</uicontrol> menu bar,
+                    click <uicontrol>Thresholds</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Click the checkbox at the right side of each threshold with triggered alerts
+                    that you want to acknowledge.</cmd>
+            </step>
+            <step>
+                <cmd>In the <uicontrol>Choose an action</uicontrol> field, select
+                    <uicontrol>Acknowledge</uicontrol> and click
+                    <uicontrol>Go</uicontrol>.</cmd>
+                <info>If a long period of time elapses after initiating an action, it is possible
+                    that there is a circular reference between the associated actions. Check the
+                    definitions of all interdependent actions to confirm that there are no circular
+                    references if you suspect that there is a problem.</info>
+            </step>
+            <step>
+                <cmd>In the Acknowledge Message window, specify an acknowledgement reason message
+                    (or leave blank for no message) and click <uicontrol>Yes</uicontrol> to
+                    acknowledge the triggered alerts for all thresholds.</cmd>
+                <stepresult>
+                    <p>This message is recorded in the <filepath>cluster.log</filepath>, threshold
+                        log database table, and syslog files.</p>
+                    <p>For each selected threshold, the <uicontrol>Acknowledge</uicontrol> icon changes into the <uicontrol>Reset
+                        Acknowledge</uicontrol> icon.</p>
+                </stepresult>
+            </step>
+        </steps>
+        <postreq>
+            <p>You can repeat the above steps, but select <uicontrol>Reset
+                Acknowledgement</uicontrol> in the <uicontrol>Choose an action</uicontrol> field
+                to allow the thresholds to resend future email and system log notifications with
+                each triggered alert for the threshold.</p>
+            <p>Click <uicontrol>Reset Acknowledge</uicontrol> next to the threshold to allow the
+                threshold to resend future email and syslog notifications with each triggered alert
+                for the threshold.</p>
+        </postreq>
+    </taskbody>
+</task>

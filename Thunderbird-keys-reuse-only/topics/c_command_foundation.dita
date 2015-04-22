@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<concept id = "i711047"><title>Command foundation</title>
+    <shortdesc>One or more words at the command prompt.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>command foundation</indexterm>
+                <indexterm>CLI prompt</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<conbody>
+        <section>
+            <p>The command foundation is a minimum of one word at the CLI prompt that combines at
+                least one attribute, and resolves to a command itself, whether or not there are more
+                optional attributes and/or parameters
+                available:<codeblock>
+cli> show alarms
+</codeblock></p>
+            <p conref="c_command_class.dita#i710794/p_1"/>
+        </section>
+<section id = "i711016"><title>Syntax</title><p>The syntax section
+lists all the variations of the command foundation with available
+attributes and parameters, as in:<codeblock>
+show alarms active severity all
+show alarms active severity critical
+show alarms active severity major
+show alarms active severity minor
+show alarms active severity warning
+</codeblock></p></section>
+<section id = "i711021"><title>Attributes</title><p>Attributes that
+concatenate with the command foundation are listed in a table.</p></section>
+<section id = "i711025"><title>Sub-attributes</title><p>Sub-attributes
+are concatenated with attributes and listed in a table.</p></section>
+<section id = "i711029"><title>Parameters</title><p>Parameters that
+concatenate with attributes, sub-attributes, and other parameters
+are listed in a table.</p></section>
+<section id = "i711033"><title>Output</title><p>Lists and defines
+the output columns provided by the command foundation.</p></section>
+<section id = "i711037"><title>Reference</title><p>Provides references for terminology expressed in command output. Usually an RFC, internal MIB, or
+                industry standard specifications, as in <xref scope="external" format="html"
+                    href="http://www.acpi.info/spec10b.htm"> http://www.acpi.info/spec10b.htm
+                </xref>.</p></section></conbody></concept>

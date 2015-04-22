@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<task id = "i713467"><title>Diverting to host destinations</title>
+    <shortdesc/>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>diversion<indexterm>to host destinations</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<taskbody>
+        <context>
+            <p>To divert to a host destination when your packets need to be backed up on a separate
+                server.</p>
+        </context><steps>
+            <step conref="t_registering_file.dita#i713528/s_1">
+                <cmd/>
+            </step>
+            <step conref="t_registering_file.dita#i713528/s_2">
+                <cmd/>
+            </step>
+            <step conref="t_registering_file.dita#i713528/s_3">
+                <cmd/>
+            </step>
+<step><cmd>For the Route option, select <uicontrol>With headers</uicontrol>. </cmd>
+                <info>
+                    <p>This is the default selection.</p>
+                </info></step>
+<step><cmd>Select a destination type.</cmd>
+                <stepresult>
+                    <p> The displayed header size changes based on the type selected.</p>
+                </stepresult></step>
+<step><cmd>To indicate how much of the original message to include in the payload, drag the
+                        <uicontrol>Payload Slider</uicontrol>.</cmd></step>
+<step><cmd>On the payload diagram, click the header type. </cmd>
+                <stepresult>
+                    <p>The input fields displayed below the payload diagram vary with the header
+                        selected.</p>
+                </stepresult></step>
+<step><cmd>Complete the fields for the header selected.</cmd></step>
+            <step conref="t_registering_file.dita#i713528/s_10">
+                <cmd/>
+            </step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step></steps>
+        <result audience="expert" outputclass="pdf">
+        Feedback from designated host servers will confirm that the diversion configuration setting have been loaded.
+        </result></taskbody></task>

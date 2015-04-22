@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title><term
+    conkeyref="productname_variables/ph_prodname"/> User Guide (Keys Reuse Only)</title>
+  <topicgroup product="STA" processing-role="resource-only">
+    <mapref href="Images/images-keys.ditamap"/>
+    <keydef keys="productname_variables" href="topics/r_productname_variables.dita" type="topic"
+      />    
+    <keydef keys="image_warehouse" href="topics/r_image_warehouse.dita" type="topic"
+      />   
+  </topicgroup>
+  <topicgroup product="STB" processing-role="resource-only">
+    <mapref href="Images2/images2-keys.ditamap"/>
+    <keydef keys="productname_variables" href="topics/r_productname_variables_2.dita" type="topic"
+      />    
+    <keydef keys="image_warehouse" href="topics/r_image_warehouse_2.dita" type="topic"
+      />   
+  </topicgroup>
+  <topicref keys="introduction" href="topics/c_introduction.dita">
+        <topicref keys="mv_about_mobileview" href="topics/c_mv_about_mobileview.dita">
+            <topicref keys="mv_about_guide" href="topics/c_mv_about_guide.dita"/>
+            <topicref keys="mv_organization" href="topics/c_mv_organization.dita"/>
+        </topicref>
+    </topicref>
+    <topicref keys="getting_started" href="topics/c_getting_started.dita">
+        <topicref keys="architecture_combined" href="topics/c_architecture_combined.dita"/>
+        <topicref keys="mv_logging_on" href="topics/t_mv_logging_on.dita"/>
+        <topicref keys="mv_workspace_tab" href="topics/c_mv_workspace_tab.dita"/>
+        <topicref keys="mv_performance_tab" href="topics/c_mv_performance_tab.dita"/>
+        <topicref keys="mv_diagnostics_tab" href="topics/c_mv_diagnostics_tab.dita"/>
+        <topicref
+      keys="faq"
+      href="topics/c_FAQ.dita"/>
+    </topicref>
+    <topicref keys="common_tasks" href="topics/c_common_tasks.dita">
+        <topicref keys="mv_managing_messages" href="topics/c_mv_managing_messages.dita"/>
+        <topicref keys="mv_customize_views" href="topics/c_mv_customize_views.dita">
+            <topicref keys="cluster_capacity" href="topics/c_cluster_capacity.dita"/>
+            <topicref keys="mv_generating_data_views" href="topics/t_mv_generating_data_views.dita"/>
+            <topicref keys="mv_query_filters" href="topics/r_mv_query_filters.dita"/>
+        </topicref>
+        <topicref keys="mv_troubleshooting_clusters" href="topics/t_mv_troubleshooting_clusters.dita"/>
+        <topicref keys="mv_query_messages" href="topics/r_mv_query_messages.dita"/>
+        <topicref keys="mv_system_notifications" href="topics/r_mv_system_notifications.dita"/>
+        <topicref keys="mv_quickref_dataview" href="topics/r_mv_quickref_dataview.dita"/>
+        <topicref keys="mv_quickref_health_indicators" href="topics/r_mv_quickref_health_indicators.dita"/>
+    </topicref>
+    
+    <reltable title="See Also">
+        <relheader>
+            <relcolspec>
+              <topicmeta>
+                <navtitle>See Also</navtitle>
+              </topicmeta>
+            </relcolspec>
+            <relcolspec>
+              <topicmeta>
+                <navtitle>See Also</navtitle>
+              </topicmeta>
+            </relcolspec>
+        </relheader>
+         <relrow>
+            <relcell>
+                <topicref keyref="cluster_capacity"/>
+            </relcell>
+            <relcell>
+                <topicref keyref="mv_troubleshooting_clusters"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref keyref="cluster_capacity"/>
+            </relcell>
+            <relcell>
+                <topicref keyref="mv_quickref_dataview"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref keyref="mv_generating_data_views"/>
+            </relcell>
+            <relcell>
+                <topicref keyref="mv_query_messages"/>
+            </relcell>
+        </relrow>
+    </reltable>
+</map>

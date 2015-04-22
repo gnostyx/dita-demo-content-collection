@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="map_65EC78EE098944839E0FBDDE941D43BD">
+  <title>Customer Proposal Template</title>
+  <mapref
+    href="keydefs-external-web-sites.ditamap"/>
+  <mapref
+    href="topics/keydefs-topics.ditamap"/>
+  <topicgroup>
+    
+  </topicgroup>
+  <topicgroup
+    product="STA"
+    processing-role="resource-only">
+    <mapref
+      href="Images/images-keys.ditamap"/>
+    <keydef
+      keys="productname_variables"
+      href="topics/r_productname_variables.dita"
+      type="topic"/>
+    <keydef
+      keys="image_warehouse"
+      href="topics/r_image_warehouse.dita"
+      type="topic"/>
+  </topicgroup>
+  <topicgroup
+    product="STB"
+    processing-role="resource-only">
+    <mapref
+      href="Images2/images2-keys.ditamap"/>
+    <keydef
+      keys="productname_variables"
+      href="topics/r_productname_variables_2.dita"
+      type="topic"/>
+    <keydef
+      keys="image_warehouse"
+      href="topics/r_image_warehouse_2.dita"
+      type="topic"/>
+  </topicgroup>
+  <topichead navtitle="Introduction">
+    <topicref keys="architecture_combined" keyref="c_architecture_combined"/>
+    <topicref keys="architecture_overview" keyref="c_architecture_overview">
+      <topicmeta>
+        <navtitle>About capture file names</navtitle>
+      </topicmeta>
+    </topicref>
+    <topicref
+      keyref="r_mv_quickref_dataview"
+      keys="mv_quickref_dataview"/>
+    <topicref
+      keyref="r_mv_quickref_health_indicators"
+      keys="mv_quickref_health_indicators"/>
+  </topichead>
+  <topichead navtitle="Standard RFP question responses">
+    <topicref
+      keys="faq proposal_standard_responses"
+      keyref="c_proposal_standard_responses"/>
+  </topichead>
+</map>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="v34r930234">
+  <title>statclusters</title>
+  <shortdesc>Displays information and current status for the submission cluster and all configured
+    execution clusters.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>statclusters</indexterm>
+        <indexterm>commands<indexterm>statclusters</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <p>This command runs locally (in the execution cluster) when submitted by a running job.</p>
+      <p><codeph>% <userinput>statclusters</userinput></codeph></p>
+      <p><systemoutput>CLUSTER_NAME STATUS MASTER_HOST ADMIN HOSTS SERVERS</systemoutput></p>
+      <p><systemoutput>sub_cluster ok hostA admin 1 1</systemoutput></p>
+      <p><systemoutput>cluster2 ok hostB admin 1 1</systemoutput></p>
+      <p><systemoutput>cluster3 ok hostC admin 2 2</systemoutput></p>
+    </section>
+  </refbody>
+</reference>

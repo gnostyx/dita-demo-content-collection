@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="v32423894232">
+ <title><term conkeyref="r_productname_variables/ph_prodname"/> component
+  interaction</title>
+ <shortdesc>Overview of the interactions between components and clusters within <term
+   conkeyref="r_productname_variables/ph_prodname"/>.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm><term conkeyref="r_productname_variables/ph_prodname"
+      /><indexterm>component interaction</indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <section>
+   <title>Component interaction model</title>
+   <p><term conkeyref="r_productname_variables/ph_prodname"/> is a composite product
+    relying on a number of interconnected components with <term
+     conkeyref="r_productname_variables/ph_clusterview"/> and <term
+     conkeyref="r_productname_variables/ph_clustercontrol"/> being two key supporting
+    systems. <term conkeyref="r_productname_variables/ph_prodname"/> is different within
+    the marketplace because its multi-component architecture allows it to apply multi-cluster
+    technology to maximize performance, advanced job scheduling, and monitoring for enhanced
+    scalability. Maintaining the front-end behavior of a single cluster, <term
+     conkeyref="r_productname_variables/ph_prodname"/> splits into multiple execution
+    clusters behind the scenes, allowing efficient scheduling and completion of large numbers of
+    jobs.</p>
+   <p>Use <term conkeyref="r_productname_variables/ph_prodname"/> to combine multiple
+    clusters and streamline administration, or to increase the capacity of already large clusters. A
+    single cluster within a group is designated as the <term>submission cluster</term>. The
+    submission cluster will manage the distribution of each job to a specific <term>execution
+     cluster</term> from a pool of available execution clusters.</p>
+   </section>
+  <section>
+   <title>Submission clusters</title>
+   <p>The submission cluster is the job submission gateway, the scheduling hub, and the user
+    interface of <term conkeyref="r_productname_variables/ph_prodname"/>. Through the
+    submission cluster, jobs are forwarded for rapid scheduling in each execution cluster, <term
+     conkeyref="r_productname_variables/ph_prodname"/> policies are implemented, and
+    job queries are submitted.</p>
+   <p>The submission cluster silently communicates with multiple execution clusters, sending jobs and receiving
+    updates behind the scenes. The submission cluster will communicate with <term
+     conkeyref="r_productname_variables/ph_balance"/> in order to make optimal use of
+    available computing resources.</p>
+  </section>
+  <section>
+   <title>Execution clusters</title>
+   <p>Execution clusters are transparent to users. They are configured by administrators as natural
+    extensions of the submission cluster.
+    Execution cluster configuration
+    mirrors that of the submission cluster, while using the capacity of each execution cluster master host for local job
+    scheduling.</p>
+   <p>From the perspective of users or other software components, the execution clusters are
+    invisible and effectively act as mirrored submission clusters.</p>
+ </section>
+ </conbody>
+</concept>

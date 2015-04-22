@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="v3893453">
+ <title><term conkeyref="r_productname_variables/ph_prodname"/> Solution architecture
+        overview</title>
+ <shortdesc>Introduction to the solution architecture of the <term
+            conkeyref="r_productname_variables/ph_prodname"/> product
+        line.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm><term conkeyref="r_productname_variables/ph_prodname"
+                        /><indexterm>overview of</indexterm></indexterm>
+                <indexterm><term conkeyref="r_productname_variables/ph_clustercontrol"
+                        /><indexterm>definition of</indexterm></indexterm>
+                <indexterm><term conkeyref="r_productname_variables/ph_clusterview"
+                        /><indexterm>definition of</indexterm></indexterm>
+                <indexterm><term conkeyref="r_productname_variables/ph_analytics"
+                        /><indexterm>definition of</indexterm></indexterm>
+                <indexterm><term conkeyref="r_productname_variables/ph_balance"
+                        /><indexterm>definition of</indexterm></indexterm>
+                <indexterm><term conkeyref="r_productname_variables/ph_persistence"
+                        /><indexterm>definition of</indexterm></indexterm>                
+            </keywords>
+        </metadata>
+    </prolog>
+ <conbody>
+     <section id="v5667350">
+         <title><term conkeyref="r_productname_variables/ph_prodname"/> Solution General
+             Architecture</title>
+         <p id="v5683391">The main solution components of <term
+                    conkeyref="r_productname_variables/ph_prodname"/> have been
+                designed to operate with maximum independence in order to facilitate unlimited
+                scalability. These components operate under the management of <term
+                    conkeyref="r_productname_variables/ph_clustercontrol"/> in order
+                to distribute computing jobs to an unlimited number of cluster nodes each running an
+                unlimited number of components.</p>
+             
+                <p id="v56833912">The <term
+                    conkeyref="r_productname_variables/ph_prodname"/> provides
+                organizations with the ability to deploy and manage a massively distributed
+                computing infrastructure as is needed to control the operations of a wide range of
+                equipment systems and business operations.</p>
+            <fig conkeyref="r_image_warehouse/fig_rr2_b35_mr" id="fig_g3q_f35_mr"/>
+         
+     </section>
+<section>
+    <title><term conkeyref="r_productname_variables/ph_prodname"/> Technology Management
+        Solution</title>
+    <p><term conkeyref="r_productname_variables/ph_prodname"/> from <term
+        conkeyref="r_productname_variables/ph_companyname"/>
+        provides a comprehensive technology management solution that enables
+        large-scale enterprises to proactively manage their technology
+        infrastructure. In particular, <term
+            conkeyref="r_productname_variables/ph_prodname"/>
+        faciltiates the efficient utilization of sophisticated computing
+        services and does so in such a way that enables almost unlimited
+        scalability. For organizations managing large networks of systems that
+        need to interact on a near real-time basis, <term
+            conkeyref="r_productname_variables/ph_prodname"/> is
+        an ideal solution. <term
+            conkeyref="r_productname_variables/ph_prodname"/>
+        assembles together a variety of specialized components that together
+        provide an integrated solution.</p>
+</section>
+     <section id="v5667360">
+         <title><term conkeyref="r_productname_variables/ph_prodname"/>
+             <term conkeyref="r_productname_variables/ph_clustercontrol"/>
+             Server</title>
+         <p id="v5667362"><term conkeyref="r_productname_variables/ph_prodname"/>
+             <term conkeyref="r_productname_variables/ph_clustercontrol"/> server
+             handles the communication between the <term
+                 conkeyref="r_productname_variables/ph_balance"/> instances and
+             the supporting nodes. It manages the data which the deployed analysis nodes collect
+             from the set of cluster node servers and which are used to coordinate server
+             activities. The <term conkeyref="r_productname_variables/ph_prodname"/>
+             <term conkeyref="r_productname_variables/ph_clustercontrol"/> server
+             receives event notifications from nodes and other components, and then sends out
+             instructions according to the rules that have been configured.</p>
+     </section>
+     <section id="v5667363">
+         <title><term conkeyref="r_productname_variables/ph_prodname"/>
+                <term conkeyref="r_productname_variables/ph_clusterview"/> Reporting
+                Server </title>
+         <p id="v5667365"><term conkeyref="r_productname_variables/ph_prodname"/>
+                <term conkeyref="r_productname_variables/ph_clusterview"/> reporting
+                server is a web-based reporting tool consisting of <term>Workbooks</term>. It
+                collects data from the database and allows the publishing of <term>Dashboard</term>
+                views or individual <term>Worksheets</term>. These <term>Worksheets</term> can be
+                accessed by authorized users through the <term
+                    conkeyref="r_productname_variables/ph_enduser"/> environment or
+                through the system administration tools.</p>
+</section>
+     <section id="v5667369">
+         <title><term conkeyref="r_productname_variables/ph_prodname"/>
+                <term conkeyref="r_productname_variables/ph_analytics"/> Analytics
+                Server</title>
+         <p id="v5667371"><term conkeyref="r_productname_variables/ph_prodname"/>
+             <term conkeyref="r_productname_variables/ph_analytics"/> is an analytics
+             server that generates a number of reports and visualizations of the data being
+             aggregated by the <term conkeyref="r_productname_variables/ph_prodname"
+             /> deployment. It provides an overall statistical view of the entire cluster. <term
+                 conkeyref="r_productname_variables/ph_analytics"/> provides
+             dynamic views of the historical behaviour of hosts, resources, and workload across
+             the cluster so that administrators can get an overall picture of cluster’s
+             performance.</p>
+     </section>
+     <section id="section_ckz_325_mr">
+            <title><term conkeyref="r_productname_variables/ph_prodname"/>
+                <term conkeyref="r_productname_variables/ph_balance"/></title>
+            <p>A <term conkeyref="r_productname_variables/ph_balance"/> instance is
+                installed on each cluster. This component synchronizes data storage and processing
+                across the different cluster nodes. Each <term
+                    conkeyref="r_productname_variables/ph_balance"/> instance collects
+                data from nodes receiving the initial updates and distributes the data resources to
+                other nodes according to configuration rules specified.</p>
+        </section>
+  
+     <section id="v5667354">
+         <title><term conkeyref="r_productname_variables/ph_prodname"/>
+                <term conkeyref="r_productname_variables/ph_persistence"/></title>
+         <p id="v5667356">A virtual <term
+                    conkeyref="r_productname_variables/ph_persistence"/> is associated
+                with each cluster grid. This components provides a secure data persistence service
+                available to all processes running on all cluster nodes. The <term
+                    conkeyref="r_productname_variables/ph_persistence"/> service
+                collects not only operational data resources but also all administrative and
+                maintenance data resources produced as a byproduct of all <term
+                    conkeyref="r_productname_variables/ph_prodname"/>
+                transactions.</p>
+     </section>
+
+     <section>
+         <title><term conkeyref="r_productname_variables/ph_prodname"/>
+                <term conkeyref="r_productname_variables/ph_enduser"/></title>
+         <p>The <term conkeyref="r_productname_variables/ph_enduser"/>
+             application provides the User Interface (UI) for the <term
+                 conkeyref="r_productname_variables/ph_prodname"/>
+             product environment. The <term
+                 conkeyref="r_productname_variables/ph_enduser"/>
+             application provides a mobile interface through which users can, in
+             accordance with their security rights, access and interact with various
+             components of the <term
+                 conkeyref="r_productname_variables/ph_prodname"/>
+             system.</p>
+     </section>
+ </conbody>
+</concept>

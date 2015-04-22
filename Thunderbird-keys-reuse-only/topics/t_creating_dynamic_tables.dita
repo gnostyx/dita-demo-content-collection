@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<task id = "i713470"><title>Creating dynamic reporting tables</title>
+    <shortdesc>Dynamic reporting tables display real-time throughput information.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>dynamic reporting tables<indexterm>creating</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody><steps><step><cmd>Click the <uicontrol>Dynamic tables</uicontrol> icon. </cmd>
+                <stepresult>
+                    <p>The <uicontrol>Dynamic tables</uicontrol> view opens.</p>
+                </stepresult></step>
+<step><cmd>To create a dynamic table, click <uicontrol>Table</uicontrol>.</cmd>
+                <info>
+                    <p>For advanced table management, use the whole toolbar.</p>
+                </info></step>
+<step><cmd>Enter a name and description for the table.</cmd></step>
+<step><cmd>(Optional) Set a timeout value.</cmd>
+<substeps><substep><cmd>In the "Time out" field, enter the number
+of units.</cmd></substep>
+<substep>
+                        <cmd>Select a unit of time.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Set additional control parameters using <cmdname>hostlimits</cmdname>
+                            command.</cmd>
+                    </substep></substeps></step>
+<step><cmd>(Optional) Set a unique-by option. Then, click <uicontrol>Add</uicontrol>.</cmd></step>
+<step><cmd>(Optional) Set target(s) for the table (which nodes this table is available for).</cmd>
+                <info>
+                    <p> If no targets are set, then the classifier is available for all elements on
+                        all nodes.</p>
+                </info></step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step></steps>
+        <result>You can now publish the table.</result></taskbody></task>

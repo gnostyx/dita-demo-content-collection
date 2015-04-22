@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<reference id = "i740832"><title>Physical drive not faulted</title>
+<shortdesc>Provides a notification on the health of the physical drive.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>physical drive<indexterm>not faulted</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<refbody><section id = "i740820"><p>Faulted/not faulted physical drive notifications share these MIB references:<ul
+                    conref="r_logical_drive.dita#i740750/ul_1" id="ul_rcd_4cm_mr">
+                    <li/>
+                </ul></p><p>The
+physical drive not faulted notification is sent when a physical
+device enters either the online or hot spare state.</p>
+                    
+   <p><table frame = "all"
+    colsep = "1" rowsep = "0">
+<tgroup cols = "2" colsep = "1" rowsep = "0" outputclass = "Basic">
+<colspec colnum = "1" colname = "1" colwidth = "20*"/>
+<colspec colnum = "2" colname = "2" colwidth = "80*"/>
+<thead>
+<row rowsep = "0">
+<entry colname = "1" colsep = "0">Profile</entry>
+<entry colname = "2">Description</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" colsep = "0"><p>MIB reference</p></entry>
+<entry colname = "2"><p>ALPHABET- RAIDMON-MIB</p><p>SNMPv2-MIB<ul conref="r_logical_drive.dita#i740750/ul_1" id="ul_ar5_tcm_mr">
+                                            <li/>
+                                        </ul></p></entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" colsep = "0"><p>Trap Name</p></entry>
+<entry colname = "2"><p>svRaidMonPhysicalDeviceNotFaultedNotification</p></entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" colsep = "0"><p>Varbinds</p></entry>
+<entry colname = "2"><p>svClusterConfigName</p></entry>
+</row>
+</tbody>
+</tgroup></table></p></section></refbody></reference>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="referenceId">
+  <title>Resource file parameters</title>
+  <shortdesc>Use resource files parameters to customize options.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>resource destinations<indexterm>parameters</indexterm></indexterm>
+        <indexterm>file<indexterm>resource destination</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <p>
+        <table frame="topbot" colsep="0" rowsep="0" id="table_pxt_rvw_ce">
+          <title>Resource file parameters</title>
+          <tgroup cols="2" colsep="0" rowsep="0" outputclass="Basic">
+            <colspec colnum="1" colname="1" colwidth="25*" colsep="0"/>
+            <colspec colnum="2" colname="2" colwidth="75*" colsep="0"/>
+            <thead>
+              <row rowsep="1">
+                <entry colname="1">Parameter</entry>
+                <entry colname="2">Description</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row rowsep="0">
+                <entry colname="1">
+                  <p>Name</p>
+                </entry>
+                <entry colname="2">
+                  <p>Name of the system destination.</p>
+                </entry>
+              </row>
+              <row rowsep="0">
+                <entry colname="1">
+                  <p>File name base</p>
+                </entry>
+                <entry colname="2">
+                  <p>Used as a prefix. </p>
+                </entry>
+              </row>
+              <row rowsep="0">
+                <entry colname="1">
+                  <p>Max file size</p>
+                </entry>
+                <entry colname="2">
+                  <p>Maximum size of each capture file in bytes.</p>
+                </entry>
+              </row>
+              <row rowsep="0">
+                <entry colname="1">
+                  <p>Number of files</p>
+                </entry>
+                <entry colname="2">
+                  <p>Maximum number of capture files of the maximum file size to keep on disk.</p>
+                </entry>
+              </row>
+              <row rowsep="0">
+                <entry colname="1">
+                  <p>Allow overwrite</p>
+                </entry>
+                <entry colname="2">
+                  <p>Indicates whether capture should stop when the maximum number of capture files
+                    is reached.</p>
+                  <p>If enabled, when the maximum number capture files have been created, any
+                    subsequent captures will cause the oldest capture file to be overwritten. If
+                    disabled and the maximum number of capture files have been created, no
+                    additional information is captured.</p>
+                </entry>
+              </row>
+              <row rowsep="0">
+                <entry colname="1">
+                  <p>Flush interval</p>
+                </entry>
+                <entry colname="2">
+                  <p>Number of seconds to wait until an automatic flush is triggered.</p>
+                  <p>The flush_interval ensures that either when the file is full or after a
+                    specific period of time, the capture file is closed and renamed so that the
+                    contents can be read.</p>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </section>
+  </refbody>
+</reference>

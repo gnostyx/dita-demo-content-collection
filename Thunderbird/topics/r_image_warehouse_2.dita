@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/OS/dtd/reference.dtd">
-<reference id="image_warehouse_STA">
+<reference id="image_warehouse_STB">
   <title>Image Warehouse</title>
   <shortdesc>All images used throughout the <term
             conkeyref="r_productname_variables/ph_prodname"/>
@@ -26,17 +26,17 @@
                         </thead>
                         <tbody>
                             <row>
-                                <entry><image href="Images/error_icon.png" id="image_dx2_m3m_mr"
+                                <entry><image href="../Images2/a_error_icon.png" id="image_dx2_m3m_mr"
                                     /></entry>
                                 <entry>Error Icon</entry>
                             </row>
                             <row>
-                                <entry><image href="Images/warning_icon.png" id="image_yxw_m3m_mr"
+                                <entry><image href="../Images2/a_warning_icon.png" id="image_yxw_m3m_mr"
                                     /></entry>
                                 <entry>Warning Icon</entry>
                             </row>
                             <row>
-                                <entry><image href="Images/operational_icon.png"
+                                <entry><image href="../Images2/a_operational_icon.png"
                                         id="image_gpx_n3m_mr"/></entry>
                                 <entry>Operational Icon</entry>
                             </row>
@@ -51,7 +51,7 @@
                 <title><term conkeyref="r_productname_variables/ph_companyname"/>
                     <term conkeyref="r_productname_variables/ph_prodname"/> Computing
                     Management Solution</title>
-                <image href="Images/Thunder-MultiDevice-003.jpg" id="image_f2g_mft_qr"/>
+          <image href="../Images2/Marketing.png" id="image_f2g_mft_qr"/>
             </fig>
       
       </section>
@@ -61,34 +61,34 @@
                 Architecture Diagram(s)</title><fig id="fig_rr2_b35_mr">
                 <title><term conkeyref="r_productname_variables/ph_prodname"/> General
                     Solution Architecture</title>
-            <image href="Images/Thunderbird_Architecture-sm.png" id="image_bk3_xh5_mr"
+                    <image href="../Images2/Architecture.png" id="image_bk3_xh5_mr"
             /></fig>
         
             <fig id="fig_jzz_ykh_mr">
                 <title id="title_kn2_tkh_mr"><term
                         conkeyref="r_productname_variables/ph_enduser"/> Login
                     Screen</title>
-                <image href="Images/ThunderBird-Login-sm.png" id="image_mfx_rbh_mr"/>
+                <image href="../Images2/Login.png" id="image_mfx_rbh_mr"/>
             </fig>
             <fig id="fig_enw_2lh_mr">
                 <title><term conkeyref="r_productname_variables/ph_enduser"/>
                     Workspace</title>
-                <image href="Images/ThunderBird-Workspace-sm.png" id="image_rtw_ffh_mr"/>
+                <image href="../Images2/Workspace.png" id="image_rtw_ffh_mr"/>
             </fig>
             <fig id="fig_eqw_2lh_mr">
                 <title><term conkeyref="r_productname_variables/ph_enduser"/>
                     Performance Monitor</title>
-                <image href="Images/ThunderBird-Performance-sm.png" id="image_az2_hfh_mr"/>
+                <image href="../Images2/Performance.png" id="image_az2_hfh_mr"/>
             </fig>
             <fig id="fig_ovw_2lh_mr">
                 <title><term conkeyref="r_productname_variables/ph_enduser"/> System
                     Support Tab: Troubleshooting</title>
-                <image href="Images/ThunderBird-Troubleshooting-sm.png" id="image_vlb_mch_mr"/>
+                <image href="../Images2/Troubleshooting.png" id="image_vlb_mch_mr"/>
             </fig>
             <fig id="fig_zxw_2lh_mr">
                 <title><term conkeyref="r_productname_variables/ph_enduser"/>
                     Customization Tab</title>
-                <image href="Images/ThunderBird-Customize-sm.png" id="image_xxv_mch_mr"/>
+                <image href="../Images2/Customization.png" id="image_xxv_mch_mr"/>
             </fig>
       </section> 
         

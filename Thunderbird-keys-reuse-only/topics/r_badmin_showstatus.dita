@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="v3242348293">
+  <title>badmin showstatus</title>
+  <shortdesc>Display real-time cluster information.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>badmin showstatus</indexterm>
+        <indexterm>commands<indexterm>badmin showstatus</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <p>Displays current cluster information. The last two lines only appear during a parallel
+          <cmdname>daemon</cmdname> restart initiated with the <cmdname>badmin restart -p</cmdname>
+        command.</p>
+      <p><codeph>% <userinput>badmin showstatus</userinput></codeph></p>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<task id = "i713559"><title>Defining subscriber attributes</title>
+          <shortdesc>Define new subscriber attributes to accurately maintain your
+                    database.</shortdesc>
+          <prolog>
+                    <metadata>
+                              <keywords>
+                                        <indexterm>subscriber
+                                                  attributes<indexterm>defining</indexterm></indexterm>
+                              </keywords>
+                    </metadata>
+          </prolog>
+          <taskbody><steps><step><cmd>Click the <uicontrol>Subscriber attribute definitions</uicontrol> icon. </cmd>
+                                        <stepresult>
+                                                  <p>The <uicontrol>Subscriber attributes</uicontrol> view opens.</p>
+                                        </stepresult></step>
+<step><cmd>To add a subscriber attribute definition, click the <uicontrol>Add</uicontrol> button
+(+).</cmd></step>
+<step><cmd>Enter a name and description for the subscriber attribute.</cmd></step>
+                    <step><cmd>In the <uicontrol>Execution scope</uicontrol> area, select a scope.</cmd></step>
+                    <step><cmd>(Optional) In the <uicontrol>Policy</uicontrol> area, check an option:</cmd>
+<substeps><substep><cmd>Suppress attribute from policy files when unused in policy.</cmd></substep>
+<substep><cmd>Notify the system when this attribute is set.</cmd></substep>
+<substep><cmd>Make this attribute reportable by Network Demographics.</cmd></substep></substeps></step>
+<step><cmd>Select an attribute type:</cmd>
+<substeps><substep><cmd><uicontrol>Accept any value.</uicontrol> Select from the
+list.</cmd></substep>
+<substep><cmd><uicontrol>Specified values.</uicontrol> Enter a value and click
+                                                  <uicontrol>Add</uicontrol>.</cmd></substep>
+<substep><cmd>Add or remove attributes on the list record (contained attribute list). </cmd>
+<info>
+                                                  <p>A Record attribute contains a group of
+                                                  attributes that can be a mix of any of the
+                                                  simple-types (strings, integers, Booleans and so
+                                                  on). For example, MyRecordAttribute, type 'record'
+                                                  is a list that declares other
+                                                  attributes:<codeblock>
+MySubString1  type is string
+          mySubString2  type is string
+          someIntAttr   type is integer
+          andABoolAttr  type is boolean
+</codeblock></p>
+                                                  </info></substep></substeps></step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step></steps></taskbody></task>

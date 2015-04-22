@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+    <booktitle>
+        <mainbooktitle>Integrator Administrator Guide</mainbooktitle>
+    </booktitle>
+    <bookmeta>
+        <audience experiencelevel="expert" job="cluster_admin" type="admin"/>
+    </bookmeta>
+    <frontmatter>
+      <topicref
+        href="topics/keydefs-topics.ditamap"
+        format="ditamap"/>    
+      <topicgroup
+        product="STA"
+        processing-role="resource-only">
+        <mapref
+          href="Images/images-keys.ditamap"/>
+        <keydef
+          keys="productname_variables"
+          href="topics/r_productname_variables.dita"
+          type="topic"/>
+        <keydef
+          keys="image_warehouse"
+          href="topics/r_image_warehouse.dita"
+          type="topic"/>
+      </topicgroup>
+      <topicgroup
+        product="STB"
+        processing-role="resource-only">
+        <mapref
+          href="Images2/images2-keys.ditamap"/>
+        <keydef
+          keys="productname_variables"
+          href="topics/r_productname_variables_2.dita"
+          type="topic"/>
+        <keydef
+          keys="image_warehouse"
+          href="topics/r_image_warehouse_2.dita"
+          type="topic"/>
+      </topicgroup>
+      <booklists>
+            <toc/>
+            <figurelist/>
+        </booklists>
+    </frontmatter>
+    <chapter keys="architecture_combined" keyref="c_architecture_combined">
+        <topicref keys="architecture_overview" keyref="c_architecture_overview"/>
+        <topicref keys="product_about" keyref="c_product_about"/>
+        <topicref keys="security" keyref="c_security"/>
+        <topicref keys="ease_of_management" keyref="c_ease_of_management"/>
+        <topicref keys="efficient_resources" keyref="c_efficient_resources"/>
+    </chapter>
+    <chapter keys="activate" keyref="t_activate" navtitle="Installation and Configuration">
+        <topicref keys="supported_platforms" keyref="r_supported_platforms"/>
+        <topicref keys="add_cluster" keyref="t_add_cluster"/>
+        <topicref keys="add_host_cluster_client" keyref="t_add_host_cluster_client"/>
+        <topicref keys="set_host_preference" keyref="t_set_host_preference"/>
+        <topicref keys="diverting_hosts" keyref="t_diverting_hosts"/>
+        <topicref keys="view_edit_metadata" keyref="t_view_edit_metadata"/>
+        <topicref keys="set_resource_definitions" keyref="t_set_resource_definitions"/>
+        <topicref keys="registering_file" keyref="t_registering_file"/>
+        <topicref keys="resource_files" keyref="r_resource_files"/>
+        <topicref keys="configure_grid_control" keyref="t_configure_grid_control"/>
+        <topicref keys="set_memory_limits" keyref="t_set_memory_limits"/>
+        <topicref keys="set_timeout" keyref="t_set_timeout"/>
+        <topicref keys="logical_drive" keyref="r_logical_drive"/>
+        <topicref keys="physical_drive_not_faulted" keyref="r_physical_drive_not_faulted"/>
+        <topicref keys="faulty_physical_drive" keyref="r_faulty_physical_drive"/>
+        <topicref keys="troubleshooting_cluster_not_reporting" keyref="t_troubleshooting_cluster_not_reporting"/>
+        <topicref keys="troubleshooting_cannot_add_cluster" keyref="t_troubleshooting_cannot_add_cluster"/>
+    </chapter>
+    <chapter keys="cluster_management" keyref="c_cluster_management">
+        <topicref keys="manage_clusters" keyref="r_manage_clusters"/>
+        <topicref keys="cluster_management" keyref="c_cluster_management" navtitle="Cluster management"/>
+        <topicref keys="configure_idle_detection" keyref="t_configure_idle_detection"/>
+        <topicref keys="acknowledge_alert" keyref="t_acknowledge_alert"/>
+        <topicref keys="cluster_reselection" keyref="c_cluster_reselection"/>
+        <topicref keys="interface_drops" keyref="r_interface_drops"/>
+        <topicref keys="interface-bypass-group-is-in-active-mode" keyref="r_interface-bypass-group-is-in-active-mode"/>
+        <topicref keys="cluster_mgmt_commands" keyref="r_cluster_mgmt_commands"/>
+        <topicref keys="cluster_capacity" keyref="c_cluster_capacity">
+            <topicref keys="adding_classifiers" keyref="t_adding_classifiers"/>
+            <topicref keys="creating_dynamic_tables" keyref="t_creating_dynamic_tables"/>
+            <topicref keys="adding_columns_dynamic_table" keyref="t_adding_columns_dynamic_table"/>
+            <topicref keys="creating_limiter" keyref="t_creating_limiter"/>
+            <topicref keys="defining_subscriber_attributes" keyref="t_defining_subscriber_attributes"/>
+            <topicref keys="dimensions_reports" keyref="r_dimensions_reports"/>
+            <topicref keys="mv_analysis_columns" keyref="r_mv_analysis_columns"/>
+            <topicref keys="mv_query_filters" keyref="r_mv_query_filters"/>
+        </topicref>
+    </chapter>
+    <chapter keys="components" keyref="c_components" navtitle="Advanced Topics in Component Interaction">
+        <topicref keys="resource_destinations" keyref="c_resource_destinations"/>
+        <topicref keys="about_defining_payload" keyref="c_about_defining_payload"/>
+        <topicref keys="bitrate" keyref="c_bitrate"/>
+        <topicref keys="capture-files" keyref="c_capture-files"/>
+        <topicref keys="command_foundation" keyref="c_command_foundation">
+            <topicref keys="command_class" keyref="c_command_class"/>
+            <topicref keys="attribute_parameter_syntax" keyref="c_attribute_parameter_syntax"/>
+            <topicref keys="jobconf_description" keyref="c_jobconf_description"/>
+            <topicref keys="jobconf" keyref="r_jobconf"/>
+            <topicref keys="jtub_description" keyref="c_jtub_description"/>
+            <topicref keys="jtub" keyref="r_jtub"/>
+        </topicref>
+        <topicref keys="notification_templates" keyref="c_notification_templates"/>
+    </chapter>
+    <backmatter>
+        <booklists>
+            <indexlist/>
+        </booklists>
+    </backmatter>
+    <reltable title="Reltable">
+        <relheader>
+            <relcolspec type="topic"/>
+            <relcolspec type="topic"/>
+        </relheader>
+        <relrow>
+            <relcell>
+                <topicref keys="add_host_cluster_client" keyref="t_add_host_cluster_client"/>
+            </relcell>
+            <relcell>
+                <topicref keys="set_memory_limits" keyref="t_set_memory_limits"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref keys="manage_clusters" keyref="r_manage_clusters"></topicref>
+            </relcell>
+            <relcell>
+                <topicref keys="cluster_mgmt_commands" keyref="r_cluster_mgmt_commands"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref keys="manage_clusters" keyref="r_manage_clusters"/>
+            </relcell>
+            <relcell>
+                <topicref keys="view_edit_metadata" keyref="t_view_edit_metadata"/>
+            </relcell>
+        </relrow>
+    </reltable>
+</bookmap>

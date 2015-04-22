@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_zbh_wtt_qr">
+ <title>Cluster notification templates</title>
+ <shortdesc>Use cluster notification templates to configure how notification information is provided
+  to system administrators.</shortdesc>
+ <conbody>
+  <section>
+   <title>Notification template placeholder tags</title>
+   <p>Placeholders are custom tags that represent real system values. You can insert placeholders in
+    threshold names to show customized names based on your system and you can insert placeholders in
+    alert email templates to present additional information for administrators to make it easy for
+    them to follow up on the alert.</p>
+   <p>Tags for threshold names are enclosed by pipe characters ( | ), while tags for alert email
+    templates are enclosed by angle brackets (&lt; >). Not all placeholders are available for
+    threshold names; some placeholders are only available for alert email templates. The following
+    is a list of the placeholders available for your thresholds:</p>
+   <p>
+    <table frame="topbot" colsep="0" rowsep="0" id="table_aht_jqr_yd">
+     <tgroup outputclass="SimpleTable" cols="4" colsep="0" rowsep="0">
+      <colspec colnum="1" colname="1" colwidth="1.20in" colsep="0"/>
+      <colspec colnum="2" colname="2" colwidth="1.850in" colsep="0"/>
+      <colspec colnum="3" colname="3" colwidth="2.00in" colsep="0"/>
+      <colspec colnum="4" colname="4" colwidth="1.75in" colsep="0"/>
+      <thead>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Placeholder name</p>
+        </entry>
+        <entry colname="2">
+         <p>Tag for threshold name</p>
+        </entry>
+        <entry colname="3">
+         <p>Tag for alert email template</p>
+        </entry>
+        <entry colname="4">
+         <p>Description</p>
+        </entry>
+       </row>
+      </thead>
+      <tbody>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Cluster ID</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|clusterid|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;clusterid></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The ID of the cluster.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Cluster name</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|cluster_name|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;cluster_name></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The name of the cluster.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Cluster master</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|cluster_master|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;cluster_master></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The name of the master host for the cluster.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Cluster version</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|cluster_version|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;cluster_version></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The version running in the cluster.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Cluster port</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|cluster_limport|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;cluster_limport></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The port number of LIM running on the master host.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Custom data value</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|custom_<varname>field_name</varname>|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;custom_<varname>field_name</varname>></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The custom data value from the data source that is linked in this alert. For example,
+           <tt>custom_percent</tt>, <tt>custom_status</tt>.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Host name</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|host_hostname|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;host_hostname></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The host name of the device linked in this alert.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Host description</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|host_description|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;host_description></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The host description of the device linked in this alert.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold description</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_description|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;DESCRIPTION&gt;</codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The threshold description.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold host name</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_hostname|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;HOSTNAME></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The host name of the threshold.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold trigger time</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_time|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;TIME></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The time in which the threshold triggered this alert.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold graph URL</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_url|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;URL></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The link to the URL of the threshold graph.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold current value</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_currentvalue|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;CURRENTVALUE></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The current value of the data field being monitored by the threshold, at the time of the
+          alert email.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold name</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_name|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;NAME></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The name of the threshold.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold data source name</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t-dsname|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;DSNAME></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The name of the data source being monitored by the threshold.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold type</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_holdtype|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;T_HOLDTYPE></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The threshold type.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold high value</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_hi|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;HI></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The high threshold boundary value.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold low value</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_lo|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;LO></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The low threshold boundary value.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold trigger</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_trigger|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;TRIGGER></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The threshold trigger value.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold graph ID</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_graphid|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;GRAPHID></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The ID of the threshold graph.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold duration</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_duration</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;DURATION></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The duration of the threshold.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold details URL</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_details_url|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;DETAILS_URL></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>A URL to the threshold details page, which is a list of hosts that breached this
+          threshold.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold breached items</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_breached_items|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;BREACHED_ITEMS></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>A list of items that breached this threshold, in an HTML table format.</p>
+        </entry>
+       </row>
+       <row rowsep="1">
+        <entry colname="1">
+         <p>Threshold graph</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_graph|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;GRAPH></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The threshold graph embedded into the email.</p>
+        </entry>
+       </row>
+       <row rowsep="0">
+        <entry colname="1">
+         <p>Threshold date</p>
+        </entry>
+        <entry colname="2">
+         <p><codeph>|t_date_rfc822|</codeph></p>
+        </entry>
+        <entry colname="3">
+         <p><codeph>&lt;DATE_RFC822></codeph></p>
+        </entry>
+        <entry colname="4">
+         <p>The threshold date in RFC 822 format. For example,</p>
+         <p><codeph>Thu, 01 Jan 2009 01:11:01 +0100</codeph></p>
+        </entry>
+       </row>
+      </tbody>
+     </tgroup>
+    </table>
+   </p>
+  </section>
+ </conbody>
+</concept>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Admin Control Map</title>
+  <mapref
+    href="topics/keydefs-topics.ditamap"/>
+  <mapref
+    href="keydefs-external-web-sites.ditamap"/>
+  <topicgroup
+    product="STA"
+    processing-role="resource-only">
+    <mapref
+      href="Images/images-keys.ditamap"/>
+    <keydef
+      keys="productname_variables"
+      href="topics/r_productname_variables.dita"
+      type="topic"/>
+    <keydef
+      keys="image_warehouse"
+      href="topics/r_image_warehouse.dita"
+      type="topic"/>
+  </topicgroup>
+  <topicgroup
+    product="STB"
+    processing-role="resource-only">
+    <mapref
+      href="Images2/images2-keys.ditamap"/>
+    <keydef
+      keys="productname_variables"
+      href="topics/r_productname_variables_2.dita"
+      type="topic"/>
+    <keydef
+      keys="image_warehouse"
+      href="topics/r_image_warehouse_2.dita"
+      type="topic"/>
+  </topicgroup>
+  <topichead navtitle="General Files">
+        <topicref keys="guide_to_scenarios" keyref="c_guide_to_scenarios"/>
+        <topicref keys="productname_variables" keyref="r_productname_variables"/>
+        <topicref keys="image_warehouse" keyref="r_image_warehouse"/>
+    </topichead>    
+    <topichead navtitle="ThunderBird StormCluster System">
+        <topicref keys="architecture_overview" keyref="c_architecture_overview"/>
+        <topicref keys="product_about" keyref="c_product_about"/>
+        <topicref keys="security" keyref="c_security"/>
+        <topicref keys="ease_of_management" keyref="c_ease_of_management"/>
+        <topicref keys="efficient_resources" keyref="c_efficient_resources"/>
+        <topicref keys="architecture_combined" keyref="c_architecture_combined"/>
+        <topicref keys="components" keyref="c_components"/>
+        <topicref keys="supported_platforms" keyref="r_supported_platforms"/>
+        <topicref keys="manage_clusters" keyref="r_manage_clusters"/>
+        <topicref keys="cluster_mgmt_commands" keyref="r_cluster_mgmt_commands"/>
+        <topicref keys="jobconf" keyref="r_jobconf"/>
+        <topicref keys="jtub" keyref="r_jtub"/>
+        <topicref keys="jobconf_description" keyref="c_jobconf_description"/>
+        <topicref keys="jtub_description" keyref="c_jtub_description"/>
+        <topicref keys="cluster_capacity" keyref="c_cluster_capacity"/>
+        <topicref keys="cluster_management" keyref="c_cluster_management"/>
+        <topicref keys="notification_templates" keyref="c_notification_templates"/>
+        <topicref keys="cluster_reselection" keyref="c_cluster_reselection"/>
+        <topicref keys="troubleshooting_cluster_not_reporting" keyref="t_troubleshooting_cluster_not_reporting"/>
+        <topicref keys="troubleshooting_cannot_add_cluster" keyref="t_troubleshooting_cannot_add_cluster"/>
+        <topicref keys="activate" keyref="t_activate"/>
+        <topicref keys="configure_idle_detection" keyref="t_configure_idle_detection"/>
+        <topicref keys="acknowledge_alert" keyref="t_acknowledge_alert"/>
+        <topicref keys="add_cluster" keyref="t_add_cluster"/>
+        <topicref keys="add_host_cluster_client" keyref="t_add_host_cluster_client"/>
+        <topicref keys="view_edit_metadata" keyref="t_view_edit_metadata"/>
+        <topicref keys="configure_grid_control" keyref="t_configure_grid_control"/>
+        <topicref keys="set_memory_limits" keyref="t_set_memory_limits"/>
+        <topicref keys="set_host_preference" keyref="t_set_host_preference"/>
+        <topicref keys="adding_classifiers" keyref="t_adding_classifiers"/>
+        <topicref keys="adding_columns_dynamic_table" keyref="t_adding_columns_dynamic_table"/>
+        <topicref keys="creating_dynamic_tables" keyref="t_creating_dynamic_tables"/>
+        <topicref keys="creating_limiter" keyref="t_creating_limiter"/>
+        <topicref keys="defining_subscriber_attributes" keyref="t_defining_subscriber_attributes"/>
+        <topicref keys="diverting_hosts" keyref="t_diverting_hosts"/>
+        <topicref keys="set_resource_definitions" keyref="t_set_resource_definitions"/>
+        <topicref keys="registering_file" keyref="t_registering_file"/>
+        <topicref keys="set_timeout" keyref="t_set_timeout"/>
+        <topicref keys="resource_destinations" keyref="c_resource_destinations"/>
+        <topicref keys="about_defining_payload" keyref="c_about_defining_payload"/>
+        <topicref keys="attribute_parameter_syntax" keyref="c_attribute_parameter_syntax"/>
+        <topicref keys="bitrate" keyref="c_bitrate"/>
+        <topicref keys="capture-files" keyref="c_capture-files"/>
+        <topicref keys="command_class" keyref="c_command_class"/>
+        <topicref keys="command_foundation" keyref="c_command_foundation"/>
+        <topicref keys="dimensions_reports" keyref="r_dimensions_reports"/>
+        <topicref keys="interface-bypass-group-is-in-active-mode" keyref="r_interface-bypass-group-is-in-active-mode"/>
+        <topicref keys="resource_files" keyref="r_resource_files"/>
+        <topicref keys="faulty_physical_drive" keyref="r_faulty_physical_drive"/>
+        <topicref keys="interface_drops" keyref="r_interface_drops"/>
+        <topicref keys="physical_drive_not_faulted" keyref="r_physical_drive_not_faulted"/>
+        <topicref keys="logical_drive" keyref="r_logical_drive"/>
+        <topicref keys="mv_query_filters" keyref="r_mv_query_filters"/>
+        <topicref keys="mv_analysis_columns" keyref="r_mv_analysis_columns"/>
+    </topichead>
+    <topichead navtitle="MobileView Application">
+        <topicref keys="mv_about_mobileview" keyref="c_mv_about_mobileview"/>
+        <topicref keys="mv_about_guide" keyref="c_mv_about_guide"/>
+        <topicref keys="mv_organization" keyref="c_mv_organization"/>
+        <topicref keys="mv_workspace_tab" keyref="c_mv_workspace_tab"/>
+        <topicref keys="mv_performance_tab" keyref="c_mv_performance_tab"/>
+        <topicref keys="mv_diagnostics_tab" keyref="c_mv_diagnostics_tab"/>    
+        <topicref keys="mv_customize_views" keyref="c_mv_customize_views"/>
+        <topicref keys="mv_managing_messages" keyref="c_mv_managing_messages"/>     
+        <topicref keys="mv_logging_on" keyref="t_mv_logging_on"/>
+        <topicref keys="mv_generating_data_views" keyref="t_mv_generating_data_views"/>
+        <topicref keys="mv_troubleshooting_clusters" keyref="t_mv_troubleshooting_clusters"/>
+        <topicref keys="mv_query_messages" keyref="r_mv_query_messages"/>
+        <topicref keys="mv_system_notifications" keyref="r_mv_system_notifications"/>
+        <topicref keys="mv_quickref_dataview" keyref="r_mv_quickref_dataview"/>
+        <topicref keys="mv_quickref_health_indicators" keyref="r_mv_quickref_health_indicators"/>
+        <topicref keys="faq" keyref="c_FAQ"/>
+    </topichead>   
+</map>

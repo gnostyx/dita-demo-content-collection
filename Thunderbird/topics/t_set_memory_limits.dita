@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="v2342342">
+    <title>Configuring memory settings</title>
+    <shortdesc> Configure the memory settings to monitor memory usage and control jobs.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>memory settings for jobs<indexterm>configure</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <steps id="steps_wmg_qtr_yd">
+            <step>
+                <cmd>Click <uicontrol>Console</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Under the Configuration section of the <uicontrol>Console</uicontrol> menu bar, click <uicontrol>Grid
+                        Settings</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Memory Exceptions</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Set the values for the Memory RUSAGE Violations fields:</cmd>
+                <info>
+                    <p>
+                        <ul id="ul_sng_qtr_yd">
+                            <li>
+                                <p><uicontrol>Enable Memory RUSAGE Job Detection</uicontrol></p>
+                                <p>Click this checkbox if you want to search for memory violation
+                                    jobs.</p>
+                            </li>
+                            <li>
+                                <p><uicontrol>Email Summary Reports</uicontrol></p>
+                                <p>Account to whom the email summary report notification should be
+                                    sent.</p>
+                            </li>
+                            <li>
+                                <p><uicontrol>Email Schedule</uicontrol></p>
+                                <p>Notification frequency for receiving email. Emails are sent
+                                    weekly on Sundays during database maintenance.</p>
+                            </li>
+                            <li>
+                                <p><uicontrol>Memory Overusage Filter Name</uicontrol></p>
+                                <p>Filter name to be displayed in the job details legend for memory
+                                    overuse.</p>
+                            </li>
+                            <li>
+                                <p><uicontrol>Memory Overusage Allocation</uicontrol></p>
+                                <p>Memory usage percentage above the RUsage level that is acceptable
+                                    prior to flagging the job.</p>
+                            </li>
+                            <li>
+                                <p><uicontrol>Memory Overusage Background Color</uicontrol></p>
+                                <p>Color of the legend. This feature is disabled if the color is set
+                                    to none.</p>
+                            </li>
+                            <li>
+                                <p><uicontrol>Memory Underusage Filter Name</uicontrol></p>
+                                <p>Filter name to be displayed in the legend and in the Job
+                                    exception filter display.</p>
+                            </li>
+                            <li>
+                                <p><uicontrol>Memory Underusage Allocation</uicontrol></p>
+                                <p>Memory usage percentage below the RUsage level that is acceptable
+                                    prior to flagging the job.</p>
+                            </li>
+                            <li>
+                                <p><uicontrol>Memory Underusage Background Color</uicontrol></p>
+                                <p>Color of the legend and row display. This feature is disabled if
+                                    the color is set to none.</p>
+                            </li>
+                            <li>
+                                <p><uicontrol>Minimum Run Window</uicontrol></p>
+                                <p>Set the minimum run time.</p>
+                            </li>
+                            <li>
+                                <p><uicontrol>Minimum Memory Limit</uicontrol></p>
+                                <p>Set the minimum memory limit for your jobs.</p>
+                            </li>
+                            <li>
+                                <p><uicontrol>Email Subject</uicontrol></p>
+                                <p>Define the email subject by using these replacement tags:
+                                        &lt;<varname>OVERFILTER</varname>>/&lt;<varname>UNDERFILTER</varname>>
+                                    and &lt;<varname>CLUSTERNAME</varname>></p>
+                            </li>
+                            <li>
+                                <p><uicontrol>Email Message</uicontrol></p>
+                                <p>Define the email content by using these replacement tags:
+                                        &lt;<varname>CLUSTERNAME</varname>>,
+                                        &lt;<varname>OVERFILTER</varname>>,
+                                        &lt;<varname>OVERSHOOT</varname>>,
+                                        &lt;<varname>UNDERFILTER</varname>>,
+                                        &lt;<varname>UNDERSHOOT</varname>>, and
+                                        &lt;<varname>REPORTTABLE</varname>></p>
+                            </li>
+                        </ul>
+                    </p>
+                </info>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Save</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

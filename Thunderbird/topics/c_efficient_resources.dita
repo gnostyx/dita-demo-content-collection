@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="conceptId">
+ <title>Efficient use of resources</title>
+ <shortdesc>Use scheduling capabilities to facilitate efficient use of cluster
+    resources.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>resource management<indexterm>overview</indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+   <section id="section_mhj_lbz_qr">
+      <title>Schedule resources as needed</title>
+      <p id="p_cf1_glc_rr">Guaranteed resource access provides flexible scheduling capabilities
+        within <term conkeyref="r_productname_variables/ph_prodname"/>
+        <term conkeyref="r_productname_variables/ph_clustercontrol"/>. Scheduling that
+        works the way you need it to, ensuring that resources are allocated to users and jobs in a
+        fashion consistent with your business needs. With extended on-demand scheduling policies,
+        you now have simplified administration and an optimal alignment of business requirements
+        with available infrastructure.</p>
+      <p id="p_edj_glc_rr">Business needs are established through an analysis of performance demands
+        using <term conkeyref="r_productname_variables/ph_clusterview"/> and <term
+          conkeyref="r_productname_variables/ph_analytics"/>, projections of expected
+        demands, and forecasts of future workloads. The business needs in turn will determine the
+        resources that will be required, the scheduling rules that will need to be put into place,
+        and the job management framework that is put into place.</p>
+    </section>
+  <section id="section_ecq_lbz_qr">
+      <title>Enhanced fairshare and pre-emptive scheduling </title>
+      <p id="p_tr1_hlc_rr">The true scheduling features of <term
+          conkeyref="r_productname_variables/ph_prodname"/> provide the ability to
+        fine-tune the defintions that determine user priority and enable different sharing policies
+        by project, team, or department. Job preemption controls help maximize productivity and
+        asset use by preempting only the jobs that should be preempted.</p>
+    </section>
+  <section id="section_rgx_lbz_qr">
+      <title>Unparalleled scalability</title>
+      <p id="p_jdx_hlc_rr">You can easily add more than 148,000 cores and 500,000 queued jobs,
+        ensuring that your <term conkeyref="r_productname_variables/ph_prodname"/>
+        environment never runs out of head room.</p>
+    </section>
+  <section id="section_ug2_mbz_qr">
+      <title>Improved productivity</title>
+      <p id="p_s2f_3lc_rr">Features provided to <term
+          conkeyref="r_productname_variables/ph_prodname"/> by <term
+          conkeyref="r_productname_variables/ph_balance"/> include: bulk job
+        submissions, dynamically adjustable swap space estimates, flexible data handling and the
+        smart handling of dependencies in job arrays. By leveraging these capabilities, <term
+          conkeyref="r_productname_variables/ph_clustercontrol"/> administrators can
+        ensure that users will spend less time waiting for the cluster, and more time focused on
+        their work.</p>
+    </section>
+ </conbody>
+</concept>
