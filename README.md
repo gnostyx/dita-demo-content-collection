@@ -1,3 +1,8 @@
+Gnostyx DITA Demostration Documents
+===================================
+
+This project provides a set of DITA documents intended to support DITA demonstrations by providing realistic documents that demonstrate a wide variety of DITA features and use patterns. The base version of the documents were originally developed and contributed by Gnostyx Research (gnostyx.com). Additional variants demonstrating various ways of using keys have been developed Eliot Kimber.
+
 Guide to Scenarios
 ==================
 
