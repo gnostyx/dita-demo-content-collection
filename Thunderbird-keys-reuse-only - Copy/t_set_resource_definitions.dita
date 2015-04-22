@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="taskId">
+    <title>Setting common resource definitions</title>
+    <shortdesc>Setting consistent host definitions across clusters promotes resource
+        sharing.</shortdesc>
+    <taskbody>
+        <context>
+            <p>For resource sharing to work between clusters, the clusters should have common
+                definitions of host types, host models, and resources. The submission cluster uses
+                the local configuration files to make job forwarding decisions, so it is important
+                these definitions remain consistent across all clusters. Common resources that are usually defined include host types, host models and host services. Once defined, these common resources are inherited by all subordinate clusters.</p>
+        </context>
+        <steps id="steps_sia_ulr_yd">
+            <step>
+                <cmd>Ensure that the <filepath>resources.shared</filepath> file is identical in all
+                    clusters. The order of resource definitions as well as the definitions
+                    themselves must not change.</cmd>
+            </step>
+            <step>
+                <cmd>Ensure that the <filepath>cluster.resources</filepath> file ReservationUsage
+                    section is identical for all clusters.</cmd>
+            </step>
+            <step>
+                <cmd>Ensure that the
+                        <filepath>set.cluster.<varname>cluster_name</varname></filepath> file
+                    ResourceMap section is consistent for all clusters.</cmd>
+                <info>
+                    <p>Since the resources defined in the ResourceMap section vary from cluster to
+                        cluster, this section should not be identical across clusters. However,
+                        resources with the same name should have the same behavior (such as shared
+                        or non-shared) in all clusters.</p>
+                    <p>
+                        <note type="warning">
+                            <p>The local ResourceMap definition is used within each cluster.
+                                Inconsistent definitions can result in jobs being forwarded to the
+                                wrong execution cluster.</p>
+                        </note>
+                    </p>
+                </info>
+            </step>
+            <step>
+                <cmd>Define targets for alarms where desired. Targets identify the threshold point
+                    for alarm notifications. Targets can be associated with any resource.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>From the <uicontrol>Targets</uicontrol> list, select a target.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Use the arrow buttons to move elements to the <uicontrol>Selected
+                                Targets</uicontrol> list.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Save changes by clicking <uicontrol>OK</uicontrol>, or save and deploy
+                            the changes by clicking <uicontrol>OK and Deploy</uicontrol>.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+    </taskbody>
+</task>

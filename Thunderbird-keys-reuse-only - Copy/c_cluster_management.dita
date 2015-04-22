@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="conceptId">
+ <title>Cluster management controls</title>
+ <shortdesc>Using <term conkeyref="r_productname_variables/ph_clustercontrol"/> for
+  cluster management to maximize job throughput.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>cluster<indexterm>management</indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <section>
+   <title>Thresholds</title>
+   <p>The <uicontrol>Thresholds</uicontrol> page under the Management section of the <term
+     conkeyref="r_productname_variables/ph_clustercontrol"/>
+    <uicontrol>Console</uicontrol> menu bar. This page shows the configured thresholds in your
+    cluster. A threshold triggers an alert if your clusters, hosts, queues, or jobs meet the
+    conditions of the threshold.</p>
+   <p>
+    <ul id="ul_fxx_tpr_yd">
+     <li>
+      <p>Name. The name of the cluster or host and the threshold.</p>
+     </li>
+     <li>
+      <p>Type. The type of threshold (for example, High/Low, Baseline, and Time Based)</p>
+     </li>
+     <li>
+      <p>High. The high threshold boundary value. If the current value of the monitored data source
+       item is greater than this value for a specified duration, the threshold triggers an
+       alert.</p>
+     </li>
+     <li>
+      <p>Low. The low threshold boundary value. If the current value of the monitored data source
+       item is lower than this value for a specified duration, the threshold triggers an alert.</p>
+     </li>
+     <li>
+      <p>Trigger. The amount of time that the data source item must be in breach of the threshold
+       before the threshold triggers an alert.</p>
+     </li>
+     <li>
+      <p>Duration. If the data source item is still in breach of the threshold, this is the amount
+       of time from when the alert was first triggered.</p>
+     </li>
+     <li>
+      <p>Repeat. The amount of time that the threshold waits before repeating the alert if the data
+       source item is still in breach of the threshold.</p>
+     </li>
+     <li>
+      <p>Current. The current value of the monitored data field.</p>
+     </li>
+     <li>
+      <p>Triggered. Indicates whether this threshold has trigged an alert.</p>
+     </li>
+     <li>
+      <p>Enabled. Indicates whether this threshold is currently active.</p>
+     </li>
+     <li>
+      <p>Ack. Indicates whether the threshold alerts have been acknowledged: "on" indicates that the
+       threshold has been acknowledged; "off" indicates that the threshold either has not been
+       acknowledged, or had its acknowledgement reset.</p>
+     </li>
+    </ul>
+   </p>
+  </section>
+  <section>
+   <title>Threshold items</title>
+   <p>The <uicontrol>Threshold Item</uicontrol> page for a threshold allows you to configure
+    threshold settings and event triggering.</p>
+   <p>Event triggering behavior is based on re-alert cycle settings. When the threshold first
+    triggers an alert, the event trigger is invoked based on a high or low threshold breach. If the
+    alert stays triggered, the event trigger is invoked again unless the re-alert cycle is set to
+     <uicontrol>Never</uicontrol>. When the alert reverts to normal, the threshold triggers the norm
+    threshold command or script.</p>
+   <p>You can configure the following items from this page:
+       <ul id="ul_eqd_bqr_yd">
+     <li>
+      <p>Template propagation enabled: Enable the propagation of changes to the threshold
+       template.</p>
+     </li>
+     <li>
+      <p>Threshold name: The name of the threshold as it appears in the Name column in the list of
+       thresholds.</p>
+      <p>
+       <note>
+        <p>You can use placeholders to customize your threshold name. Placeholders for the threshold
+         name are enclosed by pipe characters (<tt>|</tt>), for example,
+          <userinput>|cluster_name|</userinput>.</p>
+       </note>
+      </p>
+     </li>
+     <li>
+      <p>Threshold enabled.</p>
+     </li>
+     <li>
+      <p>Weekend exemption: Disable threshold alerts on weekends.</p>
+     </li>
+     <li>
+      <p>Disable restoration email: Disable threshold alerts when the threshold has returned to
+       normal.</p>
+     </li>
+     <li>
+      <p>Reset acknowledgement: Reset acknowledgements when the threshold has returned to
+       normal.</p>
+     </li>
+     <li>
+      <p>High/low threshold values.</p>
+     </li>
+     <li>
+      <p>Threshold type: High/low, baseline, or time based.</p>
+     </li>
+     <li>
+      <p>Event triggering (Shell command): Specifies event trigger commands or shell scripts in the
+       event of a breach.</p>
+      <p>
+       <ul id="ul_hrd_bqr_yd">
+        <li>
+         <p>High Threshold Trigger Command/Script: If the threshold is breached because the data
+          source exceeds this value, the threshold triggers the specified command or shell
+          script.</p>
+        </li>
+        <li>
+         <p>Low Threshold Trigger Command/Script: If the threshold is breached because the data
+          source drops below this value, the threshold triggers the specified command or shell
+          script.</p>
+        </li>
+        <li>
+         <p>Norm Threshold Trigger Command/Script: If the threshold is breached, then returns to
+          normal, the threshold triggers the specified command or shell script.</p>
+        </li>
+       </ul>
+      </p>
+     </li>
+     <li>
+      <p>Event triggering (Grid administrator host level triggers): Specifies host-level actions in
+       the event of a breach.</p>
+      <p>
+       <ul id="ul_prd_bqr_yd">
+        <li>
+         <p>Host Level Action (High Threshold): If the threshold is breached because the data source
+          exceeds this value, the threshold triggers the specified action on the host.</p>
+        </li>
+        <li>
+         <p>Host Level Action (Low Threshold): If the threshold is breached because the data source
+          drops below this value, the threshold triggers the specified action on the host.</p>
+        </li>
+       </ul>
+      </p>
+     </li>
+     <li>
+      <p>Email message body: Email alert message content. This specifies the template that is used
+       in alert email notifications for this threshold.</p>
+      <p>
+       <note>
+        <p>You can use placeholders to customize your alert emails and provide additional
+         information. Placeholders for the email message body are enclosed by angle brackets
+         (&lt;>), for example, <userinput>&lt;cluster_name></userinput>.</p>
+       </note>
+      </p>
+     </li>
+     <li>
+      <p>Syslog settings.</p>
+     </li>
+     <li>
+      <p>Data type: Special formatting for the given data.</p>
+     </li>
+     <li>
+      <p>Re-alert cycle: The amount of time the threshold repeats the alert, if it is still in
+       breach.</p>
+     </li>
+     <li>
+      <p>Notify accounts and extra alert emails: Email addresses to be notified when the threshold
+       raises an alert.</p>
+     </li>
+    </ul>
+   </p>
+  </section>
+ </conbody>
+</concept>

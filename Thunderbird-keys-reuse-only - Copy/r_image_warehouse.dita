@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/OS/dtd/reference.dtd">
+<reference id="image_warehouse_STA">
+  <title>Image Warehouse</title>
+  <shortdesc>All images used throughout the <term
+            conkeyref="productname_variables/ph_prodname"/>
+        documentation.</shortdesc>
+  <refbody id="refbody_dkw_2lh_mr">
+        <section>
+            <p>
+                <table frame="none" id="table_omw_2lh_mr">
+                    <title><term conkeyref="productname_variables/ph_prodname"/>
+                        Icon</title>
+                    <tgroup cols="2">
+                        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                        <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+                        <thead>
+                            <row>
+                                <entry>
+                                    <p><ph>Icon</ph></p>
+                                </entry>
+                                <entry>
+                                    <p><ph>Description</ph></p>
+                                </entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry><image keyref="error_icon" id="image_dx2_m3m_mr"
+                                    >
+                                  <alt>Error Icon</alt>
+                                </image></entry>
+                                <entry>Error Icon</entry>
+                            </row>
+                            <row>
+                                <entry><image keyref="warning_icon" id="image_yxw_m3m_mr"
+                                    >
+                                  <alt>Warning Icon</alt>
+                                </image></entry>
+                                <entry>Warning Icon</entry>
+                            </row>
+                            <row>
+                                <entry><image keyref="operational_icon"
+                                        id="image_gpx_n3m_mr">
+                                  <alt>Operational Icon</alt>
+                                </image></entry>
+                                <entry>Operational Icon</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </p>
+        </section>
+      <section><title><term conkeyref="productname_variables/ph_prodname"/> Marketing Images
+            </title>
+      <fig id="fig_ihs_xmc_rr">
+                <title><term conkeyref="productname_variables/ph_companyname"/>
+                    <term conkeyref="productname_variables/ph_prodname"/> Computing
+                    Management Solution</title>
+                <image keyref="Thunder-MultiDevice-003" id="image_f2g_mft_qr">
+                  <alt>Computing
+                    Management Solution</alt>
+                </image>
+            </fig>
+      
+      </section>
+      
+      
+      <section><title><term conkeyref="productname_variables/ph_prodname"/>
+                Architecture Diagram(s)</title><fig id="fig_rr2_b35_mr">
+                <title><term conkeyref="productname_variables/ph_prodname"/> General
+                    Solution Architecture</title>
+            <image keyref="Thunderbird_Architecture-sm" id="image_bk3_xh5_mr"
+            >
+              <alt>General
+                    Solution Architecture</alt>
+            </image></fig>
+        
+            <fig id="fig_jzz_ykh_mr">
+                <title id="title_kn2_tkh_mr"><term
+                        conkeyref="productname_variables/ph_enduser"/> Login
+                    Screen</title>
+                <image keyref="ThunderBird-Login-sm" id="image_mfx_rbh_mr">
+                  <alt>Login
+                    Screen</alt>
+                </image>
+            </fig>
+            <fig id="fig_enw_2lh_mr">
+                <title><term conkeyref="productname_variables/ph_enduser"/>
+                    Workspace</title>
+                <image keyref="ThunderBird-Workspace-sm" id="image_rtw_ffh_mr">
+                  <alt>Workspace</alt>
+                </image>
+            </fig>
+            <fig id="fig_eqw_2lh_mr">
+                <title><term conkeyref="productname_variables/ph_enduser"/>
+                    Performance Monitor</title>
+                <image keyref="ThunderBird-Performance-sm" id="image_az2_hfh_mr">
+                  <alt>Performance Monitor</alt>
+                </image>
+            </fig>
+            <fig id="fig_ovw_2lh_mr">
+                <title><term conkeyref="productname_variables/ph_enduser"/> System
+                    Support Tab: Troubleshooting</title>
+                <image keyref="ThunderBird-Troubleshooting-sm" id="image_vlb_mch_mr">
+                  <alt>System
+                    Support Tab: Troubleshooting</alt>
+                </image>
+            </fig>
+            <fig id="fig_zxw_2lh_mr">
+                <title><term conkeyref="productname_variables/ph_enduser"/>
+                    Customization Tab</title>
+                <image keyref="ThunderBird-Customize-sm" id="image_xxv_mch_mr">
+                  <alt>Customization Tab</alt>
+                </image>
+            </fig>
+      </section> 
+        
+    </refbody>
+</reference>

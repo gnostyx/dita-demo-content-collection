@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="v4375893453">
+ <title>About job submission from active running jobs</title>
+ <shortdesc>Currently running jobs can submit commands.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>job submission<indexterm>active running jobs</indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <section>
+   <p><ph conkeyref="r_productname_variables/ph_prodname"/> supports commands issued
+    by jobs running on execution clusters. All <cmdname>jobsub</cmdname> commands issued by running
+    jobs are sent to the submission cluster, and then forwarded to an appropriate execution cluster
+    to run.</p>
+   <p>This is necessary because <ph conkeyref="r_productname_variables/ph_prodname"/>
+    execution clusters do not accept local job submissions.</p>
+  </section>
+ </conbody>
+</concept>

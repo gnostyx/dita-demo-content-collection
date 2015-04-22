@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
+
+<!-- Begin Document Specific Declarations -->
+
+
+<!-- End Document Specific Declarations -->
+
+]>
+
+
+<concept id = "i713958"><title>Payload definition</title>
+    <shortdesc>Layers of a captured packet are accessible when using payload options.</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>system destinations<indexterm>payload</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+<conbody><section>
+            <p>The payload option allows you to select specific layers of the captured packet. The
+                payload is defined by setting the appropriate control parameters.</p>
+            <p>The payload layers are:<parml>
+                    <plentry>
+                        <pt>Ether</pt>
+                        <pd>
+                            <p>
+                                <table frame="all" colsep="1" rowsep="1" id="table_gbv_fwt_de">
+                                    <tgroup cols="4" colsep="1" rowsep="1" outputclass="Format A">
+                                        <colspec colnum="1" colname="1" colwidth="25*"/>
+                                        <colspec colnum="2" colname="2" colwidth="25*"/>
+                                        <colspec colnum="3" colname="3" colwidth="25*"/>
+                                        <colspec colnum="4" colname="4" colwidth="25*"/>
+                                        <tbody>
+                                            <row rowsep="0">
+                                                <entry colname="1">
+                                                  <p>Original L2</p>
+                                                </entry>
+                                                <entry colname="2">
+                                                  <p>(Outer IP or Tunnel header)</p>
+                                                </entry>
+                                                <entry colname="3">
+                                                  <p>Original L3 IP</p>
+                                                </entry>
+                                                <entry colname="4">
+                                                  <p>Original L4-L7</p>
+                                                </entry>
+                                            </row>
+                                        </tbody>
+                                    </tgroup>
+                                </table>
+                            </p>
+                            <p>The entire packet is processed, including the entire ethernet
+                                header.</p>
+                        </pd>
+                    </plentry>
+                    <plentry>
+                        <pt>IP</pt>
+                        <pd>
+                            <p>The ethernet headers are stripped and the rest of the packet is
+                                processed.</p>
+                        </pd>
+                    </plentry>
+                    <plentry>
+                        <pt>layer 4</pt>
+                        <pd>
+                            <p>Encapsulation is stripped down to the public IP headers, which is
+                                processed along with the rest of the packet.</p>
+                            <p>
+                                <table frame="all" colsep="1" rowsep="1" id="table_aia_kwt_de">
+                                    <tgroup cols="4" colsep="1" rowsep="1" outputclass="Format A">
+                                        <colspec colnum="1" colname="1" colwidth="25*"/>
+                                        <colspec colnum="2" colname="2" colwidth="25*"/>
+                                        <colspec colnum="3" colname="3" colwidth="25*"/>
+                                        <colspec colnum="4" colname="4" colwidth="25*"/>
+                                        <tbody>
+                                            <row rowsep="0">
+                                                <entry colname="1" >
+                                                  <p/>
+                                                </entry>
+                                                <entry colname="2">
+                                                  <p/>
+                                                </entry>
+                                                <entry colname="3">
+                                                  <p>Original L3 IP</p>
+                                                </entry>
+                                                <entry colname="4">
+                                                  <p>Original L4-L7</p>
+                                                </entry>
+                                            </row>
+                                        </tbody>
+                                    </tgroup>
+                                </table>
+                            </p>
+                        </pd>
+                    </plentry>
+                    <plentry>
+                        <pt>original payload</pt>
+                        <pd>
+                            <p>IP header is stripped and the rest of the packet (layers 4 through 7)
+                                are processed.</p>
+                            <p>
+                                <table frame="all" colsep="1" rowsep="1" id="table_wwf_mwt_de">
+                                    <tgroup cols="4" colsep="1" rowsep="1" outputclass="Format A">
+                                        <colspec colnum="1" colname="1" colwidth="25*"/>
+                                        <colspec colnum="2" colname="2" colwidth="25*"/>
+                                        <colspec colnum="3" colname="3" colwidth="25*"/>
+                                        <colspec colnum="4" colname="4" colwidth="25*"/>
+                                        <tbody>
+                                            <row rowsep="0">
+                                                <entry colname="1">
+                                                  <p/>
+                                                </entry>
+                                                <entry colname="2">
+                                                  <p/>
+                                                </entry>
+                                                <entry colname="3">
+                                                  <p/>
+                                                </entry>
+                                                <entry colname="4">
+                                                  <p>Original L4-L7</p>
+                                                </entry>
+                                            </row>
+                                        </tbody>
+                                    </tgroup>
+                                </table>
+                            </p>
+                        </pd>
+                    </plentry>
+                </parml></p>
+        </section>
+    <section id="i713912">
+            <title>IP header</title>
+            <p>An IP address routes traffic to the IP of the next node. Enter the destination IP
+                address. This is used to obtain the Ethernet address.</p>
+        </section>
+    <section id="i713917">
+            <title>IP4 header</title>
+            <p>The IP4 header options are:<table
+                    frame="topbot" colsep="0" rowsep="0">
+                    <tgroup cols="2" colsep="0" rowsep="0" outputclass="Basic">
+                        <colspec colnum="1" colname="1" colwidth="15*" colsep="0"/>
+                        <colspec colnum="2" colname="2" colwidth="85*" colsep="0"/>
+                        <thead>
+                            <row rowsep="1">
+                                <entry colname="1">Parameter</entry>
+                                <entry colname="2">Description</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row rowsep="0">
+                                <entry colname="1">
+                                    <p>Destination IP</p>
+                                </entry>
+                                <entry colname="2">
+                                    <p>Destination IP address</p>
+                                </entry>
+                            </row>
+                            <row rowsep="0">
+                                <entry colname="1">
+                                    <p>Source IP</p>
+                                </entry>
+                                <entry colname="2">
+                                    <p>Source IP address. If omitted, the IP of the outgoing
+                                        interface is used.</p>
+                                </entry>
+                            </row>
+                            <row rowsep="0">
+                                <entry colname="1">
+                                    <p>TOS</p>
+                                </entry>
+                                <entry colname="2">
+                                    <p>Marking for the processed packet</p>
+                                </entry>
+                            </row>
+                            <row rowsep="0">
+                                <entry colname="1">
+                                    <p>TTL</p>
+                                </entry>
+                                <entry colname="2">
+                                    <p>Use to assign a time to live value to the processed packet.
+                                        This value is measured in milliseconds.</p>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table></p>
+        </section>
+    <section id="i713923">
+            <title>UDP header</title>
+            <p>The UDP header options are:<table
+                    frame="topbot" colsep="0" rowsep="0">
+                    <tgroup cols="2" colsep="0" rowsep="0" outputclass="Basic">
+                        <colspec colnum="1" colname="1" colwidth="15*" colsep="0"/>
+                        <colspec colnum="2" colname="2" colwidth="85*" colsep="0"/>
+                        <thead>
+                            <row rowsep="1">
+                                <entry colname="1">Parameter</entry>
+                                <entry colname="2">Description</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row rowsep="0">
+                                <entry colname="1">
+                                    <p>Destination port</p>
+                                </entry>
+                                <entry colname="2">
+                                    <p>Layer 4 destination port</p>
+                                </entry>
+                            </row>
+                            <row rowsep="0">
+                                <entry colname="1">
+                                    <p>Source port</p>
+                                </entry>
+                                <entry colname="2">
+                                    <p>Layer 4 source port</p>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table></p>
+        </section>
+    <section id="i713929">
+            <title>Binary header</title>
+            <p>The binary header takes a format
+                string in TCL binary format.</p>
+            <p>There are three fields parameters: Specified, Timestamp and subscriber.id.<parml>
+                    <plentry>
+                        <pt>Specified</pt>
+                        <pd>
+                            <p>Requires an expression</p>
+                        </pd>
+                    </plentry>
+                    <plentry>
+                        <pt>Timestamp</pt>
+                        <pd>
+                            <p>Time the packet arrived</p>
+                        </pd>
+                    </plentry>
+                    <plentry>
+                        <pt>subscriber.id</pt>
+                        <pd>
+                            <p>Subscriber of the flow</p>
+                        </pd>
+                    </plentry>
+                </parml></p>
+        </section></conbody></concept>

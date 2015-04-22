@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="v892342324">
+    <title>Setting host preference</title>
+    <shortdesc>Select the host(s) you want to run your jobs during job submission. </shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>host preference<indexterm>job level</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The enhanced <cmdname>jobsub -m</cmdname> option supports setting remote host and
+                cluster preference for individual jobs. Host preference can be set for remote hosts
+                in any cluster.</p>
+        </context>
+        <steps id="steps_kar_csr_yd">
+            <step>
+                <cmd>Submit a job using <userinput>jobsub -m
+                            <varname/><varname>cluster_name</varname></userinput> or
+                        <userinput>jobsub -m
+                            <varname>host_name</varname>@<varname>cluster_name</varname></userinput>.</cmd>
+                <info>
+                    <p>
+                        <note type="note">
+                            <p>Cluster preference specified at job submission using
+                                    <userinput>jobsub -m
+                                        <varname>host_name</varname>@<varname>cluster_name</varname></userinput>
+                                or <userinput>jobsub -m
+                                    <varname/><varname>cluster_name</varname></userinput> takes
+                                precedence over cluster preference set in
+                                    <parmname>SNDJOBS_TO</parmname>.</p>
+                        </note>
+                    </p>
+                </info>
+            </step>
+        </steps>
+        <example>
+            <p>For example:</p>
+            <p>
+                <codeblock><codeph><userinput>jobsub -m "cluster3 cluster2+1"</userinput></codeph></codeblock>
+            </p>
+            <p>In this example the submission cluster first considers <keyword>cluster2</keyword>,
+                with <keyword>cluster3</keyword> as the second choice.</p>
+            <p>
+                <codeblock><codeph><userinput>jobsub -m "hostA hostB+1"</userinput></codeph></codeblock>
+            </p>
+            <p>The submission cluster first considers the cluster containing
+                    <keyword>hostB</keyword>, with the cluster containing <keyword>hostA</keyword>
+                as the second choice.</p>
+            <p>
+                <codeblock><codeph><userinput>jobsub -m "cluster3 cluster4+1"</userinput></codeph></codeblock>
+            </p>
+            <p>The submission cluster first considers <keyword>cluster4</keyword> , with
+                    <keyword>cluster3</keyword> as the second choice.</p>
+            <p>
+                <codeblock><codeph><userinput>jobsub -m "hostC@cluster1+1 hostD@cluster1+2 cluster1"</userinput></codeph></codeblock>
+            </p>
+            <p>All hosts in this example are in <keyword>cluster1</keyword>. The cluster selection
+                is combined with the host preference; the submission cluster forwards the job to
+                cluster1 with the filtered and merged host preference <userinput>"others hostC+1
+                    hostD+2"</userinput>.</p>
+        </example>
+    </taskbody>
+</task>
