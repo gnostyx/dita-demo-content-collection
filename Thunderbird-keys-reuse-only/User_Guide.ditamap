@@ -29,7 +29,9 @@
         <topicref keys="mv_workspace_tab" href="c_mv_workspace_tab.dita"/>
         <topicref keys="mv_performance_tab" href="c_mv_performance_tab.dita"/>
         <topicref keys="mv_diagnostics_tab" href="c_mv_diagnostics_tab.dita"/>
-        <topicref keys="faq_questions" href="FAQ.dita"/>
+        <topicref
+      keys="faq"
+      href="c_FAQ.dita"/>
     </topicref>
     <topicref keys="common_tasks" href="c_common_tasks.dita">
         <topicref keys="mv_managing_messages" href="c_mv_managing_messages.dita"/>
