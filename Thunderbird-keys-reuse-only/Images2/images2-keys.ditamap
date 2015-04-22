@@ -60,7 +60,7 @@
   </keydef>
   <keydef
     keys="error_icon a_error_icon"
-    href="a_error_icon.png"
+    href="topics/a_error_icon.png"
     format="png">
     <topicmeta>
       <navtitle>a_error_icon.png</navtitle>
@@ -68,7 +68,7 @@
   </keydef>
   <keydef
     keys="operational_icon a_operational_icon"
-    href="a_operational_icon.png"
+    href="topics/a_operational_icon.png"
     format="png">
     <topicmeta>
       <navtitle>a_operational_icon.png</navtitle>
@@ -76,7 +76,7 @@
   </keydef>
   <keydef
     keys="warning_icon a_warning_icon"
-    href="a_warning_icon.png"
+    href="topics/a_warning_icon.png"
     format="png">
     <topicmeta>
       <navtitle>a_warning_icon.png</navtitle>
