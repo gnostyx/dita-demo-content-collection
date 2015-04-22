@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>Key definitions for external Web-based resources</title>
+  <keydef
+    keys="cc-license-by-sa cc-license-by-sa-4.0"
+    scope="external"
+    format="html"
+    href="http://creativecommons.org/licenses/by-sa/4.0/">
+    <topicmeta>
+      <navtitle>Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef keys="gnostyx.com" scope="external" format="html"
+     href="http://www.gnostyx.com">
+    <topicmeta>
+      <navtitle>Gnostyx Research Inc.</navtitle>
+    </topicmeta>
+  </keydef>
+</map>

@@ -2,17 +2,21 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
   <title><term
-    conkeyref="productname_variables/ph_prodname"/> User Guide (Keys Reuse Only)</title>
-  <mapref href="topics/keydefs-topics.ditamap"/>
+    conkeyref="productname_variables/ph_prodname"/> User Guide (Resonly For All Topics)</title>
+  <mapref
+    href="topics/keydefs-topics.ditamap"/>
+  <mapref href="keydefs-external-web-sites.ditamap"/>
   <topicgroup product="STA" processing-role="resource-only">
-    <mapref href="Images/images-keys.ditamap"/>
+    <mapref
+      href="Images/images-keys.ditamap"/>
     <keydef keys="productname_variables" href="topics/r_productname_variables.dita" type="topic"
       />    
     <keydef keys="image_warehouse" href="topics/r_image_warehouse.dita" type="topic"
       />   
   </topicgroup>
   <topicgroup product="STB" processing-role="resource-only">
-    <mapref href="Images2/images2-keys.ditamap"/>
+    <mapref
+      href="Images2/images2-keys.ditamap"/>
     <keydef keys="productname_variables" href="topics/r_productname_variables_2.dita" type="topic"
       />    
     <keydef keys="image_warehouse" href="topics/r_image_warehouse_2.dita" type="topic"

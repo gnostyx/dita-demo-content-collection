@@ -62,8 +62,7 @@
   <section>
    <title>Licensing Terms</title>
    <p>The DITA Demonstration Collection has been released under the Creative Commons
-    Attribution-ShareAlike 4.0 International Public License (See <xref scope="external"
-     format="html" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</xref>). This
+    Attribution-ShareAlike 4.0 International Public License (See <xref keyref="cc-license-by-sa">CC-BY-SA 4.0</xref>). This
     license essentially encourages others to use, adapt and extend the collection in ways that they
     see fit. This includes providing this content as part of a commercial offering, for example as
     reference files within a product tutorial. The only caveats that are introduced by the licensing
@@ -71,8 +70,7 @@
     available to the public on similar terms. </p></section>
   <section>
    <title>Acknowledgements</title>
-   <p>The initial release of the DITA Demonstration Collection has been sponsored by <xref scope="external" format="html"
-     href="http://www.gnostyx.com">Gnostyx Research Inc.</xref> and has been the result of
+   <p>The initial release of the DITA Demonstration Collection has been sponsored by <xref keyref="gnostyx.com"/> and has been the result of
     contributions from the following people:<ul id="ul_cl1_vcd_rh">
      <li>Joe Gollner</li>
      <li>Kelsey Nelson</li>

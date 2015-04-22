@@ -111,8 +111,8 @@ The should <b>not</b> be used for cross references.</shortdesc>
       keys="c_security"
       href="c_security.dita"/>
     <keydef
-      keys="proposal_standard_responses"
-      href="proposal_standard_responses.dita"/>
+      keys="c_proposal_standard_responses"
+      href="c_proposal_standard_responses.dita"/>
     <keydef
       keys="r_active_job_submission"
       href="r_active_job_submission.dita"/>
