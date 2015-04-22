@@ -2,6 +2,62 @@
 <map>
   <title>Key definitions for images in the Images directory</title>
   <keydef
+    keys="Marketing"
+    href="../Images2/Marketing.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Marketing.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Architecture"
+    href="../Images2/Architecture.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Architecture.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Customization"
+    href="../Images2/Customization.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Customization.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Login"
+    href="../Images2/Login.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Login.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Performance"
+    href="../Images2/Performance.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Performance.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Troubleshooting"
+    href="../Images2/Troubleshooting.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Troubleshooting.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Workspace"
+    href="../Images2/Workspace.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Workspace.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
     keys="Thunder-MultiDevice-003"
     href="Thunder-MultiDevice-003.jpg"
     format="jpg">

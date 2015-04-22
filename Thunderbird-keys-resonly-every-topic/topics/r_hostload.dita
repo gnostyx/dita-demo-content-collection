@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="v324323423">
   <title>hostload</title>
-  <shortdesc>Shows host load information for all hosts within all clusters connected by <ph
+  <shortdesc>Shows host load information for all hosts within all clusters connected by <term
       conkeyref="r_productname_variables/ph_prodname"/>.</shortdesc>
   <prolog>
     <metadata>

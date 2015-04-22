@@ -59,6 +59,62 @@
     </topicmeta>
   </keydef>
   <keydef
+    keys="Thunder-MultiDevice-003"
+    href="../Images/Thunder-MultiDevice-003.jpg"
+    format="jpg">
+    <topicmeta>
+      <navtitle>Thunder-MultiDevice-003.jpg</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="ThunderBird-Customize-sm"
+    href="../Images/ThunderBird-Customize-sm.png"
+    format="png">
+    <topicmeta>
+      <navtitle>ThunderBird-Customize-sm.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="ThunderBird-Login-sm"
+    href="../Images/ThunderBird-Login-sm.png"
+    format="png">
+    <topicmeta>
+      <navtitle>ThunderBird-Login-sm.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="ThunderBird-Performance-sm"
+    href="../Images/ThunderBird-Performance-sm.png"
+    format="png">
+    <topicmeta>
+      <navtitle>ThunderBird-Performance-sm.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="ThunderBird-Troubleshooting-sm"
+    href="../Images/ThunderBird-Troubleshooting-sm.png"
+    format="png">
+    <topicmeta>
+      <navtitle>ThunderBird-Troubleshooting-sm.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="ThunderBird-Workspace-sm"
+    href="../Images/ThunderBird-Workspace-sm.png"
+    format="png">
+    <topicmeta>
+      <navtitle>ThunderBird-Workspace-sm.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="Thunderbird_Architecture-sm"
+    href="../Images/Thunderbird_Architecture-sm.png"
+    format="png">
+    <topicmeta>
+      <navtitle>Thunderbird_Architecture-sm.png</navtitle>
+    </topicmeta>
+  </keydef>
+  <keydef
     keys="error_icon a_error_icon"
     href="a_error_icon.png"
     format="png">
