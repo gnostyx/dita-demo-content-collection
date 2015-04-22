@@ -7,21 +7,21 @@
 	<prolog>
 		<metadata>
 			<prodinfo>
-				<prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+				<prodname><term conkeyref="productname_variables/ph_enduser"/></prodname>
 				<vrmlist>
 					<vrm version="1.1" release="GA" modification="b"/>
 				</vrmlist>
 			</prodinfo>
 		</metadata>
 		<metadata>
-			<keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>messaging overview</indexterm></indexterm></keywords>
+			<keywords><indexterm><term conkeyref="productname_variables/ph_enduser"/><indexterm>messaging overview</indexterm></indexterm></keywords>
 		</metadata>
 	</prolog>
 	<conbody> 
 	 <section> 
 		<title>Introduction</title> 
 		
-	 	<p>The message manager in <term conkeyref="r_productname_variables/ph_enduser"/>
+	 	<p>The message manager in <term conkeyref="productname_variables/ph_enduser"/>
 				allows you to do the following: <ul>
 					<li>Send messages.</li>
 					<li>Receive messages and notifications.</li>
@@ -34,14 +34,14 @@
 	 </section> 
 	<section><title>Sending Messages</title>
 		<p>You can send a message to an individual contact or to a group of contacts in <term
-					conkeyref="r_productname_variables/ph_enduser"/>. You can compose
+					conkeyref="productname_variables/ph_enduser"/>. You can compose
 				a message and then add one or more recipients or you can select one or more
 				recipients and then compose your message. All messages are retained within <term
-					conkeyref="r_productname_variables/ph_persistence"/>.</p></section>	
+					conkeyref="productname_variables/ph_persistence"/>.</p></section>	
 		
 	 <section> 
 		<title>Receiving Messages and Notifications</title> 
-	 	<p>You can receive messages from other <term conkeyref="r_productname_variables/ph_enduser"/> users. You can also receive automated notifications regarding alerts or alarms associated with your project.</p> 
+	 	<p>You can receive messages from other <term conkeyref="productname_variables/ph_enduser"/> users. You can also receive automated notifications regarding alerts or alarms associated with your project.</p> 
 	 </section> 
 	 <section> 
 		<title>Replying to Messages</title> 
@@ -64,7 +64,7 @@
 	 	<p>You can delete messages by selecting one or more messages and using the
 					<uicontrol>Delete</uicontrol> option. Deleted messages are not removed from the
 				message archive within <term
-					conkeyref="r_productname_variables/ph_persistence"/>. These
+					conkeyref="productname_variables/ph_persistence"/>. These
 				archived messages can be retrieved by a system administrator. </p> 
 	 </section> 
 	 <section> 

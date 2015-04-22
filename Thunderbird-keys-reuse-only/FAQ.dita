@@ -3,12 +3,12 @@
 
   <topic id="mobileview_FAQ"> 
 	 <title>Frequently Asked Questions</title> 
-  	<shortdesc>Answers to your frequently asked questions about <term conkeyref="r_productname_variables/ph_enduser"/>. 
+  	<shortdesc>Answers to your frequently asked questions about <term conkeyref="productname_variables/ph_enduser"/>. 
 	 </shortdesc> 
 	 <body> 
 	 	<section> 
 	 		<title>How do I change my password?</title> 
-	 		<p>You can change your password after you log on to <term conkeyref="r_productname_variables/ph_enduser"/>.</p>
+	 		<p>You can change your password after you log on to <term conkeyref="productname_variables/ph_enduser"/>.</p>
 	 		<p>Select the <uicontrol>Account</uicontrol> button in the top right hand corner, then select the <uicontrol>Settings</uicontrol> option. In the Settings tab, click the 
 	 			<uicontrol>Change Password</uicontrol> button. In the Are-you-sure-you-want-to-change-your-password? dialog
 	 			box, enter your old password, enter your new password twice, and click <uicontrol>OK</uicontrol>.</p>
@@ -24,7 +24,7 @@
 	 	<section> 
 	 		<title>How do I generate a custom query?</title> 
 	 		<p>You can generate customized queries on the tasks, clusters, and targets in your 
-	 			<term conkeyref="r_productname_variables/ph_enduser"/> system for investigation or 
+	 			<term conkeyref="productname_variables/ph_enduser"/> system for investigation or 
 	 			maintenance purposes.</p>
 	 		<p>Within the <uicontrol>Customize Views</uicontrol> tab, use the filters in the
 					<uicontrol>Query Pane</uicontrol> to set up your query. Click on a filter

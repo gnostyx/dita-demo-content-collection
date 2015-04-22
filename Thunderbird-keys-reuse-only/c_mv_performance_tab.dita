@@ -2,19 +2,19 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="c_mv_performance_tab" xml:lang="en-us">
  <title>System performance</title>
- <shortdesc><term conkeyref="r_productname_variables/ph_enduser"/> reports on system
+ <shortdesc><term conkeyref="productname_variables/ph_enduser"/> reports on system
   performance.</shortdesc>
  <prolog>
   <metadata>
    <prodinfo>
-    <prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+    <prodname><term conkeyref="productname_variables/ph_enduser"/></prodname>
     <vrmlist>
      <vrm version="1.1" release="GA" modification="b"/>
     </vrmlist>
    </prodinfo>
   </metadata>
   <metadata>
-    <keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>system performance tab</indexterm></indexterm></keywords>
+    <keywords><indexterm><term conkeyref="productname_variables/ph_enduser"/><indexterm>system performance tab</indexterm></indexterm></keywords>
   </metadata>
  </prolog>
  <conbody>
@@ -25,7 +25,7 @@
   </ul>
    You can use the real-time System Performance readings to better manage your project and subordinate tasks. 
   </p>
-  <fig conkeyref="r_image_warehouse/fig_eqw_2lh_mr" id="fig_lkc_ggm_mr"/>
+  <fig conkeyref="image_warehouse/fig_eqw_2lh_mr" id="fig_lkc_ggm_mr"/>
   <section>Monitoring <uicontrol>System Performance</uicontrol>
    <p>The <uicontrol>System Performance</uicontrol> tab provides the ability to monitor the
     performance of selected cluster hosts and specific processing jobs. In order to facilitate this,

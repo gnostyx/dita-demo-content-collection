@@ -6,7 +6,7 @@
 	<prolog>
 		<metadata>
 			<keywords>
-				<indexterm><term conkeyref="r_productname_variables/ph_prodname"/><indexterm>system health indicators</indexterm></indexterm>
+				<indexterm><term conkeyref="productname_variables/ph_prodname"/><indexterm>system health indicators</indexterm></indexterm>
 			</keywords>
 		</metadata>
 	</prolog> 
@@ -34,7 +34,7 @@
 					<tbody>
 						<row>
 							<entry colname="col2">
-								<p><image conkeyref="r_image_warehouse/image_gpx_n3m_mr" id="image_tbr_qms_mr"
+								<p><image conkeyref="image_warehouse/image_gpx_n3m_mr" id="image_tbr_qms_mr"
 									/></p>
 							</entry>
 							<entry colname="col3">
@@ -46,7 +46,7 @@
 						</row>
 						<row>
 							<entry colname="col2">
-								<p><image conkeyref="r_image_warehouse/image_yxw_m3m_mr" id="image_t3f_rms_mr"
+								<p><image conkeyref="image_warehouse/image_yxw_m3m_mr" id="image_t3f_rms_mr"
 									/></p>
 							</entry>
 							<entry colname="col3">
@@ -59,7 +59,7 @@
 						</row>
 						<row>
 							<entry colname="col2">
-								<p><image conkeyref="r_image_warehouse/image_dx2_m3m_mr" id="image_l2t_rms_mr"
+								<p><image conkeyref="image_warehouse/image_dx2_m3m_mr" id="image_l2t_rms_mr"
 									/></p>
 							</entry>
 							<entry colname="col3">

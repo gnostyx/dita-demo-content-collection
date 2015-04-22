@@ -8,14 +8,14 @@
  <prolog>
   <metadata>
    <prodinfo>
-    <prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+    <prodname><term conkeyref="productname_variables/ph_enduser"/></prodname>
     <vrmlist>
      <vrm version="1.1" release="GA" modification="b"/>
     </vrmlist>
    </prodinfo>
   </metadata>
   <metadata>
-   <keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>workspace tab<indexterm>query warning messages</indexterm></indexterm></indexterm></keywords>
+   <keywords><indexterm><term conkeyref="productname_variables/ph_enduser"/><indexterm>workspace tab<indexterm>query warning messages</indexterm></indexterm></indexterm></keywords>
   </metadata>
  </prolog>
  <refbody>

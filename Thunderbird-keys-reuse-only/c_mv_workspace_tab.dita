@@ -7,14 +7,14 @@
   <author>Technical writing</author>
   <metadata>
    <prodinfo>
-    <prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+    <prodname><term conkeyref="productname_variables/ph_enduser"/></prodname>
     <vrmlist>
      <vrm version="1.1" release="GA" modification="b"/>
     </vrmlist>
    </prodinfo>
   </metadata>
   <metadata>
-   <keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>workspace tab</indexterm></indexterm></keywords>
+   <keywords><indexterm><term conkeyref="productname_variables/ph_enduser"/><indexterm>workspace tab</indexterm></indexterm></keywords>
   </metadata>
  </prolog>
  <conbody>
@@ -26,7 +26,7 @@
     <li>Cluster workload.</li>
    </ul>
   </p>
-  <fig conkeyref="r_image_warehouse/fig_enw_2lh_mr" id="fig_a5k_zfm_mr"/>
+  <fig conkeyref="image_warehouse/fig_enw_2lh_mr" id="fig_a5k_zfm_mr"/>
   
   
   
@@ -103,7 +103,7 @@
           can be accessed and participated in. </li>
         </ul></p>
        <p><uicontrol>Contact Support</uicontrol> if you have trouble using <term
-         conkeyref="r_productname_variables/ph_enduser"/> and cannot find the answers
+         conkeyref="productname_variables/ph_enduser"/> and cannot find the answers
         you need on the Troubleshooting or Documentation pages. </p>
       </entry>
      </row>

@@ -8,7 +8,7 @@
     <prolog>
          <metadata>
             <prodinfo>
-                <prodname><term conkeyref="r_productname_variables/ph_clusterview"/>
+                <prodname><term conkeyref="productname_variables/ph_clusterview"/>
                 </prodname>
                 <vrmlist>
                     <vrm version="1.1" release="GA" modification="b"/>
@@ -16,7 +16,7 @@
             </prodinfo>
         </metadata>
         <metadata>
-            <keywords><indexterm><term conkeyref="r_productname_variables/ph_clusterview"/><indexterm>query filters</indexterm></indexterm></keywords>
+            <keywords><indexterm><term conkeyref="productname_variables/ph_clusterview"/><indexterm>query filters</indexterm></indexterm></keywords>
         </metadata>
     </prolog>
     <refbody>

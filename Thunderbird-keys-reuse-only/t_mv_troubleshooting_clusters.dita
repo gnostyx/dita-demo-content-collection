@@ -4,14 +4,14 @@
   <prolog>
       <metadata>
          <prodinfo>
-            <prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+            <prodname><term conkeyref="productname_variables/ph_enduser"/></prodname>
             <vrmlist>
                <vrm version="1.1" release="GA" modification="b"/>
             </vrmlist>
          </prodinfo>
       </metadata>
       <metadata>
-         <keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><term conkeyref="r_productname_variables/ph_clustercontrol"/><indexterm>cluster reporting<indexterm>troubleshooting</indexterm></indexterm></indexterm></keywords>
+         <keywords><indexterm><term conkeyref="productname_variables/ph_enduser"/><term conkeyref="productname_variables/ph_clustercontrol"/><indexterm>cluster reporting<indexterm>troubleshooting</indexterm></indexterm></indexterm></keywords>
       </metadata>
   </prolog>
   <taskbody>

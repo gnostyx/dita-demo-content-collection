@@ -6,14 +6,14 @@
  <prolog>
   <metadata>
    <prodinfo>
-    <prodname><term conkeyref="r_productname_variables/ph_enduser"/></prodname>
+    <prodname><term conkeyref="productname_variables/ph_enduser"/></prodname>
     <vrmlist>
      <vrm version="1.1" release="GA" modification="b"/>
     </vrmlist>
    </prodinfo>
   </metadata>
   <metadata>
-   <keywords><indexterm><term conkeyref="r_productname_variables/ph_enduser"/><indexterm>customize views tab</indexterm></indexterm></keywords>
+   <keywords><indexterm><term conkeyref="productname_variables/ph_enduser"/><indexterm>customize views tab</indexterm></indexterm></keywords>
   </metadata>
  </prolog>
  <conbody>
@@ -21,7 +21,7 @@
    You can analyze the tasks, targets, and clusters associated with your project. 
    This allows you to gain more powerful insights into the status and progress of your project.
   </p>
-  <fig conkeyref="r_image_warehouse/fig_zxw_2lh_mr" id="fig_l4w_bjm_mr"/>
+  <fig conkeyref="image_warehouse/fig_zxw_2lh_mr" id="fig_l4w_bjm_mr"/>
  
   <p>There are a variety of existing data analysis tasks available for constructing your queries or you can develop your own. Once you have developed your custom data view, you can save, print, or export the results.</p>
  

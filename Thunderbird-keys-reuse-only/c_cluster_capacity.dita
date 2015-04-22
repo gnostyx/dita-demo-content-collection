@@ -13,8 +13,8 @@
  <conbody>
         <section id="v5815406">
             <p id="v5827470">With the <term>cluster capacity</term> capability provided by <term
-                    conkeyref="r_productname_variables/ph_clusterview"/> and <term
-                    conkeyref="r_productname_variables/ph_analytics"/>, implementation
+                    conkeyref="productname_variables/ph_clusterview"/> and <term
+                    conkeyref="productname_variables/ph_analytics"/>, implementation
                 teams can:</p>
             <p id="v5815408">
                 <ul id="v5815409">
@@ -32,7 +32,7 @@
                     </li>
                     <li>
                         <p>Manage the performance of the <term
-                                conkeyref="r_productname_variables/ph_prodname"/>
+                                conkeyref="productname_variables/ph_prodname"/>
                             environment</p>
                     </li>
                     <li><p>Analyze capability in order to:
@@ -43,7 +43,7 @@
                 </li></ul>
             </p>
             <p id="v5815418">Worksheets in the <term
-                    conkeyref="r_productname_variables/ph_analytics"/>
+                    conkeyref="productname_variables/ph_analytics"/>
                 <term>Dashboard</term>:</p>
             <p id="v5815419">
                 <ul id="v5815420">

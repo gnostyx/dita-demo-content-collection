@@ -27,7 +27,8 @@
                                     <p><ph>Primary product name</ph></p>
                                 </entry>
                                 <entry>
-                                    <p><term id="ph_prodname">StormCluster</term></p>
+                                    <p><term
+                    id="ph_prodname">STA</term></p>
                                     <draft-comment>Change value here when primary
                                         product name changes. </draft-comment>
                                 </entry>

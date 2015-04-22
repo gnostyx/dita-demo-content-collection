@@ -27,7 +27,8 @@
                                     <p><ph>Primary product name</ph></p>
                                 </entry>
                                 <entry>
-                                    <p><term id="ph_prodname">ProductName</term></p>
+                                    <p><term
+                    id="ph_prodname">STB</term></p>
                                     <draft-comment>Change value here when primary
                                         product name changes. </draft-comment>
                                 </entry>
