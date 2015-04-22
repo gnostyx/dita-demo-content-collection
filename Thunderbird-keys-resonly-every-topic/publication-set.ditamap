@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Catalog of Publications</title>
+  <topicmeta>   
+    <shortdesc>This map serves as a list of all the top-level
+    publication maps in the content set. Each map is referenced
+    using a peer-scope map ref. Per the DITA 1.3 rules, a peer-scope
+    map reference means "this map acts as a separate root map",
+    in this context, meaning "The root of a publication". This
+    map reflects DITA 1.2 and thus does not use the DITA 1.3 @keyscope
+    attribute. For DITA 1.3 it would make sense to also put a key scope
+    name on each publication, at least to establish the convention
+    for the scope name for that publication when used from other maps.
+    That would also allow this map to be used from any publication map
+    that wanted to enable links to any of the other publications.
+    </shortdesc>    
+  </topicmeta>
+  <topicgroup>
+    <mapref href="Integrator_admin.ditamap" scope="peer"/>
+    <mapref href="User_Guide-resonly-all-topics.ditamap" scope="peer"/>
+    <mapref href="master_control.ditamap" scope="peer"/>
+    <mapref href="proposal_template.ditamap" scope="peer"/>
+  </topicgroup>
+</map>
