@@ -22,7 +22,7 @@ If a topic is used exactly once across all the maps and that use is a navigation
 
 In both of these versions of the content, cross references and content references are to always to keys: all references from topics to any kind of resource are key references, including all content references.
 
-For more background on these two key-using versions on the content, see below.
+For more background on these two key-using versions on the content, see "Reworking the User Guide Map" below.
 
 Introduction
 ------------
