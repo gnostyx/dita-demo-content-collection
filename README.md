@@ -139,12 +139,12 @@ global search and replace to sets of files.
 
 The basic technique is:
 
-Step 1. Capture the list of files in the image directory to a file. On a unix-type
+**Step 1.** Capture the list of files in the image directory to a file. On a unix-type
 operating system you can do this with "ls > files.txt". There must be a Windows
 equivalent (or you can install the git Windows client and include the git command
 window, which provides a basic bash shell environment).
 
-Step 2. Edit the files.txt file in oXygen and apply this regular expression 
+**Step 2.** Edit the files.txt file in oXygen and apply this regular expression 
 search and replace:
 
 ~~~~
@@ -167,7 +167,7 @@ filename as group 2, and the extension as group 3.
 The navigation title is necessary because the key is bound to a non-DITA resource and thus
 needs an explicit navigation title.
 
-Step 3. Add the map DOCTYPE declaration and map start and end elements to make a complete map
+**Step 3.** Add the map DOCTYPE declaration and map start and end elements to make a complete map
 document. You can copy the markup from the master_control.ditamap 
 
 ~~~~
@@ -180,9 +180,9 @@ document. You can copy the markup from the master_control.ditamap
     </topicmeta>
 ~~~~
 
-Step 4. Save the file as "keydefs-images.ditamap" in the Images/ directory
+**Step 4.** Save the file as "keydefs-images.ditamap" in the Images/ directory
 
-Step 5. Repeat for the Images2/ directory, calling the file keydefs-images2.ditamap.
+**Step 5.** Repeat for the Images2/ directory, calling the file keydefs-images2.ditamap.
 
 ### Reworking the User Guide Map
 
@@ -297,15 +297,15 @@ were to images.
 This is essentially the same regular expression search and replace used to update to the navigation topicrefs
 in the map, but applied to all the topic files using the oXygen project view.
 
-*Step 1.* Select the Project view in oXygen. You should have already added the dita-demo-content-collection directory
+**Step 1.** Select the Project view in oXygen. You should have already added the dita-demo-content-collection directory
 to it. If you haven't, so so now.
 
-*Step 2.* In the Project view, navigate to the topics/ directory under the directory that contains the files you're 
+**Step 2.** In the Project view, navigate to the topics/ directory under the directory that contains the files you're 
 modifying. 
 
-*Step 3.* Right click on the topics/ directory and select "Find/Replace in files..."
+**Step 3.** Right click on the topics/ directory and select "Find/Replace in files..."
 
-*Step 4.* For the "Text to find" field enter this regular expression:
+**Step 4.** For the "Text to find" field enter this regular expression:
 
 ~~~~
 href="\.\./Image[s]?/([^\.]+)\.[^"]+"
@@ -315,26 +315,27 @@ If you do "Find all" now you can test the regular expression without worrying ab
 making any changes. Also, oXygen will remember the expression so the next time
 you open the Find/Replace dialog it will be there for you.
 
-*Step 5.* For the "Replace with" field, enter:
+**Step 5.** For the "Replace with" field, enter:
 
 ~~~~
 keyref="$1"
 ~~~~
 
-*Step 6.* Make sure the "Regular expression" box is checked and the "Make backup files with extension"
-box is *unchecked*. Because we're using a git repository we shouldn't need to worry about backups.
-Rather, we can commit our current changes before making the global search and replace, making it
+**Step 6.** Make sure the "Regular expression" box is checked and the "Make backup files with extension"
+box is **unchecked**. Because you're using a git repository you shouldn't need to worry about backups.
+Rather, you can commit your current changes before making the global search and replace, making it
 easy to revert back to a good state or, if you want to be really disciplined about it, 
 create a new temporary ("feature") branch just for this search and replace. With git in use,
-the backup files just cause annoyance.
+the backup files just cause annoyance. (However, I've added .bak to the .gitignore file in 
+this project so backup files will not be added to the repository if you do create them).
 
-*Step 7.* In the "XPath" field enter:
+**Step 7.** In the "XPath" field enter:
 
 ~~~~
 image
 ~~~~
 
-*Step 8.* Click "Replace All..."
+**Step 8.** Click "Replace All..."
 
 This will bring up the Replace All dialog. Here you can use the "Preview"
 button to see what will be selected and what the change will be if you're
@@ -366,13 +367,22 @@ With an XPath of "xref" to find all the xrefs in all the topics.
 
 From the search results I then just opened each topic to the xref,
 copied the @href attribute to a new keydef in the keydefs map,
-made up a key name, added an appropriate navigation title
-to the keydef for that Web site, and replaced the @href attribute
-with @keyref to the key I just defined on the original xref element.
+made up a key name, set the @scope attribute to "external"
+and the @format attribute "html", added an appropriate navigation title
+to the keydef for that Web site.
+
+On the original xref I replaced the @href attribute
+with @keyref pointing to the key I just defined.
 
 With that task complete, the only URI references should be in map files,
 either on dedicated keydef elements or on navigation topicrefs to topics
-that are not reused.
+that are not reused. You can check that by doing a search on "href=" across
+all the .dita and .ditamap files in the project. You should only get hits
+on .ditamap files.
+
+A more complete check would be to ensure that a given URI is only referenced
+once it an given map (or, more dogmatically, in exactly one map), which could
+be done with an XQuery the operates on all the files in the project.
 
 With these changes made and validated against the User Guide map, it's then
 simply a matter of making the same updates to the other root maps (integrator_admin.ditamap,
