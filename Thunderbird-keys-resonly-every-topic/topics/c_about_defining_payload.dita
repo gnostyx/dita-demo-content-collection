@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd" [
-
-<!-- Begin Document Specific Declarations -->
-
-
-<!-- End Document Specific Declarations -->
-
-]>
-
-
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id = "i713958"><title>Payload definition</title>
     <shortdesc>Layers of a captured packet are accessible when using payload options.</shortdesc>
     <prolog>
