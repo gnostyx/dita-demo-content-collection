@@ -214,18 +214,24 @@ topicgroups used to define keys for the variables and warehouse topics:
 ~~~~
 
 Note that both topic groups include both image keydef maps but in opposite orders. This ensures that 
-the product-specific key bindings take precedence while still ensuring that any key defined in
-one of the maps but not the other will have a definition regardless of which product is filtered
-in.
+the product-specific key bindings take precedence while still ensuring that any keys defined in
+one of the maps but not the other will have definitions regardless of which product is filtered
+out.
 
-The image warehouse topics could be replaced with a single warehouse since all the key definitions
-are now conditional if all they contained were image elements used by conref. But the image warehouse
+If all they contained were image elements used by conref, the image warehouse topics could be replaced with a single warehouse as all the key definitionsare now conditional. 
+But the image warehouse
 also contains figures that then contain images and those figures could be product specific beyond
 just the image referenced. Likewise, the image elements could have product-specific alternative text,
 so it can still make sense to use a warehouse for the image elements and use them via conref.
 
 The other thing to do for the User Guide map is to add @keys attributes to all the navigation
-topicrefs. This can be done with another regular expression search and replace applied to
+topicrefs. The navigation topicref keys enable cross references (and ultimately, cross-deliverable
+links) to specific uses of topics within the publication. This is essential for reliable cross
+referencing. Navigation topicref keys can also be used to control the anchors used in deliverables
+(e.g., the filenames of HTML files generated from the referenced topics, as though @copy-to had
+been specified on each topicref such that the effective filename reflects the key name).
+
+This can be done with another regular expression search and replace applied to
 the navigation topicrefs in the map:
 
 ~~~~
@@ -252,15 +258,16 @@ The XPath limits the change to only topicrefs under topichead ancestors, which
 prevents it from changing topicrefs in the relationship table, which we don't 
 want to do.
 
-There is one topic whose filename does not following the pattern: FAQ.dita.
+There is one topic whose filename does not follow the pattern: FAQ.dita.
 I solved this problem by changing it's filename to "c_FAQ.dita" (even though
 the topic is a generic topic, it functions more or less as a concept) and just
 manually changed the topicref to add the @keys attribute with the value "FAQ".
 
 For the relationship tables, we want to replace the @href attributes with the
-equivalent @keyref. We don't need to @keys on these topicrefs because they
+equivalent @keyref. We don't need @keys on these topicrefs because they
 only serve to establish links between topics, they don't put those topics
-into any navigation structure.
+into any navigation structure, so there would never be a reason to link to
+these particular topicrefs.
 
 To change the reltable topicrefs use this regular expression search and replace:
 
@@ -273,11 +280,13 @@ Replace with:
 
 keyref="$1"
 
-XPath: reltable//topicref
+XPath: 
+
+reltable//topicref
 ~~~~
 
 If you've done this correctly, oXygen should not report any unresolvable key references in the map if the current map is 
-selected in the Root map pulldown on the oXygen Map Manager view.
+selected in the "Root map" field in the oXygen Map Manager view.
 
 ### Replacing @href With @keyref on Images
 
@@ -285,18 +294,18 @@ With the keys set up in the User Guide map, I then updated all the topics to use
 The original topics did not have any topic-to-topic cross references, so the only direct URI references
 were to images.
 
-This is essentially the same regular expression seach and replace used to update to the navigation topicrefs
+This is essentially the same regular expression search and replace used to update to the navigation topicrefs
 in the map, but applied to all the topic files using the oXygen project view.
 
-1. Select the Project view in oXygen. You should have already added the dita-demo-content-collection directory
+*Step 1.* Select the Project view in oXygen. You should have already added the dita-demo-content-collection directory
 to it. If you haven't, so so now.
 
-2. In the Project view, navigate to the topics/ directory under the directory that contains the files you're 
+*Step 2.* In the Project view, navigate to the topics/ directory under the directory that contains the files you're 
 modifying. 
 
-3. Right click on the topics/ directory and select "Find/Replace in files..."
+*Step 3.* Right click on the topics/ directory and select "Find/Replace in files..."
 
-4. For the "Text to find" field enter this regular expression:
+*Step 4.* For the "Text to find" field enter this regular expression:
 
 ~~~~
 href="\.\./Image[s]?/([^\.]+)\.[^"]+"
@@ -306,26 +315,26 @@ If you do "Find all" now you can test the regular expression without worrying ab
 making any changes. Also, oXygen will remember the expression so the next time
 you open the Find/Replace dialog it will be there for you.
 
-5. For the "Replace with" field, enter:
+*Step 5.* For the "Replace with" field, enter:
 
 ~~~~
 keyref="$1"
 ~~~~
 
-6. Make sure the "Regular expression" box is checked and the "Make backup files with extension"
+*Step 6.* Make sure the "Regular expression" box is checked and the "Make backup files with extension"
 box is *unchecked*. Because we're using a git repository we shouldn't need to worry about backups.
 Rather, we can commit our current changes before making the global search and replace, making it
 easy to revert back to a good state or, if you want to be really disciplined about it, 
 create a new temporary ("feature") branch just for this search and replace. With git in use,
 the backup files just cause annoyance.
 
-7. In the "XPath" field enter:
+*Step 7.* In the "XPath" field enter:
 
 ~~~~
 image
 ~~~~
 
-8. Click "Replace All..."
+*Step 8.* Click "Replace All..."
 
 This will bring up the Replace All dialog. Here you can use the "Preview"
 button to see what will be selected and what the change will be if you're
