@@ -139,12 +139,12 @@ global search and replace to sets of files.
 
 The basic technique is:
 
-1. Capture the list of files in the image directory to a file. On a unix-type
+Step 1. Capture the list of files in the image directory to a file. On a unix-type
 operating system you can do this with "ls > files.txt". There must be a Windows
 equivalent (or you can install the git Windows client and include the git command
 window, which provides a basic bash shell environment).
 
-2. Edit the files.txt file in oXygen and apply this regular expression 
+Step 2. Edit the files.txt file in oXygen and apply this regular expression 
 search and replace:
 
 ~~~~
@@ -167,7 +167,7 @@ filename as group 2, and the extension as group 3.
 The navigation title is necessary because the key is bound to a non-DITA resource and thus
 needs an explicit navigation title.
 
-3. Add the map DOCTYPE declaration and map start and end elements to make a complete map
+Step 3. Add the map DOCTYPE declaration and map start and end elements to make a complete map
 document. You can copy the markup from the master_control.ditamap 
 
 ~~~~
@@ -180,9 +180,9 @@ document. You can copy the markup from the master_control.ditamap
     </topicmeta>
 ~~~~
 
-4. Save the file as "keydefs-images.ditamap" in the Images/ directory
+Step 4. Save the file as "keydefs-images.ditamap" in the Images/ directory
 
-5. Repeat for the Images2/ directory, calling the file keydefs-images2.ditamap.
+Step 5. Repeat for the Images2/ directory, calling the file keydefs-images2.ditamap.
 
 ### Reworking the User Guide Map
 
