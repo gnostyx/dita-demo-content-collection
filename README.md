@@ -395,7 +395,7 @@ versions of the Thunderbird source files.
 
 ### Managing Publications
 
-In anticipation of the DITA 1.3's cross-deliverable linking feature and as an 
+In anticipation of the DITA 1.3 cross-deliverable linking feature and as an 
 experiment in publication management, I also created a new map to serve as
 a catalog or declaration of the maps that act as the roots of publications
 in this content set.
@@ -404,7 +404,7 @@ In the general case, there is no way to know if a given map is intended to be
 a root map or a submap. For some maps it's obvious to a human (e.g., a map
 containing only keydefs for example) but for other maps it's not: if the map
 has a title and has references to topics or other maps, it might be intended
-to be a root map or not.
+to be a root map or it might not.
 
 One solution to this is to create another map that references the maps you
 intend to be root maps as "peer" maps. This map then serves as an explicit
@@ -440,7 +440,7 @@ In this example, I created the map "publication-set.ditamap":
 </map>
 ~~~~
 
-Note that the mapref elements all specified @scope of "peer". In DITA 1.3,
+Note that the mapref elements all specify a @scope of "peer". In DITA 1.3,
 setting the scope attribute to "peer" for a reference to a DITA map
 explicitly means "the referenced map is a root map from the point of view of
 this map". That's intended primarily to enable cross-deliverable linking 
