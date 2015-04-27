@@ -1,4 +1,4 @@
-Gnostyx DITA Demostration Documents
+Gnostyx DITA Demonstration Documents
 ===================================
 
 This project provides a set of DITA documents intended to support DITA demonstrations by providing realistic documents that demonstrate a wide variety of DITA features and use patterns. The base version of the documents were originally developed and contributed by Gnostyx Research (gnostyx.com). Additional variants demonstrating various ways of using keys have been developed Eliot Kimber.
@@ -31,7 +31,7 @@ The DITA Demonstration Collection provides a set of sample DITA files that are m
 
 The content has been created based on materials produced by various organizations with this content being modified to exclude proprietary details.
 
-The functional objective set for the content itself is that it should be "functionally realistic" without necessarily being a flawless description of an actual system. As a technical objective, the DITA markup is valid and inline with generally accepted DITA markup practices. As a further objective, the DITA markup intentionally includes a range of possible markup and content organization tactics, based on patterns encountered in real-world content sources.
+The functional objective set for the content itself is that it should be "functionally realistic" without necessarily being a flawless description of an actual system. As a technical objective, the DITA markup is valid and in line with generally accepted DITA markup practices. As a further objective, the DITA markup intentionally includes a range of possible markup and content organization tactics, based on patterns encountered in real-world content sources.
 
 The collection of instances provided as part of this collection is also intended to be broad enough to support the definition and execution of a number of useful demonstration scenarios.
 
