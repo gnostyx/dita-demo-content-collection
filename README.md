@@ -49,7 +49,16 @@ One of the key target demonstration scenarios set for the _StormCluster_ collect
 Licensing Terms
 ---------------
 
-The DITA Demonstration Collection has been released under the Creative Commons Attribution-ShareAlike 4.0 International Public License (See [CC-BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)). This license essentially encourages others to use, adapt and extend the collection in ways that they see fit. This includes providing this content as part of a commercial offering, for example as reference files within a product tutorial. The only caveats that are introduced by the licensing terms are the obligations to acknowledge the source and to make adaptations and extensions available to the public on similar terms.
+Copyright 2015 Gnostyx Research Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+In line with this license, people are encouraged to use, adapt, extend, and distribute the collection in whatever ways that they see fit. This includes providing this content as part of a commercial offering, for example as reference files within a product tutorial. They are further encouraged, but not obligated, to make their adaptations and extensions available to the public on similar terms.
+
 
 Acknowledgements
 ----------------
